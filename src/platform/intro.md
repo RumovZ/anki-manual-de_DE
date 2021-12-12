@@ -1,4 +1,4 @@
-# Platform Notes
+# Plattformspezifische Anmerkungen
 
-The way Anki is installed, and the possible problems you may encounter, depend
-on the type of computer you are using.
+Wie Anki installiert wird, und die Probleme, auf die du stoßen könntest, hängen
+von der Art von Computer ab, die du benutzt.
