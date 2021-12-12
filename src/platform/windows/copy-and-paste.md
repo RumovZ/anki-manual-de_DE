@@ -1,6 +1,7 @@
-# Copy and paste issues
+# Probleme beim Kopieren und Einfügen
 
-If you are experiencing problems with copying and pasting, please check if you
-are running other programs on your computer that monitor the clipboard, such as
-dictionary programs, clipboard managers or clipping tools. The toolkit Anki uses
-can have trouble when such programs are running.
+Wenn du Probleme beim Kopieren und Einfügen hast, überprüfe bitte, ob du andere
+Programme auf dem PC laufen hast, die die Zwischenablage überwachen, zum Beispiel
+Wörterbuchprogramme, Zwischenablage-Manager oder Ausschnittswerkzeuge.
+Wenn solche Programme laufen, kann die Programmbibliothek, die Anki benutzt,
+Schwierigkeiten bekommen.
