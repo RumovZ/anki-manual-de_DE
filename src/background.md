@@ -1,142 +1,142 @@
-# Background
+# Hintergrund
 
 <!-- toc -->
 
-Anki is a program which makes remembering things easy. Because it is a
-lot more efficient than traditional study methods, you can either
-greatly decrease your time spent studying, or greatly increase the
-amount you learn.
+Anki ist ein Programm, dass es einfach macht, sich Dinge zu merken.
+Weil es viel effizienter ist als traditionelle Lernmethoden, kannst du entweder deine Lernzeit
+drastisch reduzieren oder die Menge, die du lernst, enorm steigern.
 
-Anyone who needs to remember things in their daily life can benefit from
-Anki. Since it is content-agnostic and supports images, audio, videos
-and scientific markup (via LaTeX), the possibilities are endless. For
-example:
+Jeder, der sich in seinem Alltag Dinge merken muss, kann von Anki profitieren.
+Da es inhaltsunabhängig ist und Bilder, Ton, Video und wissenschaftliche Textauszeichnung (durch
+LaTeX) unterstützt, sind die Möglichkeiten unbegrenzt.
+Hier sind ein paar Beispiele, was du mit Anki machen kannst:
 
-- learning a language
+- eine Sprache lernen
 
-- studying for medical and law exams
+- für eine Medizin- oder Jura-Prüfung lernen
 
-- memorizing people’s names and faces
+- Namen und Gesichter auswendig lernen
 
-- brushing up on geography
+- deine Geographiekenntnisse auffrischen
 
-- mastering long poems
+- lange Gedichte meistern
 
-- even practising guitar chords!
+- sogar Gitarrenakkorde üben!
 
-There are two simple concepts behind Anki: __active recall testing__ and
-__spaced repetition__. They are not known to most learners, despite having
-been written about in the scientific literature for many years.
-Understanding how they work will make you a more effective learner.
+Hinter Anki stehen zwei simple Konzepte: __active recall testing__ (aktive Erinnerungsprüfung) und
+__spaced repetition__ (verteilte Wiederholung). Den meisten Lernern sind sie unbekannt, obwohl über
+sie seit Jahren in der wissenschaftlichen Literatur berichtet wird.
+Zu verstehen, wie sie funktionieren, wird dich effektiver lernen lassen.
 
-## Active Recall Testing
+## _Active recall testing_
 
-_Active recall testing_ means being asked a question and trying to
-remember the answer. This is in contrast to _passive study_, where we
-read, watch, or listen to something without pausing to consider if we
-know the answer. Research has shown that active recall testing is far
-more effective at building strong memories than passive study. There are
-two reasons for this:
+_Active recall testing_ bedeutet, eine Frage gestellt zu bekommen und zu versuchen, sich an die
+Antwort zu erinnern, mit anderen Worten, abgefragt zu werden.
+Das Gegenstück dazu ist __passives Lernen__, bei dem wir etwas lesen, sehen oder hören, ohne dabei
+innezuhalten, um zu überlegen, ob wir die Antwort kennen. Die Forschung hat gezeigt, dass Abfragen
+wesentlich effektiver dazu ist, starke Erinnerungen zu formen, als passives Lernen. 
+Dafür gibt es zwei Gründe:
 
-- The act of recalling something _strengthens_ the memory, increasing
-    the chances we’ll be able to remember it again.
+- Das Abrufen einer Erinnerung _stärkt_ sie und erhöht damit die Chance, sie
+  erneut abrufen zu können.
 
-- When we're unable to answer a question, it tells us we need to
-    return to the material to review or relearn it.
+- Können wir eine Frage nicht beantworten, sagt uns das, dass wir den Stoff
+  wiederholen oder neu erlernen müssen.
 
-You have probably encountered active recall testing in your school years
-without even realizing it. When good teachers give you a series of
-questions to answer after reading an article, or make you take weekly
-progress-check tests, they are not doing it simply to see if you
-understood the material or not. By testing you, they are increasing the
-chances you will be able to remember the material in the future.
+Wahrscheinlich kennst du _active recall testing_ aus deiner Schulzeit, ohne dass
+es dir bewusst ist. Wenn ein guter Lehrer dich nach der Lektüre eines Artikels
+eine Reihe von Fragen beantworten oder wöchentliche Tests schreiben lässt,
+macht er das nicht nur, um zu prüfen, ob du den Stoff verstanden hast.
+Durch das Abfragen erhöht er auch die Wahrscheinlichkeit, dass du dich in Zukunft
+daran erinnern können wirst. 
 
-A good way to integrate active recall testing into your own studies is
-to use _flashcards_. With traditional paper flashcards, you write a
-question on one side of a card, and the answer on the other side. By not
-turning the card over until you've thought about the answer, you can
-learn things more effectively than passive observation allows.
+Eine gute Möglichkeit, _active recall testing_ in deinen eigenen Lernprozess zu
+integrieren, sind Karteikarten. Bei traditionellen Karteikarten aus Papier schreibst
+du eine Frage auf die eine und die Antwort auf die andere Seite. 
+Indem du die Karte nicht umdrehst, bis du über die Antwort nachgedacht hast,
+kannst effektiver lernen, als durch passives Lernen möglich wäre.
 
-## Use It or Lose It
+## _Use it or lose it_
 
-Our brains are efficient machines, and they rapidly discard information
-that doesn't seem useful. Chances are that you don't remember what you
-had for dinner on Monday two weeks ago, because this information is not
-usually useful. If you went to a fantastic restaurant that day and spent
-the last two weeks telling people about how great it was, however,
-you're likely to still remember in vivid detail.
+Unser Gehirn ist eine effiziente Maschine, das Informationen, die nicht nützlich
+erscheinen, schnell entsorgt. Vermutlich erinnerst du dich nicht daran, was du
+am Montag vor zwei Wochen zum Abendessen hattest, weil diese Information für
+gewöhnlich keinen Nutzen bringt.
+Wenn du an dem Tag allerdings in einem großartigen Restaurant warst und die letzten
+zwei Wochen jedem erzählt hast, wie toll es war, kannst du dich wahrscheinlich
+noch lebhaft daran erinnern.
 
-The brain's "use it or lose it" policy applies to everything we learn.
-If you spend an afternoon memorizing some science terms, and then don't
-think about that material for two weeks, you'll probably have forgotten
-most of it. In fact, studies show we forget about 75% of material learnt
-within a 48 hour period. This can seem pretty depressing when you need
-to learn a lot of information!
+Das Gehirn wendet das Prinzip _"use it or lose it"_ ("benutz es oder verlier es")
+auf alles an, was wir lernen. Wenn du einen Nachmittag lang Fachausdrücke auswendig
+gelernt und dann zwei Wochen nicht daran gedacht hast, hast du vermutlich die
+meisten wieder vergessen. Tatsächlich haben Studien gezeigt, dass wir etwa 75%
+des gelernten Stoffes innerhalb von 48 Stunden vergessen. Das mag ziemlich
+deprimierend erscheinen, wenn du du sehr viel lernen musst!
 
-The solution is simple, however: _review_. By reviewing newly-learnt
-information, we can greatly reduce forgetting.
+Die Lösung ist jedoch einfach: _Wiederholung_. Durch das Wiederholen neu erlernter
+Informationen, können wir dem Vergessen stark entgegenwirken.
 
-The only problem is that traditionally, reviewing has not been very practical. If
-you are using paper flashcards, it's easy to flick through all of them
-if you only have 30 of them to review, but as the number grows to 300 or
-3000, it quickly becomes unwieldy.
+Das einzige Problem ist, dass Wiederholung traditioneller Weise nicht sehr
+praktikabel ist. Benutzt du Karteikarten aus Papier, kannst du sie schnell
+durchblättern, wenn du nur 30 von ihnen wiederholen musst. Aber wenn es 300
+oder 3000 sind, wird die Handhabung schnell schwierig.
 
-## Spaced Repetition
+## _Spaced Repetition_
 
-The _spacing effect_ was reported by a German psychologist Hermann Ebbinghaus in 1885. He
-observed that we tend to remember things more effectively, if we spread
-reviews out over time, instead of studying multiple times in one
-session. Since the 1930s, there have been a number of proposals for
-utilizing the spacing effect to improve learning, in what has come to be
-called _spaced repetition_.
+Über den Abstandseffekt berichtete 1885 der deutsche Psychologe Hermann Ebbinghaus.
+Er beobachtete, dass wir uns besser an Dinge erinnern können, wenn die Wiederholungen
+über einen gewissen Zeitraum verteilt, anstatt alle in einer einzigen Sitzung
+erfolgt sind. Seit den 1930ern wurde eine Reihe von Vorschlägen gemacht, wie dieser
+Effekt zur Verbesserung des Lernprozesses genutzt werden kann, und es etablierte
+sich der Begriff _spaced repetition_.
 
-One example was in 1972, when a German scientist called Sebastian Leitner
-popularized a method of spaced repetition with paper flashcards. By
-separating the paper cards into a series of boxes, and moving the
-cards to a different box on each successful or unsuccessful review, it
-was possible to see at a glance a rough estimate of how well a card was
-known and when it should be reviewed again. This was a great improvement
-over a single box of cards, and it has been widely adopted by
-computerized flashcard software. It is a rather rough approach however,
-as it cannot give you an exact date on which you should review something
-again, and it does not cope very well with material of varying
-difficulty.
+Ein Beispiel dafür ist die _Spaced-Repetition_-Methode mittels Karteikarten aus Papier,
+die der deutsche Publizist Sebastian Leitner 1972 bekannt machte. Indem die Karten
+in eine Reihe von Kästen eingeordnet und je nach erfolgreicher oder gescheiterter
+Wiederholung einem neuen Kasten zugeordnet wurden, war es möglich, mit einem Blick
+einen groben Überblick davon zu bekommen, wie gut eine Karte bekannt war und wann
+die nächste Wiederholung erfolgen sollte. Das war eine deutliche Verbesserung
+zu nur einem einzelnen Kasten und wurde weitgehend in Karteikarten-Software
+umgesetzt.
+Es ist allerdings ein eher ungenaues Vorgehen, da es kein exaktes Datum liefert,
+zu dem Stoff wiederholt werden sollte, und nicht gut mit Stoff unterschiedlicher
+Schwierigkeit zurechtkommt.
 
-The biggest developments in the last 30 years have come from the authors
-of SuperMemo, a commercial flashcard program that implements spaced
-repetition. SuperMemo pioneered the concept of a system that keeps track
-of the ideal time to review material and optimizes itself based on the
-performance of the user.
+Die größten Entwicklungen in den letzten 30 Jahren stammen von den Urhebern von
+SuperMemo, einem kommerziellen Karteikartenprogramm, das _spaced repetition_
+benutzt. SuperMemo bereitete den Weg für ein System, das den optimalen Zeitpunkt
+für die Wiederholung des Lernstoffs überwacht und sich selbst basierend auf der
+Leistung des Anwenders optimiert.
 
-In SuperMemo's spaced repetition system, every time you answer a
-question, you tell the program how well you were able to remember it —
-whether you forgot completely, made a small mistake, remembered with
-trouble, remembered easily, etc. The program uses this feedback to
-decide the optimal time to show you the question again. Since a memory
-gets stronger each time you successfully recall it, the time between
-reviews gets bigger and bigger — so you may see a question for the first
-time, then 3 days later, 15 days later, 45 days later, and so on.
+In SuperMemos System teilst du dem Programm bei jedem Beantworten einer Frage mit,
+wie gut du dich erinnern konntest — ob du die Antwort komplett vergessen hattest,
+einen kleinen Fehler gemacht hast, Schwierigkeiten hattest, dich zu erinnern,
+dich leicht erinnern konntest, etc. Das Programm nutzt diese Rückmeldung, um den
+perfekten Zeitpunkt zu bestimmen, dir die Frage erneut zu zeigen.
+Weil die Erinnerung durch jeden erfolgreichen Abruf stärker wird, wird die Zeit
+zwischen den Wiederholungen länger und länger. So siehst du eine Frage vielleicht
+das erste Mal, dann 3 Tage später, 15 Tage später, 45 Tage später und so weiter.
 
-This was a revolution in learning, as it meant material could be learnt
-and retained with the absolute minimum amount of effort necessary.
-SuperMemo's slogan sums it up: with spaced repetition, you can: "forget
-about forgetting".
+Das war eine Revolution des Lernens, da es bedeutete, dass Stoff mit dem absoluten
+Minimum an Aufwand gelernt und behalten werden konnte.
+SuperMemos Slogan fasst es zusammen: Mit _spaced repetition_ kannst du Vergessen
+vergessen.
 
-## Why Anki?
+## Warum Anki?
 
-While there is no denying the huge impact SuperMemo has had on the
-field, it is not without its problems. The program is often criticized
-for being buggy and difficult to navigate. It only runs on Windows
-computers. It is proprietary software, meaning that end-users cannot extend it
-or access the raw data. And while very old versions have been made available
-for free, they are quite limited for modern use.
+Obwohl SuperMemos enormer Einfluss auf das Gebiet nicht zu leugnen ist, hat es auch
+seine Probleme. Das Programm wird oft als fehlerhaft und schwer navigierbar
+kritisert. Es läuft nur auf Windows. Es is geschützte Software, das heißt Endbenutzer
+können sie nicht erweitern oder auf die Rohdaten zugreifen. Und während sehr alte
+Versionen kostenlos zur Vefügung gestellt wurden, sind sie für die heutige Nutzung
+ziemlich limitiert.
 
-Anki addresses these issues. There are free clients for Anki available
-on many platforms, so struggling students and teachers with budgetary
-constraints are not left out. Anki is open source, with an already
-flourishing library of add-ons contributed by end-users. It is
-multi-platform, running on Windows, macOS, Linux/FreeBSD, and some
-mobile devices. And it is considerably easier to use than SuperMemo.
+Anki behebt diese Probleme. Es gibt kostenlose Versionen für viele Plattformen,
+sodass Schüler und Lehrer mit begrenztem Budget nicht außen vor sind.
+Anki ist quelloffene Software mit einer florierenden Sammlung von Erweiterungen,
+die von Endbenutzern beigesteuert wurden.
+Es läuft auf vielen Plattformen, Windows, macOS, Linux/FreeBSD und einigen Mobilgeräten.
+Und es ist wesentlich einfacher zu benutzen als SuperMemo.
 
-Anki's spaced repetition system is based on an older version of the
-SuperMemo algorithm called [SM-2](faqs.md).
+Ankis _Spaced-Repetition_-System auf einer älteren Version von SuperMemos
+[SM-2](faqs.md) genannten Algorithmus.
