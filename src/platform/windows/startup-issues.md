@@ -1,84 +1,89 @@
-# Windows startup issues
+# Startprobleme
 
 <!-- toc -->
 
-## Windows updates
+## Windows-Updates
 
-When starting Anki, you may receive a message like the following:
+Wenn du Anki startest, erhältst du vielleicht eine solche Meldung:
 
-- *Error loading Python DLL*
-- *The program can't start because api-ms-win.... is missing*
-- *Failed to execute script runanki*
-- *Failed to execute script pyi_rth_multiprocessing*
-- *Failed to execute script pyi_rth_win32comgenpy*
+- *Fehler beim Laden der Python-DLL.*
+- *Das Programm kann nicht gestartet werden, weil api-ms-win-... nicht auf Ihrem
+  Computer installiert ist.*
+- *Skript runanki kann nicht ausgeführt werden.*
+- *Skript pyi_rth_multiprocessing kann nicht ausgeführt werden.*
+- *Skript pyi_rth_win32comgenpy kann nicht ausgeführt werden.*
 
-These errors are usually because your computer is missing a Windows update
-or Windows library.
+Diese Fehlermeldungen erscheinen für gewöhnlich, weil deinem PC ein Windows-Update
+oder eine Windows-Bibliothek fehlt.
 
-Please open Windows update, and ensure your system has all updates installed.
-If any needed to be installed, please restart your device after installing.
+Öffne bitte Windows Update und stell sicher, dass alle Updates installiert sind.
+Falls welche installiert werden müssen, starte deinen PC bitte nach der Installation
+neu.
 
 ## Windows 7/8
 
-On Windows 7/8, you may need to manually install extra updates. Please try:
+Auf Windows 7/8 musst du vielleicht manuell zusätzliche Updates installieren.
+Versuche es bitte mit:
 
 - <https://www.microsoft.com/en-us/download/details.aspx?id=48234>
 - <https://aka.ms/vs/15/release/vc_redist.x64.exe>
 - <http://www.catalog.update.microsoft.com/Search.aspx?q=kb4474419>
 - <http://www.catalog.update.microsoft.com/Search.aspx?q=kb4490628>
 
-## Video driver issues
+## Videotreiber
 
-Please see [display issues](./display-issues.md).
+Siehe bitte [Anzeigeprobleme](./display-issues.md).
 
-## Multiple displays
+## Mehrere Bildschirme
 
-If you get a *LoadLibrary failed with error 126*, this may be caused by the
-toolkit Anki is built on having trouble with [multiple
-displays](https://forums.ankiweb.net/t/error-126-on-open-anki-desktop/13967)
+Wenn du die Meldung *"LoadLibrary ist mit Fehler 126 fehlgeschlagen"* bekommst,
+könnte das daran liegen, dass das von Anki benutzte Toolkit Probleme mit
+[mehreren Bildschirmen](https://forums.ankiweb.net/t/error-126-on-open-anki-desktop/13967)
+hat.
 
-## Antivirus/firewall software
+## Antivirus- / Firewall-Software
 
-Third-party software on your machine may prevent Anki from loading. You can
-try adding an exception to Anki, or temporarily disabling your antivirus/firewall
-to see if it helps.
+Drittanbieter-Software auf deinem Rechner kann Anki am Starten hindern. Du kannst
+versuchen, eine Ausnahme hinzuzufügen oder die Antivirus- / Firewall-Software
+vorübergehend deaktivieren, um zu sehen, ob es hilft.
 
-## Admin access
+## Administratorrechte
 
-Some users have reported that Anki did not run for them until they right-clicked
-on the Anki icon and chose "Run as administrator". Anki stores all of its data in
-your user folder, and should not need administrator privileges, but it's something
-you can try if you've exhausted other options.
+Einige Nutzer haben berichtet, dass Anki erst gestartet hat, nachdem sie auf das
+Anki-Symbol rechtsgeklickt und "Als Administrator ausführen" ausgewählt haben.
+Anki speichert all seine Dateien in deinem Benutzerorder und sollte keine Administratorrechte
+benötigen, aber es ist einen Versuch wert, wenn du die Alternativen ausgeschöpft hast.
 
-## Multiple Anki installations present after updating
+## Mehrere Anki-Installationen nach Update
 
-If the update process leaves you with multiple Anki installs (such as within
-`C:\Program Files\Anki` and `C:\Program Files (x86)\Anki`), they may be left in a
-non-working state, and Anki may refuse to start without showing an error message.
+Wenn nach einem Update mehrere Anki-Installationen vorliegen (zum Beispiel in
+`C:\Programme\Anki` and `C:\Programme (x86)\Anki`), könnten sie fehlerhaft
+sein und Anki sich nicht ohne Fehlermeldung starten lassen.
 
-Try uninstalling all copies - you may be able to do so with the Windows `Apps &
-features` settings menu, or by running `uninstall.exe` in each Anki program
-folder. Afterward, install Anki again.
+Versuche, alle Kopien zu deinstallieren, zum Beispiel mit Windows' `Apps und Features`
+oder, indem du `uninstall.exe` in jedem Anki-Ordner ausführst. Anschließend kannst
+du Anki wieder installieren.
 
-## Debugging
+## Debuggen
 
-Starting Anki from a terminal may reveal a bit more information about some
-errors. After installing the latest Anki version and ensuring all Windows
-updates are installed, instead of running Anki directly, use Start>Run
-and type cmd.exe. When a console window appears, type
+Anki von der Konsole aus zu starten, kann weitere Erkenntnisse über einige Fehler
+liefern. Nachdem du die neueste Anki-Version und alle Windows-Updates installiert
+hast, kannst du Start>Ausführen>cmd.exe benutzen, anstatt Anki direkt zu starten.
+Gib Folgendes in die geöffnete Konsole ein:
 
 ```bat
 cd \program files\anki & anki-console
 ```
 
-Presumably Anki will fail to open like before, but it may reveal something about
-what is causing the problem.
+Vermutlich wird Anki genausowenig starten wie zuvor, aber es könnte Informationen
+über die Fehlerursache liefern.
 
-## If all else fails
+## Wenn alles andere versagt
 
-If you are unable to start Anki after trying the above workarounds, you have
-two remaining options:
+Wenn du Anki immer noch nicht starten kannst, nachdem du alle obigen Vorschläge
+ausprobiert hast, gibt es noch zwei verbleibende Optionen:
 
-- You can try [running from Python](https://faqs.ankiweb.net/running-from-python.html).
-- You can try an older Anki version built with an older toolkit, such as
-  2.1.35-alternate, and 2.1.15.
+- Du kannst versuchen,
+  [Anki von Python aus](https://faqs.ankiweb.net/running-from-python.html) zu starten.
+- Du kannst eine ältere Anki-Version wie 2.1.35-alternate oder 2.1.15 ausprobieren,
+  die mit einer anderen Version des Toolkits erstellt wurden.
