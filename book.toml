@@ -1,9 +1,9 @@
 [book]
-authors = ["Ankitects Pty Ltd and contributors"]
-language = "en"
+authors = ["Ankitects Pty Ltd und Mitwirkende"]
+language = "de_DE"
 multilingual = false
 src = "src"
-title = "Anki Manual"
+title = "Anki-Handbuch"
 
 [build]
 create-missing = true
@@ -13,7 +13,7 @@ command = "mdbook-toc"
 renderer = ["html"]
 
 [output.html]
-git-repository-url = "https://github.com/ankitects/anki-manual/"
+git-repository-url = "https://github.com/RumovZ/anki-manual-de_DE"
 cname = "docs.ankiweb.net"
 additional-css = ["css/kbd.css"]
 
