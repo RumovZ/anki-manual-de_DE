@@ -138,5 +138,5 @@ die von Endbenutzern beigesteuert wurden.
 Es läuft auf vielen Plattformen, Windows, macOS, Linux/FreeBSD und einigen Mobilgeräten.
 Und es ist wesentlich einfacher zu benutzen als SuperMemo.
 
-Ankis _Spaced-Repetition_-System auf einer älteren Version von SuperMemos
-[SM-2](faqs.md) genannten Algorithmus.
+Ankis _Spaced-Repetition_-System basiert auf einem älteren, [SM-2](faqs.md)
+genannten Algorithmus von SuperMemo.

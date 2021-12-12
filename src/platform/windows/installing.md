@@ -1,17 +1,17 @@
-# Anki installieren und updaten
+# Installation & Updates
 
 <!-- toc -->
 
 ## Voraussetzungen
 
-Neue Anki-Versionen benötigen die 64-Bit-Version von Windows 7, 8, 10 or 11.
+Neue Anki-Versionen benötigen die 64-Bit-Version von Windows 7, 8, 10 oder 11.
 
 Die letzte Version, die 32-Bit-Windows unterstützt, war _Anki 2.1.35-alternate_.
 Wenn du einen alten PC hast, kannst du diese Version
 [hier](https://github.com/ankitects/anki/releases)
 herunterladen.
 
-## Installieren
+## Installation
 
 Um Anki zu installieren:
 

@@ -11,6 +11,7 @@ Es wurde von Freiwilligen in verschiedene Sprachen übersetzt, die Übersetzunge
 nicht unbedingt aktuell.
 
 - [Bahasa Indonesia](https://apps.ankiweb.net/docs/manual.id.html)
+- [Deutsch (alte Übersetzung)](http://www.dennisproksch.de/anki)
 - [Español](https://apps.ankiweb.net/docs/manual.es.html)
 - [Français](https://apps.ankiweb.net/docs/manual.fr.html)
 - [Italiano](https://web.archive.org/web/20160423223801/http://192.167.9.6/Anki_ITA/Manual_ITA.htm)
@@ -23,6 +24,6 @@ nicht unbedingt aktuell.
 - [简体中文](http://www.ankichina.net/manual/anki/)
 
 Wenn du zu der vorliegenden Übersetzung beitragen möchtest, siehe
-[hier](https://github.com/RumovZ/anki-manual/).
+[hier](https://github.com/RumovZ/anki-manual-de_DE/).
 Wenn du bei der Übersetzung in eine andere Sprache helfen möchtest, siehe
 [hier](https://translating.ankiweb.net/anki/manual.html).
