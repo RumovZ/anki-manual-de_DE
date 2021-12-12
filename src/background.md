@@ -28,7 +28,7 @@ __spaced repetition__ (verteilte Wiederholung). Den meisten Lernern sind sie unb
 sie seit Jahren in der wissenschaftlichen Literatur berichtet wird.
 Zu verstehen, wie sie funktionieren, wird dich effektiver lernen lassen.
 
-## _Active recall testing_
+## Active recall testing
 
 _Active recall testing_ bedeutet, eine Frage gestellt zu bekommen und zu versuchen, sich an die
 Antwort zu erinnern, mit anderen Worten, abgefragt zu werden.
@@ -56,7 +56,7 @@ du eine Frage auf die eine und die Antwort auf die andere Seite.
 Indem du die Karte nicht umdrehst, bis du über die Antwort nachgedacht hast,
 kannst effektiver lernen, als durch passives Lernen möglich wäre.
 
-## _Use it or lose it_
+## Use it or lose it
 
 Unser Gehirn ist eine effiziente Maschine, das Informationen, die nicht nützlich
 erscheinen, schnell entsorgt. Vermutlich erinnerst du dich nicht daran, was du
@@ -81,7 +81,7 @@ praktikabel ist. Benutzt du Karteikarten aus Papier, kannst du sie schnell
 durchblättern, wenn du nur 30 von ihnen wiederholen musst. Aber wenn es 300
 oder 3000 sind, wird die Handhabung schnell schwierig.
 
-## _Spaced Repetition_
+## Spaced Repetition
 
 Über den Abstandseffekt berichtete 1885 der deutsche Psychologe Hermann Ebbinghaus.
 Er beobachtete, dass wir uns besser an Dinge erinnern können, wenn die Wiederholungen
