@@ -37,7 +37,7 @@ cleaner merges, and a consistent look.
 - File names are not to be translated. Title translations are made in `SUMMARY.md`
   (in square brackets) and have to agree with the titles on the relevant pages.
 - Linebreaks should be inserted after (very) roughly 100 characters.
-- Formatting, such as `\`` for code and `&lt;kbd&gt;` for key presses, may be
+- Formatting, such as \` for code and `<kbd></kbd>` for key presses, may be
   improved, as it's not consistent in the official manual.
 
 ### Translation
