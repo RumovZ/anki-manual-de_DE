@@ -1,20 +1,21 @@
-# Windows display issues
+# Anzeigeprobleme
 
-On Windows, there are three ways of content being displayed on screen. The the
-default is *software*, which is slower, but the most compatible. There are two
-other options that are faster: *OpenGL* and *ANGLE*. They are faster, but they
-may not work, or may cause display issues such as missing menubars, blank
-windows, and so on. Which one works best will depend on your computer.
+Auf Windows gibt es drei Möglichkeiten, Inhalte auf dem Bildschirm anzuzeigen.
+Der Standard ist *Software*, langsam aber am kompatibelsten. Es gibt zwei
+Alternativen: *OpenGL* und *ANGLE*. Sie sind schneller, aber funktionieren vielleicht
+nicht oder nicht richtig, was zu fehlenden Menüleisten, leeren Fenstern und so weiter
+führen kann. Welche Option am besten funktioniert, hängt von deinem Computer ab.
 
-The display driver can be adjusted via the Tools>Preferences menu. Make sure
-you restart Anki after adjusting it.
+Der Anzeigetreiber kann unter Werkzeuge>Einstellungen angepasst werden.
+Anschließend solltest du Anki neu starten.
 
-If you’re unable to get to Anki’s preferences screen, and restarting Anki a few
-times does not help, you may need to manually adjust the graphics driver. You
-can do this by starting cmd.exe and typing the following:
+Wenn du nicht auf Ankis Einstellungen zugreifen kannst und Anki ein paar mal neu zu
+starten nicht hilft, musst du den Grafiktreiber vielleicht manuell anpassen.
+Dafür kannst cmd.exe starten und das Folgende eingeben:
 
 ```bat
 echo auto > %APPDATA%\Anki2\gldriver
 ```
 
-The default is `software`; the other two drivers you can try are `angle` and `auto`.
+Die Voreinstellung ist `software`; die beiden anderen Treiber, die du ausprobieren kannst,
+sind `angle` und `auto`.
