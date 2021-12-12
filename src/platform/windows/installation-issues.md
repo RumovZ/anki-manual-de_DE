@@ -1,22 +1,24 @@
-# Windows installation issues
+# Installationsprobleme
 
-Some error messages you may encounter when installing Anki:
+
+Einige Fehlermeldungen, auf die du beim Installieren von Anki stoßen könntest:
 
 <!-- toc -->
 
-Please also see [startup issues](./startup-issues.md).
+Siehe bitte auch [Startprobleme](./startup-issues.md).
 
-## "Error opening file for writing"
+## "Fehler beim Öffnen der Datei zum Schreiben"
 
-If closing Anki and your browser does not help, please try restarting your
-computer, then running the installer again.
+Wenn Anki und deinen Datei-Explorer zu schließen nicht hilft, versuche bitte deinen
+PC neuzustarten und dann die Installation erneut auszuführen.
 
-## "Windows protected your PC"
+## "Der Computer wurde durch Windows geschützt"
 
-When a new Anki version is released, Windows may display a scary-looking message
-until it has seen enough people using the new version. To be able to proceed
-with app installation, please use [Run
-anyway](https://www.tekrevue.com/tip/windows-protected-your-pc-disable-smartscreen/).
+Wenn eine neue Anki-Version veröffentlicht wird, zeigt Windows vielleicht eine
+unheimlich aussehende Nachricht, bevor es genug Nuter gesehen hat, die diese
+Version benutzen. Um mit der Installation fortfahren zu können, benutz bitte
+[Trotzdem ausführen](https://www.tekrevue.com/tip/windows-protected-your-pc-disable-smartscreen/).
 
-Antivirus programs may sometimes also report a [false
-positive](https://faqs.ankiweb.net/my-antivirus-program-says-anki-is-infected.html).
+Antivirenprogramme können ebenfalls manchmal eine
+[falsch positive Warnung](https://faqs.ankiweb.net/my-antivirus-program-says-anki-is-infected.html).
+ausgeben.
