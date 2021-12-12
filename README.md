@@ -32,8 +32,9 @@ Contributions can be made in three ways.
 This list of conventions is to ensure easier synchronisation with the official manual,
 cleaner merges, and a consistent look.
 
-- Linebreaks, heading placements, etc. in the official manual are to be preserved
-  as much as possible.
+- Empty lines, heading placements, etc. in the official manual are to be preserved
+  as much as possible. Single linebreaks (which are ignored in Markdown) may be
+  used to the heart's content.
 - File names are not to be translated. Title translations are made in `SUMMARY.md`
   (in square brackets) and have to agree with the titles on the relevant pages.
 - Linebreaks should be inserted after (very) roughly 100 characters.
@@ -51,3 +52,11 @@ If you disagree with or want to add anything, feel free to open an issue.
   as long as the content remains the same. Updates to the content, however, must be
   made on <https://github.com/ankitects/anki-manual> before they can be integrated
   here.
+
+## Tips
+
+### Previewing Changes
+
+If you want to preview your local changes, you can install [mdbook](https://github.com/rust-lang/mdBook),
+put it in your `PATH`, and run `mdbook serve -o` from within your repository folder.
+The binaries and a more detailed description can be found under the link above.
