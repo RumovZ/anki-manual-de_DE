@@ -10,7 +10,7 @@ Um das Problem zu beheben, kannst du das Folgende tun:
   um deinen Benutzernamen anzuzeigen.
 - Gib nun das Folgende ein, wobei du nach jeder Zeile <kbd>Enter</kbd> drückst und
   ____ (ohne das `:F` zu entfernen) mit deinem Benutzernamen ersetzt:
-  ```sh
+  ```bat
   cd %APPDATA%
   icacls Anki2 /grant ____:F /t
   ```
@@ -33,7 +33,7 @@ Wenn die Probleme weiterhin bestehen, nachdem du Antivirus- und ähnliche Progra
 ausgeschlossen hast, die oben beschriebenen Schritte ausgeführt hast und nicht OneDrive
 benutzt, führe bitte die folgenden Befehle in `cmd.exe` aus, indem du nach jeder Zeile
 <kbd>Enter</kbd> drückst:
-```sh
+```bat
 whoami
 cd %APPDATA%
 icacls Anki2 /t
