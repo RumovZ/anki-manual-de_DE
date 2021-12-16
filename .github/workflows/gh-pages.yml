@@ -1,5 +1,5 @@
 env:
-  cname: docs.ankiweb.net
+  cname: github pages
 
 name: github pages
 
@@ -23,7 +23,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./book/html
-          cname: ${{ env.cname }}
 
   check:
     runs-on: ubuntu-18.04
