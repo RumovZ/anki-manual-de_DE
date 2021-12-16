@@ -14,7 +14,8 @@ submit will be licensed under the above license.
 Contributions can be made in three ways.
 
 1. **Translating a file.**
-    Please see #1 and [conventions](#conventions) below.
+    Please see [#1](https://github.com/RumovZ/anki-manual-de_DE/issues/1) and
+    [conventions](#conventions) below.
 
 2. **Improving an existing translation.**
     A simple PR will do, but please see [conventions](#conventions) below.
@@ -37,7 +38,7 @@ cleaner merges, and a consistent look.
   used to the heart's content.
 - File names are not to be translated. Title translations are made in `SUMMARY.md`
   (in square brackets) and have to agree with the titles on the relevant pages.
-- Linebreaks should be inserted after (very) roughly 100 characters.
+- Linebreaks should be inserted roughly after at most 100 characters.
 - Formatting, such as \` for code and `<kbd></kbd>` for key presses, may be
   improved, as it's not consistent in the official manual.
 
@@ -52,11 +53,17 @@ If you disagree with or want to add anything, feel free to open an issue.
   as long as the content remains the same. Updates to the content, however, must be
   made on <https://github.com/ankitects/anki-manual> before they can be integrated
   here.
+- Ideally, terms used in Anki should agree with the translations over on
+  <https://i18n.ankiweb.net/de/>. Of course, improvements can be made there as well.
 
 ## Tips
 
 ### Previewing Changes
 
-If you want to preview your local changes, you can install [mdbook](https://github.com/rust-lang/mdBook),
+If you want to preview your local changes, you can install
+[mdbook](https://github.com/rust-lang/mdBook),
 put it in your `PATH`, and run `mdbook serve -o` from within your repository folder.
 The binaries and a more detailed description can be found under the link above.
+In order to render the table of contents at the top of some pages,
+[mdbook-toc](https://github.com/badboy/mdbook-toc) is needed as well, but this
+requires a Rust installation.
