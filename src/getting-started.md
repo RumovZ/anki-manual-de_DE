@@ -12,7 +12,7 @@ Bitte schau dir die Anweisungen für deinen Computer an:
 
 ## Videos (Englisch)
 
-Für einen schnellen Einstieg in Anki, kannst du dir diese Einführungsvideos
+Für einen schnellen Einstieg in Anki kannst du dir diese Einführungsvideos
 (auf Englisch) ansehen.
 Einige wurden mit einer früheren Anki-Version erstellt, aber die Konzepte sind
 dieselben.
@@ -37,7 +37,7 @@ Falls YouTube in deinem Land nicht verfügbar ist, kannst du die Videos stattdes
 
 ### Karten
 
-Eine Frage-Antwort-Paar heißt Karte. Das entspricht einer Karteikarte aus Papier
+Ein Frage-Antwort-Paar heißt Karte. Das entspricht einer Karteikarte aus Papier
 mit der Frage auf der Vorder- und der Antwort auf der Rückseite.
 In Anki sieht eine Karte nicht wirklich wie eine Papierkarte aus, und wenn du die
 Antwort anzeigen lässt, bleibt die Frage standardmäßig sichtbar.
@@ -58,7 +58,7 @@ die Karte das nächste Mal zeigen wird.
 
 ### Stapel
 
-Ein Stapel is eine Gruppe von Karten. Du kannst Karten in verschiedene Stapel
+Ein Stapel ist eine Gruppe von Karten. Du kannst Karten in verschiedene Stapel
 aufteilen, um Teile deiner Sammlung anstatt alles auf einmal zu lernen.
 Jeder Stapel kann andere Einstellungen haben, zum Beispiel wie viele neue Karten
 du pro Tag sehen willst oder wie viel Abstand zwischen Wiederholungen liegen soll.
@@ -77,7 +77,7 @@ Stapel, die sich in einem anderen Stapel befinden (die also mindestens ein "::"
 im Namen haben), werden oft Unterstapel und Stapel der obersten Ebene
 Ober- oder Elternstapel genannt. 
 
-Anki beginnt mit einem Stapel namens Standard. Alle Karten, die irgendwie von den
+Anki beginnt mit einem Stapel namens "Standard". Alle Karten, die irgendwie von den
 anderen Stapeln getrennt wurden, landen hier. Anki versteckt den Standard-Stapel,
 wenn er keine Karten enthält und du andere Stapel hinzugefügt hast.
 Alternativ kannst du ihn umbenennen und für andere Karten benutzen.
@@ -91,15 +91,15 @@ siehe bitte den Abschnitt [Anzeigereihenfolge](studying.md#display-order).
 
 ### Notizen & Felder
 
-Beim Erstellen von Karteikarten möchte man oft mehr als eine Karte
-zu einer bestimmten Information zu erstellen. Wenn du zum Beispiel Französisch
-lernst und behalten willst, dass "bonjour" "hallo" bedeutet, würdest du vielleicht
+Oft möchte man mehr als eine Karteikarte
+zu einer bestimmten Information erstellen. Wenn du zum Beispiel Französisch
+lernst und dir merken willst, dass "bonjour" "hallo" bedeutet, würdest du vielleicht
 gerne eine Karte anlegen, die nach der deutschen Übersetzung von "bonjour" fragt,
 und eine, die nach der französischen Übersetzung von "hallo" fragt.
 Die erste Karte testet, ob du das fremde Wort erkennen, die zweite, ob du es
 hervorrufen kannst.
 
-Mit Papierkarteikarten ist die einzige Möglichkeit, die Informationen zweimal
+Mit Papierkarteikarten bleibt dir nichts anderes übrig, als die Informationen zweimal
 aufzuschreiben, einmal für jede Karte. Einige Karteikartenprogramme erleichtern
 das, indem sie die Möglichkeit bieten, Vorder- und Rückseite zu vertauschen.
 Das ist eine Verbesserung, hat aber zwei große Nachteile:
@@ -142,17 +142,17 @@ In Anki heißt dieser Informationsblock *Notiz* und jede einzelne Information da
 *Feld*. Wir können also sagen, dass diese Art von Notiz drei Felder hat:
 Französisch, Deutsch und Seitenzahl.
 
-Um Felder hinzuzufügen oder zu bearbeiten, klicke während des Bearbeitens
+Um Felder hinzuzufügen oder anzupassen, klicke während der Bearbeitung
 von Notizen auf die Schaltfläche "Felder...". Für weitere Informationen siehe
 bitte den Abschnitt [Felder anpassen](editing.md#customizing-fields).
 
 ### Kartentypen
 
 Damit Anki basierend auf unseren Notizen Karten erstellen kann, müssen wir ihm
-eine Blaupause zur Verfügung stellen, die besagt, welche Felder auf der Vor-
-und Rückseite jeder Karte zu sehen sein sollen. Diese Blaupause heußt *Kartentyp*.
-Jede Art Notiz kann einen oder mehrere Kartentypen haben. Wann immer du eine
-Notiz hinzufügst, wird Anki für jeden Kartentypen eine Karte erstellen.
+eine Blaupause zur Verfügung stellen, die besagt, welche Felder auf der Vorder-
+und Rückseite jeder Karte zu sehen sein sollen. Diese Blaupause heißt *Kartentyp*.
+Jede Art Notiz kann einen oder mehrere Kartentypen haben. Wenn du eine
+Notiz hinzufügst, wird Anki für jeden Kartentyp eine Karte erstellen.
 
 Jeder Kartentyp hat zwei *Vorlagen*, eine für die Frage und eine für die Antwort.
 Im obigen Beispiel sollte die Karte zum Erkennen der Französischvokabel so aussehen:
@@ -171,7 +171,7 @@ Indem wir einen Feldnamen in doppelte geschweifte Klammern einfassen, weisen wir
 Anki an, diesen Bereich mit der Information aus dem Feld zu ersetzen. Alles, was
 nicht in geschweifte Klammern eingefasst ist, bleibt auf jeder Karte gleich.
 So müssen wir nicht jedes Mal "Seite" in das Seitenzahl-Feld eingeben, wenn wir
-Stoff hinzufügen – es wird auf jeder Karte automatisch hinzugefügt.
+Notizen erstellen – es wird auf jeder Karte automatisch hinzugefügt.
 `<br>` ist eine besondere Zeichenfolge, die Anki anweist, die Zeile umzubrechen.
 Weitere Informationen finden sich im Abschnitt [Kartenvorlagen](templates/intro.md).
 
@@ -181,17 +181,17 @@ Die Vorlagen für die Karte zum Hervorrufen der Vokabel funktionieren ganz ähnl
     Antwort: {{Französisch}}<br>
        Seite {{Seitenzahl}}
 
-Nachdem ein Kartentyp erstellt wurde, wird jedes Mal, wenn du eine neue Notiz
-hinzufügst, basierend auf diesem Kartentypen eine neue Karte erstellt.
+Sobald ein Kartentyp erstellt wurde, wird jedes Mal, wenn du eine neue Notiz
+hinzufügst, basierend auf diesem Kartentyp eine neue Karte erstellt.
 Mit Kartentypen ist es leicht, die Formatierung deiner Karten einheitlich zu
 halten, und sie können den Aufwand, neue Informationen hinzuzufügen, drastisch
 reduzieren.
 Sie erlauben Anki auch, dafür zu sorgen, dass verwandte Karten nicht zu dicht
-nacheinander erscheinen, und ermöglichen dir, einen Tippfehler oder eine
-Falschinformation an einer Stelle zu korrigieren und damit alle betroffenen
+nacheinander erscheinen, und ermöglichen dir, Tippfehler oder
+Falschinformationen an einer Stelle zu korrigieren und damit alle betroffenen
 Karten gleichzeitig zu aktualisieren.
 
-Um Kartentypen hinzuzufügen oder zu bearbeiten, klicke während des Bearbeitens
+Um Kartentypen hinzuzufügen oder zu bearbeiten, klicke während der Bearbeitung
 von Notizen auf die Schaltfläche "Karten...". Für weitere Informationen siehe
 bitte den Abschnitt [Kartenvorlagen](templates/intro.md).
 
@@ -200,9 +200,9 @@ bitte den Abschnitt [Kartenvorlagen](templates/intro.md).
 Anki erlaubt dir, für unterschiedlichen Stoff verschiedene Notiztypen zu erstellen.
 Jeder Notiztyp hat seine eigenen Felder und Kartentypen.
 Es ist sinnvoll, für jedes weitgefasste Thema, das du lernst, einen eigenen
-Notiztypen anzulegen. Im obigen Beispiel könnten wir einen Notiztypen
+Notiztyp anzulegen. Im obigen Beispiel könnten wir einen Notiztyp
 "Französisch" erstellen. Wenn wir dann noch Hauptstädte lernen möchten, könnten
-wir dafür einen weiteren Notiztypen anlegen, der Felder wie "Land" und "Hauptstadt"
+wir dafür einen weiteren Notiztyp anlegen, der Felder wie "Land" und "Hauptstadt"
 hat. 
 
 Wenn Anki nach Duplikaten sucht, vergleicht es nur Notizen vom selben Typ.
@@ -216,22 +216,22 @@ empfohlen, je nach dem gelernten Stoff eigene Notiztypen anzulegen.
 Die Standardnotiztypen sind die folgenden:
 
 **Einfach**  
-Hat die Felder "Vorderseite" und "Rückseite" und erzeugt eine Karte.
+Hat die Felder "Vorderseite" und "Rückseite" und erzeugt eine einzige Karte.
 Text, den du in die Felder eingibst, wird auf der jeweiligen Kartenseite gezeigt.
 
 **Einfach (beide Richtungen)**  
-Wie "Einfach", aber erzeugt zwei Karten für eingegebenen Text: eine von
+Wie "Einfach", erzeugt aber zwei Karten für eingegebenen Text: eine von
 "Vorderseite" nach "Rückseite" und eine von "Rückseite" nach "Vorderseite".
 
 **Einfach (eine oder zwei Richtungen)**  
 Erzeugt eine Karte mit "Vorderseite"→"Rückseite" und optional eine Karte mit
-"Rückseite"→"Vorderseite". Dafür hat der Notiztyp ein drittes Feld namens
-"Gegenrichtung hinzufügen". Wenn du irgendwelchen Text darin eingibst, wird die
+"Rückseite"→"Vorderseite". Hierfür hat der Notiztyp ein drittes Feld namens
+"Gegenrichtung hinzufügen". Gibst du in dieses Feld Text ein, so wird die
 umgekehrte Karte erzeugt. Mehr Informationen finden sich im Abschnitt
 [Kartenvorlagen](templates/intro.md).
 
 **Lückentext**  
-Macht es einfach, Text in einen Lückentext zu verwandeln. Zum Beispiel:
+Erlaubt es, Text in einen Lückentext zu verwandeln. Zum Beispiel:
 "Die Mondlandung geschah im Jahre \[...\]." → "Die Mondlandung geschah im Jahre
 1969." Mehr Informationen finden sich im Abschnitt
 [Lückentext](editing.md#cloze-deletion).
@@ -239,14 +239,14 @@ Macht es einfach, Text in einen Lückentext zu verwandeln. Zum Beispiel:
 Um deine eigenen Notiztypen hinzuzufügen und vorhandene zu bearbeiten, kannst
 du vom Hauptfenster aus *Werkzeuge* > *Notiztypen verwalten* auswählen.
 
-Notizen und Notiztypen sind dieselben für deine gesamte Sammlung und sind nicht
-auf einen einzelnen Stapel beschränkt. Das bedeutet, dass du viele verschiedene
+Notizen und Notiztypen sind nicht auf einen einzelnen Stapel beschränkt
+- sie gelten für deine gesamte Sammlung. Das bedeutet, dass du viele verschiedene
 Notiztypen im selben Stapel verwenden oder Karten, die von derselben Notiz erzeugt
 wurden, in verschiedene Stapel einteilen kannst.
-Wenn du Notizen mithilfe des *Hinzufügen*-Fensters erstellst, kannst du auswählen,
-welcher Notiztyp und welcher Stapel verwendet werden soll. Diese beiden
-Entscheidungen sind komplett unabhängig voneinander.
-Du kannst auch den Notiztypen von Notizen ändern,
+Im *Hinzufügen*-Fenster kannst du auswählen, welcher Notiztyp für neue Notizen
+verwendet wird und in welchem Stapel die Karten landen sollen.
+Diese beiden Entscheidungen sind komplett unabhängig voneinander.
+Du kannst auch den Notiztyp von Notizen ändern,
 [nachdem du sie schon erstellt hast](browsing.md).
 
 ### Sammlung
@@ -260,8 +260,8 @@ Du kannst dir ein
 [Video über öffentliche Stapel und Wiederholung (Englisch)](http://www.youtube.com/watch?v=QS2G-k2hQyg&yt:cc=on)
 auf YouTube ansehen.
 
-Die einfachste Möglichkeit, mit Anki loszulegen, ist, einen Stapel herunterzuladen,
-den jemand geteilt:
+Die einfachste Möglichkeit, mit Anki loszulegen, ist einen Stapel herunterzuladen,
+den jemand geteilt hat:
 
 1. Klick auf "Stapel herunterladen" am unteren Ende der Stapelübersicht.
 
@@ -282,8 +282,8 @@ um sie effektiv zu lernen. Außerdem zwingt dich das eigenhändige Eingeben der
 Informationen zu entscheiden, was die wesentlichen Aspekte sind, was widerum zu
 einem besseren Verständnis führt.
 
-Wenn du eine Sprache lernst, ist es verlockend, eine lange List von Vokabeln und
-ihren Übersetzungen herunterzuladen, aber das wird dir genausowenig eine Sprache
+Wenn du eine Sprache lernst, ist es verlockend, eine lange Liste von Vokabeln und
+ihren Übersetzungen herunterzuladen, aber das wird dir genauso wenig eine Sprache
 beibringen, wie dich das Auswendiglernen von wissenschaftlichen Gleichungen
 Astrophysik lehrt. Um wirklich zu lernen brauchst du Lehrbücher, Lehrer oder
 Zugang zu Sätzen aus der echten Welt.
