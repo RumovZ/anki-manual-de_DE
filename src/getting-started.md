@@ -12,7 +12,7 @@ Bitte schau dir die Anweisungen für deinen Computer an:
 
 ## Videos (Englisch)
 
-Für einen schnellen Einstieg in Anki, kannst du dir diese Einführungsvideos
+Für einen schnellen Einstieg in Anki kannst du dir diese Einführungsvideos
 (auf Englisch) ansehen.
 Einige wurden mit einer früheren Anki-Version erstellt, aber die Konzepte sind
 dieselben.
@@ -77,7 +77,7 @@ Stapel, die sich in einem anderen Stapel befinden (die also mindestens ein "::"
 im Namen haben), werden oft Unterstapel und Stapel der obersten Ebene
 Ober- oder Elternstapel genannt. 
 
-Anki beginnt mit einem Stapel namens Standard. Alle Karten, die irgendwie von den
+Anki beginnt mit einem Stapel namens "Standard". Alle Karten, die irgendwie von den
 anderen Stapeln getrennt wurden, landen hier. Anki versteckt den Standard-Stapel,
 wenn er keine Karten enthält und du andere Stapel hinzugefügt hast.
 Alternativ kannst du ihn umbenennen und für andere Karten benutzen.
@@ -260,7 +260,7 @@ Du kannst dir ein
 [Video über öffentliche Stapel und Wiederholung (Englisch)](http://www.youtube.com/watch?v=QS2G-k2hQyg&yt:cc=on)
 auf YouTube ansehen.
 
-Die einfachste Möglichkeit, mit Anki loszulegen, ist, einen Stapel herunterzuladen,
+Die einfachste Möglichkeit, mit Anki loszulegen, ist einen Stapel herunterzuladen,
 den jemand geteilt hat:
 
 1. Klick auf "Stapel herunterladen" am unteren Ende der Stapelübersicht.
