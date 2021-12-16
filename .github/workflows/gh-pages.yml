@@ -1,6 +1,3 @@
-env:
-  cname: github pages
-
 name: github pages
 
 on:
