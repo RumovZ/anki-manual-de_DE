@@ -1,6 +1,7 @@
 Best viewed on the website: <https://rumovz.github.io/anki-manual-de_DE>
 
-This manual is licensed under the CC BY-SA 4 license:
+This is a translation fork of the [official Anki manual](https://github.com/ankitects/anki-manual)
+and accordingly licensed under the CC BY-SA 4 license:
 
 <https://creativecommons.org/licenses/by-sa/4.0/>
 
