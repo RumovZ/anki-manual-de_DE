@@ -37,7 +37,7 @@ Falls YouTube in deinem Land nicht verfügbar ist, kannst du die Videos stattdes
 
 ### Karten
 
-Eine Frage-Antwort-Paar heißt Karte. Das entspricht einer Karteikarte aus Papier
+Ein Frage-Antwort-Paar heißt Karte. Das entspricht einer Karteikarte aus Papier
 mit der Frage auf der Vorder- und der Antwort auf der Rückseite.
 In Anki sieht eine Karte nicht wirklich wie eine Papierkarte aus, und wenn du die
 Antwort anzeigen lässt, bleibt die Frage standardmäßig sichtbar.
@@ -58,7 +58,7 @@ die Karte das nächste Mal zeigen wird.
 
 ### Stapel
 
-Ein Stapel is eine Gruppe von Karten. Du kannst Karten in verschiedene Stapel
+Ein Stapel ist eine Gruppe von Karten. Du kannst Karten in verschiedene Stapel
 aufteilen, um Teile deiner Sammlung anstatt alles auf einmal zu lernen.
 Jeder Stapel kann andere Einstellungen haben, zum Beispiel wie viele neue Karten
 du pro Tag sehen willst oder wie viel Abstand zwischen Wiederholungen liegen soll.
@@ -92,8 +92,8 @@ siehe bitte den Abschnitt [Anzeigereihenfolge](studying.md#display-order).
 ### Notizen & Felder
 
 Beim Erstellen von Karteikarten möchte man oft mehr als eine Karte
-zu einer bestimmten Information zu erstellen. Wenn du zum Beispiel Französisch
 lernst und behalten willst, dass "bonjour" "hallo" bedeutet, würdest du vielleicht
+zu einer bestimmten Information erstellen. Wenn du zum Beispiel Französisch
 gerne eine Karte anlegen, die nach der deutschen Übersetzung von "bonjour" fragt,
 und eine, die nach der französischen Übersetzung von "hallo" fragt.
 Die erste Karte testet, ob du das fremde Wort erkennen, die zweite, ob du es
@@ -149,10 +149,10 @@ bitte den Abschnitt [Felder anpassen](editing.md#customizing-fields).
 ### Kartentypen
 
 Damit Anki basierend auf unseren Notizen Karten erstellen kann, müssen wir ihm
-eine Blaupause zur Verfügung stellen, die besagt, welche Felder auf der Vor-
-und Rückseite jeder Karte zu sehen sein sollen. Diese Blaupause heußt *Kartentyp*.
 Jede Art Notiz kann einen oder mehrere Kartentypen haben. Wann immer du eine
 Notiz hinzufügst, wird Anki für jeden Kartentypen eine Karte erstellen.
+eine Blaupause zur Verfügung stellen, die besagt, welche Felder auf der Vorder-
+und Rückseite jeder Karte zu sehen sein sollen. Diese Blaupause heißt *Kartentyp*.
 
 Jeder Kartentyp hat zwei *Vorlagen*, eine für die Frage und eine für die Antwort.
 Im obigen Beispiel sollte die Karte zum Erkennen der Französischvokabel so aussehen:
@@ -261,7 +261,7 @@ Du kannst dir ein
 auf YouTube ansehen.
 
 Die einfachste Möglichkeit, mit Anki loszulegen, ist, einen Stapel herunterzuladen,
-den jemand geteilt:
+den jemand geteilt hat:
 
 1. Klick auf "Stapel herunterladen" am unteren Ende der Stapelübersicht.
 
@@ -282,8 +282,8 @@ um sie effektiv zu lernen. Außerdem zwingt dich das eigenhändige Eingeben der
 Informationen zu entscheiden, was die wesentlichen Aspekte sind, was widerum zu
 einem besseren Verständnis führt.
 
-Wenn du eine Sprache lernst, ist es verlockend, eine lange List von Vokabeln und
-ihren Übersetzungen herunterzuladen, aber das wird dir genausowenig eine Sprache
+Wenn du eine Sprache lernst, ist es verlockend, eine lange Liste von Vokabeln und
+ihren Übersetzungen herunterzuladen, aber das wird dir genauso wenig eine Sprache
 beibringen, wie dich das Auswendiglernen von wissenschaftlichen Gleichungen
 Astrophysik lehrt. Um wirklich zu lernen brauchst du Lehrbücher, Lehrer oder
 Zugang zu Sätzen aus der echten Welt.
