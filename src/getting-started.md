@@ -149,10 +149,10 @@ bitte den Abschnitt [Felder anpassen](editing.md#customizing-fields).
 ### Kartentypen
 
 Damit Anki basierend auf unseren Notizen Karten erstellen kann, müssen wir ihm
-Notiz hinzufügst, wird Anki für jeden Kartentypen eine Karte erstellen.
 eine Blaupause zur Verfügung stellen, die besagt, welche Felder auf der Vorder-
 und Rückseite jeder Karte zu sehen sein sollen. Diese Blaupause heißt *Kartentyp*.
 Jede Art Notiz kann einen oder mehrere Kartentypen haben. Wenn du eine
+Notiz hinzufügst, wird Anki für jeden Kartentyp eine Karte erstellen.
 
 Jeder Kartentyp hat zwei *Vorlagen*, eine für die Frage und eine für die Antwort.
 Im obigen Beispiel sollte die Karte zum Erkennen der Französischvokabel so aussehen:
@@ -181,8 +181,8 @@ Die Vorlagen für die Karte zum Hervorrufen der Vokabel funktionieren ganz ähnl
     Antwort: {{Französisch}}<br>
        Seite {{Seitenzahl}}
 
-hinzufügst, basierend auf diesem Kartentypen eine neue Karte erstellt.
 Sobald ein Kartentyp erstellt wurde, wird jedes Mal, wenn du eine neue Notiz
+hinzufügst, basierend auf diesem Kartentyp eine neue Karte erstellt.
 Mit Kartentypen ist es leicht, die Formatierung deiner Karten einheitlich zu
 halten, und sie können den Aufwand, neue Informationen hinzuzufügen, drastisch
 reduzieren.
@@ -200,9 +200,9 @@ bitte den Abschnitt [Kartenvorlagen](templates/intro.md).
 Anki erlaubt dir, für unterschiedlichen Stoff verschiedene Notiztypen zu erstellen.
 Jeder Notiztyp hat seine eigenen Felder und Kartentypen.
 Es ist sinnvoll, für jedes weitgefasste Thema, das du lernst, einen eigenen
-Notiztypen anzulegen. Im obigen Beispiel könnten wir einen Notiztypen
+Notiztyp anzulegen. Im obigen Beispiel könnten wir einen Notiztyp
 "Französisch" erstellen. Wenn wir dann noch Hauptstädte lernen möchten, könnten
-wir dafür einen weiteren Notiztypen anlegen, der Felder wie "Land" und "Hauptstadt"
+wir dafür einen weiteren Notiztyp anlegen, der Felder wie "Land" und "Hauptstadt"
 hat. 
 
 Wenn Anki nach Duplikaten sucht, vergleicht es nur Notizen vom selben Typ.
@@ -243,10 +243,10 @@ Notizen und Notiztypen sind nicht auf einen einzelnen Stapel beschränkt
 - sie gelten für deine gesamte Sammlung. Das bedeutet, dass du viele verschiedene
 Notiztypen im selben Stapel verwenden oder Karten, die von derselben Notiz erzeugt
 wurden, in verschiedene Stapel einteilen kannst.
-Du kannst auch den Notiztypen von Notizen ändern,
 Im *Hinzufügen*-Fenster kannst du auswählen, welcher Notiztyp für neue Notizen
 verwendet wird und in welchem Stapel die Karten landen sollen.
 Diese beiden Entscheidungen sind komplett unabhängig voneinander.
+Du kannst auch den Notiztyp von Notizen ändern,
 [nachdem du sie schon erstellt hast](browsing.md).
 
 ### Sammlung
