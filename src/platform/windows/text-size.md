@@ -5,7 +5,7 @@ die du ausprobieren kannst:
 
 - `ANKI_NOHIGHDPI=1` deaktiviert teilweise Qt’s Unterstützung für hohe DPI.
 
-- `ANKI_WEBSCALE=1` ändert die Skalierung von Ankis Web-Ansichten (wie die Stapelübersicht,
+- `ANKI_WEBSCALE=1` ändert die Skalierung von Ankis Web-Ansichten (wie die Stapelansicht,
   den Lernbildschirm etc.), wohingegen es Schnittstellen-Elemente wie die Menüleiste
   nicht verändert. Ersetze `1` mit der gewünschten Skalierung, wie `1.5` oder `0.75`.
 

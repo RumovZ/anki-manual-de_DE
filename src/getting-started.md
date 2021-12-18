@@ -72,7 +72,7 @@ inklusive der Hanzi-Karten, gezeigt.
 
 Um einen Stapel in einem Stammbaum anzuordnen, kannst du ihm entweder einen
 Namen mit "::" zwischen jeder Ebene geben oder ihn mit der Maus auf einen anderen
-Stapel in der Stapelübersicht ziehen und loslassen.
+Stapel in der Stapelansicht ziehen und loslassen.
 Stapel, die sich in einem anderen Stapel befinden (die also mindestens ein "::"
 im Namen haben), werden oft Unterstapel und Stapel der obersten Ebene
 Ober- oder Elternstapel genannt. 
@@ -263,7 +263,7 @@ auf YouTube ansehen.
 Die einfachste Möglichkeit, mit Anki loszulegen, ist einen Stapel herunterzuladen,
 den jemand geteilt hat:
 
-1. Klick auf "Stapel herunterladen" am unteren Ende der Stapelübersicht.
+1. Klick auf "Stapel herunterladen" am unteren Ende der Stapelansicht.
 
 2. Wenn du einen Stapel gefunden hast, der dich interessiert, klick auf "Download", um das Stapelpaket
    herunterzuladen
