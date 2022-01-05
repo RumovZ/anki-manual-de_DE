@@ -26,7 +26,7 @@
     - [Input Methods](platform/linux/input-methods.md)
 - [Loslegen](getting-started.md)
 - [Studying](studying.md)
-- [Adding/Editing](editing.md)
+- [Hinzufügen/Bearbeiten](editing.md)
 - [Card Templates](templates/intro.md)
   - [Field Replacements](templates/fields.md)
   - [Card Generation](templates/generation.md)
