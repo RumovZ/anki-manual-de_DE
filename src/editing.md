@@ -198,7 +198,7 @@ aus folgenden Gründen davon ab:
   Bei Anki-Versionen unterhalb von 2.1.50 können übergroße Stapelhierarchien
   sogar zu Anzeigefehlern in der Stapelübersicht führen.
 
-### Verwendung von Schlagwörtern
+### Schlagwörter verwenden
 
 Anstatt eine Menge kleiner Stapel zu erstellen, solltest du Schlagwörter und/oder
 Felder verwenden, um dein Lernmaterial zu strukturieren.
@@ -351,7 +351,7 @@ aufgedeckt.
 Siehe Regel 5 [hier](http://supermemo.org/deutsch/articles/20rules.htm),
 um mehr über die Vorteile von Lückentexten zu erfahren.
 
-Anki bietet einen eigenen Notiztyp, der die Erstellung von Lückentexten
+Anki bietet einen eigenen Notiztyp, um einfach Lückentexte zu erstellen.
 leicht macht. Um einen Lückentext zu erstellen, wähle zuerst den Notiztyp
 "Lückentext" und gib dann einen Satz in das "Text"-Feld ein.
 Markiere danach mit der Maus den Teil, den du verstecken willst, und klicke auf die
