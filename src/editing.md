@@ -1,463 +1,489 @@
-# Adding/Editing
+# Hinzufügen/Bearbeiten
 
 <!-- toc -->
 
-## Adding Cards and Notes
-
-Recall from the [basics](getting-started.md) that in Anki we add notes rather than
-cards, and Anki creates cards for us. Click 'Add' in the main window,
-and the Add Notes window will appear.
-
-The top left of the window shows us the current note type. If it does
-not say "Basic," then you may have added some note types when you
-downloaded a shared deck. The text below assumes that "Basic" is
-selected.
-
-The top right of the window shows us the deck cards will be added to. If
-you would like to add cards to a new deck, you can click on the deck name
-button and then click "Add".
-
-Below the note type, you'll see some buttons, and an area labelled
-"Front" and "Back". Front and Back are called 'fields', and you can add,
-remove, and rename them by clicking the "Fields…​" button above.
-
-Below the fields is another area labelled "Tags". Tags are labels that
-you can attach to your notes, to make organizing and finding notes
-easier. You can leave the tags blank if you wish, or add one or more of
-them. Tags are separated by a space. If the tags area says
-
-    vocab check_with_tutor
-
-…​then the note you add would have two tags.
-
-When you have entered text into the front and back, you can click the
-"Add" button or press <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (<kbd>Command</kbd>+<kbd>Enter</kbd> on a Mac) to add the
-note to your collection. When you do so, a card will be created as well,
-and placed into the deck you chose. If you would like to edit a card you
-added, you can click the history button to search for a recently added
-card in the [browser](browsing.md).
-
-For more information on the buttons between the note type and the
-fields, please see the [editor](editing.md) section.
-
-### Duplicate Check
-
-Anki checks the first field for uniqueness, so it will warn you if you
-enter two cards with a Front field of "apple" (for example). The
-uniqueness check is limited to the current note type, so if you're
-studying multiple languages, two cards with the same Front would not be
-listed as duplicates as long as you had a different note type for each
-language.
-
-Anki does not check for duplicates in other fields automatically for
-efficiency reasons, but the browser has a "Find Duplicates" function,
-which you can run periodically.
-
-###  Effective Learning
-
-Different people like to review in different ways, but there are some
-general concepts to keep in mind. An excellent introduction is [this
-article](http://www.supermemo.com/articles/20rules.htm) on the SuperMemo
-site. In particular:
-
-- **Keep it simple**: The shorter your cards, the easier they are to
-  review. You may be tempted to include lots of information "just in
-  case," but reviews will quickly become painful.
-
-- **Don't memorize without understanding**: If you are studying a
-  language, try to avoid large lists of words. The best way to learn
-  languages is in context, which means seeing those words used in a
-  sentence. Likewise, imagine you're studying a computer course. If
-  you attempt to memorize the mountain of acronyms, you'll find it
-  very difficult to make progress. But if you take the time to
-  understand the concepts behind the acronyms, learning the acronyms
-  will become a lot easier.
-
-## Adding a Note Type
-
-While basic note types are sufficient for simple cards with only a word
-or phrase on each side, as soon as you find yourself wanting to include
-more than one piece of information on the front or back, it's better to
-split that information up into more fields.
-
-You may find yourself thinking "but I only want one card, so why can't I
-just include the audio, a picture, a hint, and the translation in the
-Front field?" If you'd prefer to do that, that's fine. But the
-disadvantage of that approach is that all the information is stuck
-together. If you wanted to sort your cards by the hint, you wouldn't be
-able to do that as it is mixed in with the other content. You also
-wouldn't be able to do things such as moving the audio from the front to the
-back, except by laboriously copying and pasting it for every note. By
-keeping content in separate fields, you make it much easier to adjust
-the layout of your cards in the future.
-
-To create a new type of note, choose Tools → Manage Note Types from the
-main Anki window. Then click "Add" to add a new type of note. You will now
-see another screen that gives you a choice of note types to base the new
-type on. "Add" means to base the newly created type on one that comes
-with Anki. "Clone" means to base the newly created type on one that is
-already in your collection. For instance, if you'd created a French
-vocab type already, you might want to clone that when creating a German
-vocab type.
-
-After choosing OK, you will be asked to name the new type. The subject
-material that you are studying is a good choice here – things like "Japanese",
-"Trivia", and so on. Once you have chosen a name, close the Note Types
-window, and you will return to the adding window.
-
-## Customizing Fields
-
-To customize fields, click the "Fields…​" button when adding or editing
-a note, or while the note type is selected in the Manage Note Types
-window.
-
-You can add, remove, or rename fields by clicking the appropriate
-buttons. To change the order in which the fields appear in this dialog
-and the add notes dialog, you can use the reposition button, which asks
-for the numerical position you want the field to have. So if you want to
-change a field to be the new first field, enter "1".
-
-Do not use 'Tags', 'Type', 'Deck', 'Card', or 'FrontSide' as field
-names, as they are [special fields](templates/fields.md#special-fields) and will not work
-properly.
-
-The options at the bottom of the screen allow you to edit various
-properties of the fields to be used when adding and editing the cards.
-This is _not_ where you customize what appears on your cards when
-reviewing; for that, please see [templates](templates/intro.md).
-
-**Editing Font** allows you to customize the font and size used when
-editing notes. This is useful if you want to make unimportant
-information smaller, or increase the size of foreign characters which
-are hard to read. The changes you make here do not affect how cards
-appear when reviewing: to do that, please see the
-[templates](templates/intro.md) section. If you have enabled the "type in the
-answer" function, however, the text you type will use the font size
-defined here. (For information about how to change the actual font face
-when typing the answer, please see the [checking your
-answer](templates/fields.md#checking-your-answer) section.)
-
-**Sort by this field…​** tells Anki to show this field in the Sort Field
-column of the browser. You can use this to sort cards by that field.
-Only one field can be the sort field at once.
-
-**Reverse text direction** is useful if you are studying languages that
-display text from right to left (RTL), such as Arabic or Hebrew. This
-setting currently only controls editing; to make sure the text displays
-correctly during review, you'll need to adjust your
-[template](templates/styling.md#text-direction).
-
-After you have added fields, you will probably want to add them to the front
-or back of your cards. For more information on that, please see the
-[templates](templates/intro.md) section.
-
-## Changing Deck / Note Type
-
-While adding, you can click on the top left button to change note type,
-and the top right button to change deck. The window that opens up will
-not only allow you to select a deck or note type, but also to add new
-decks or manage your note types.
-
-## Organizing Content
-
-### Using Decks Appropriately
-
-[Decks](getting-started.md#decks) are designed to divide your content up into
-broad categories that you wish to study separately, such as English, Geography,
-and so on. You may be tempted to create lots of little decks to keep your
-content organized, such as "my geography book chapter 1", or "food verbs", but
-this is not recommended, for the following reasons:
-
-- Lots of little decks may mean you end up seeing cards in a
-  recognizable order. On older scheduler versions, new cards can only
-  be introduced in deck order. And if you were planning to click on each deck
-  in turn (which is slow), you will end up seeing all the "chapter 1" or
-  "food verb" reviews together. This makes it easier to answer the
-  cards, as you can guess them from the context, which leads to weaker
-  memories. When you need to recall the word or phrase outside Anki,
-  you won't always have the luxury of being shown related content first!
-
-- While less of a problem than it was in earlier Anki versions,
-  adding hundreds of decks may cause slowdowns, and very large deck
-  trees with thousands of items can actually break the display of
-  the deck list in Anki versions before 2.1.50.
-
-### Using Tags
-
-Instead of creating lots of little decks, it's a better idea to use tags
-and/or fields to classify your content. Tags are a useful way to boost 
-search results, find specific content, and keep your collection 
-organized.
-There are many ways of using tags and flags effectively, and
-thinking in advance about how you want to use them will help you decide
-what will work best for you.
-
-Some people prefer using decks and subdecks to keep their cards organized,
-but using tags have a big advantage over decks for that: you can add several
-tags to a single note, but a single card can only belong to one deck, which 
-makes tags a more powerful and flexible categorization system than 
-decks in most cases. 
-
-For example, instead of creating a "food verbs" deck, you could add those 
-cards to your main language study deck, and tag the cards with "food" and
-"verb". Since each card can have multiple tags, you can do things like 
-[search](searching.md#tags-decks-cards-and-notes) for all verbs, or all 
-food-related vocabulary, or all verbs that are related to food. 
-
-You can add tags from the Edit window and from the [Browser](browsing.md), and you can also add,
-delete, rename, or organize tags there. Please note that
-tags work at [note](getting-started.md#notes--fields) level, which means that when you tag a card that has siblings,
-all the siblings will be tagged as well. If you need to tag a single card,
-but not its siblings, you should consider using flags instead.
-
-### Using Flags
-
-Flags are similar to tags, but they will appear during study in the review 
-window, showing a colored flag icon on the upper right area of the screen. 
-You can also search for flagged cards in the Browse screen, rename flags 
-from the browser and create filtered decks from flagged cards, but unlike tags, 
-a single card can have only one flag at a time. Another important difference
-is that flags work at [card](getting-started.md#cards) level, so flagging a card that have siblings 
-won't have any effect on the card's siblings. 
-
-You can flag / unflag cards directly while in review mode (by pressing 
-<kbd>CTRL</kbd> + <kbd>1-7</kbd> on Windows or <kbd>CMD</kbd> + <kbd>1-7</kbd> on Mac) 
-and from the [Browser.](browsing.md)
-
-
-### The "Marked" Tag
-
-Anki treats a tag called "marked" specially. There are options in the review
-screen and browse screen to add and remove the "marked" tag. The review screen 
-will show a star when the current card's note has that tag. And cards are 
-shown in a different color in the browse screen when their note is marked.
-
-Note: Marking is mainly left around for compatibility with older Anki 
-versions; most users will want to use flags instead.
-
-
-### Using Fields
-
-For those who like to stay very organized, you can add fields to your
-notes to classify your content, such as "book", "page", and so on. Anki
-supports searching in specific fields, which means you can do a search
-for "book:'my book' page:63" and immediately find what you're looking
-for.
-
-### Custom Study and Filtered Decks
-
-Using [custom study and filtered deck](filtered-decks.md) you can create 
-temporary decks out of search
-terms. This allows you to review your content mixed together in a single
-deck most of the time (for optimum memory), but also create temporary
-decks when you need to focus on particular material, such as before a
-test. The general rule is that if you always want to be able to study
-some content separately, it should be in a normal deck; if you only
-occasionally need to be able to study it separately (for a test, when
-under a backlog, etc.), then filtered decks created from tags, flags, 
-marks or fields are better.
-
-## Editing Features
+## Notizen und Karten hinzufügen
+
+In den [Grundlagen](getting-started.md) haben wir besprochen, dass man in Anki
+nicht direkt Karten, sondern Notizen hinzufügt und Anki die Erstellung der Karten übernimmt.
+Du kannst das "Hinzufügen"-Fenster mit einem Klick auf die entsprechende Schaltfläche
+in der Hauptansicht öffnen.
+
+In der linken oberen Ecke dieses Fensters wird der aktuelle Notiztyp angezeigt.
+Sollte dort nicht "Einfach" stehen, hast du vermutlich Notiztypen
+durch Herunterladen eines geteilten Stapels hinzugefügt. Im Folgenden gehen wir davon aus,
+dass der Notiztyp "Einfach" ausgewählt ist.
+
+In der rechten oberen Ecke steht der Name des Stapels, in dem die neuen Karten landen werden.
+Wenn du einen neuen Stapel für deine Karten erstellen willst, klicke auf den aktuell ausgewählten
+Stapel und wähle im Folgefenster "Hinzufügen".
+
+Unterhalb dieser Schaltflächen befinden sich einige Werkzeuge sowie zwei Eingabeflächen,
+die mit "Vorderseite" und "Rückseite" beschrieben sind. Diese Eingabeflächen werden
+"Felder" genannt. Felder können durch einen Klick auf die Schaltfläche "Felder…" hinzugefügt,
+entfernt oder umbenannt werden.
+
+Unterhalb der Felder gibt es einen weiteren Bereich für "Schlagwörter".
+Schlagwörter sind wie Etiketten, die du an deine Notizen anhängen kannst, um deine Sammlung
+zu strukturieren und Notizen einfacher zu finden. Du kannst mehrere Schlagwörter hinzufügen,
+indem du sie mit Leerzeichen voneinander trennst. So würde z. B. die Eingabe
+
+    Vokabeln mit_Tutor_durchgehen
+
+… zwei Schlagwörter an die Notiz anhängen.
+Du kannst diesen Bereich aber auch leer lassen.
+
+Hast du Text auf Vorder- und Rückseite eingegeben, kannst du die Notiz mit einem
+Klick auf die Schalfläche "Hinzufügen" oder mit dem Tastaturkürzel <kbd>Strg</kbd>
++<kbd>Enter</kbd> (<kbd>⌘</kbd>+<kbd>Enter</kbd> auf dem Mac) zu deiner Sammlung hinzufügen.
+Zusätzlich wird eine Karte erstellt und in den aktuell ausgewählten Stapel einsortiert.
+Du kannst auch nach der Erstellung noch Änderungen an deinen Notizen vornehmen.
+Klicke auf die Schaltfläche "Verlauf", um in der [Kartenverwaltung](browsing.md)
+nach einer kürzlich hinzugefügten Notiz zu suchen.
+
+Für eine Erklärung der Werkzeuge, die sich im Bereich zwischen Notiztyp und Feldern befinden,
+siehe den Abschnitt [Funktionen des Editors](#funktionen-des-editors).
+
+### Duplikatüberprüfung
+
+Anki überprüft das erste Feld auf Einzigartigkeit. Erstellst du z. B. eine Notiz mit
+der Vorderseite "Apfel", obwohl sich bereits eine derartige Notiz in deiner Sammlung befindet,
+wird Anki dich mit einer Warnung darauf hinweisen.
+Die Duplikatüberprüfung ist jedoch auf den aktuellen Notiztyp beschränkt. Anki wird also keine
+Warnung anzeigen, wenn das Wort "Apfel" auf der Vorderseite mehrerer Notizen von unterschiedlichen
+Notiztypen steht (z. B. ein Notiztyp für Japanisch und einer für Französisch).
+
+Aus Effizienzgründen überprüft Anki die restlichen Felder nicht automatisch auf Duplikate.
+Die Kartenverwaltung bietet jedoch eine Funktion namens "Duplikate suchen", die du bei Bedarf
+manuell ausführen kannst.
+
+###  Effektiv lernen
+
+Jeder hat seine eigenen Vorlieben, wenn es um die Wiederholung von Lernstoff geht.
+Es gibt jedoch eine Reihe allgemeingültiger Konzepte, die man stets im Hinterkopf behalten
+sollte. [Dieser Artikel](http://supermemo.org/deutsch/articles/20rules.htm) von SuperMemo
+bietet eine hervorragende Einführung, insbesondere die folgenden Punkte:
+
+- **Halte es einfach**: Je kürzer deine Karten sind, desto einfacher wird es sein,
+  sie zu wiederholen. Du magst vielleicht in Versuchung kommen, möglichst viele Fakten
+  "sicherheitshalber" mitaufzunehmen - die Wiederholungen würden aber durch das Übermaß
+  an Information schnell zur Belastung werden.
+
+- **Lerne nicht auswendig, was du nicht verstehst**: Versuche, lange Vokabellisten beim
+  Erlernen einer Sprache zu vermeiden. Neue Sprachen lernt man am besten
+  kontextuell. Das bedeutet, Wörter so zu lernen, wie sie in
+  Wirklichkeit verwendet werden: in ganzen Sätzen. Das gilt auch für alle anderen
+  Disziplinen. Stell dir vor, du machst einen Computer-Kurs und möchtest dir eine
+  große Menge an Abkürzungen merken. Ohne Kontext wird dir das vermutlich schwer fallen.
+  Wenn du dir aber die Zeit nimmst, um die Konzepte hinter den Abkürzungen zu
+  verstehen, wird das Auswendiglernen wesentlich leichter von der Hand gehen.
+
+## Notiztypen hinzufügen
+
+Die Standardnotiztypen sind gut geeignet für simple Karten mit nur einem Wort oder Satz
+je Seite. Sobald du jedoch mehr als eine Information in
+einer Notiz unterbringen willst, solltest du den Inhalt auf mehrere Felder
+verteilen.
+
+Vielleicht denkst du: "Aber ich will nur eine Karte,
+warum kann ich nicht einfach eine Audiodatei, ein Bild, einen Hinweis
+und die Übersetzung in das Feld *Vorderseite* eingeben?"
+Wenn du das bevorzugst, geht das natürlich in Ordnung. Diese Herangehensweise hat
+jedoch einen großen Nachteil: All diese Informationen sind untrennbar miteinander verbunden.
+So bist du dann z. B. nicht in der Lage, die Karten nach dem Hinweis zu sortieren, da dieser
+mit dem restlichen Inhalt vermischt ist.
+Die Aufteilung des Inhalts auf mehrere Felder erleichtert eine spätere Bearbeitung
+deiner Karten deutlich. Würdest du im oben genannten Beispiel die Audiodatei
+von der Vorder- auf die Rückseite bringen wollen, müsstest du das manuell für
+jede einzelne Notiz erledigen. Hast du jedoch ein eigenes Feld für die Audiodatei,
+musst du nur einmal die Kartenvorlage anpassen, um alle Notizen zu ändern.
+
+Um einen neuen **Notiztyp** zu erstellen, wähle den Eintrag
+`Werkzeuge → Notiztypen verwalten` in der Hauptansicht von Anki und klicke auf "Hinzufügen".
+Es öffnet sich ein neues Fenster, das eine Auswahl an Notiztypen
+anbietet, auf denen der neue Notiztyp basieren soll.
+"Hinzufügen" bedeutet also, einen Notiztyp nach einer von Ankis Vorlagen zu erstellen.
+Soll der neue Notiztyp auf einem Notitzyp aus deiner Sammlung basieren,
+wähle stattdessen "Klonen" aus. Hast du z. B. bereits einen Notiztyp für
+Französischvokabeln, könntest du einen Klon für Spanischvokabeln erstellen.
+
+Nach dem Klick auf OK wird dich Anki nach einem Namen für den neuen Notiztyp fragen.
+Das Fach des Lernmaterials ist zumeist eine gute Wahl, z. B. "Japanisch",
+"Allgemeinwissen" etc. Nach Eingabe des Namens kannst du den Dialog schließen
+und zum Editor zurückkehren.
+
+## Felder anpassen
+
+Um die Felder eines Notiztyps anzupassen, klicke bei der Erstellung
+oder Bearbeitung von Notizen im Editor, oder nach Auswahl des Notiztyps
+im Fenster "Notiztypen verwalten" auf die Schaltfläche "Felder…".
+
+Du kannst mit den entsprechenden Schaltflächen Felder hinzufügen,
+entfernen oder umbenennen. Im Dialog "Position ändern" kannst du die numerische
+Position eines Feldes im Editor festlegen. Willst du, dass ein bestimmtes
+Feld an erster Stelle erscheint, ändere dessen Position auf "1".
+
+"Tags", "Type", "Deck", "Card" und "FrontSide" sind spezielle, von Anki
+[reservierte Feldnamen](templates/fields.md#special-fields) und sollten
+deshalb nicht verwendet werden.
+
+Mithilfe der Bedienelemente auf der unteren Hälfte des Fensters kannst du
+verschiedene Eigenschaften der Felder im Editor festlegen.
+Wichtig: In diesem Fenster wird _nicht_ festgelegt, wie der Inhalt deiner Felder
+beim Wiederholen auf deinen Karten aussieht.
+Das ist die Aufgabe der [Vorlagen](templates/intro.md).
+
+**Schriftart festlegen** \
+Damit lässt sich die Schriftart und Größe ändern, in welcher der Textinhalt
+des jeweiligen Feldes angezeigt wird. Das kann beispielsweise nützlich sein,
+wenn du unwichtige Informationen kleiner darstellen oder die Größe fremder
+Schriftzeichen erhöhen willst, um sie lesbarer zu machen.
+Nochmals: Diese Einstellungen haben keine Auswirkungen auf das Aussehen
+der Karten im Rahmen der Wiederholung.
+Das Design wird mittels CSS in den [Vorlagen](templates/intro.md) festgelegt.
+Notiztypen mit der Funktion "Antwort eintippen" stellen hier eine Ausnahme dar:
+Der einzugebende Text verwendet die Schriftgröße, die du hier
+definierst.
+(Wie du bei solchen Notiztypen die Schriftart für das Eingabefeld ändern kannst,
+erfährst du im Abschnitt [Antwort überprüfen](templates/fields.md#checking-your-answer)).
+
+**In der Kartenverwaltung nach diesem Feld sortieren** \
+Mit dieser Einstellung kannst du das Feld festlegen, das für die Spalte
+"Sortierfeld" in der Kartenverwaltung verwendet werden soll. So lassen sich
+Notizen und Karten alphabetisch nach dem Feldinhalt ordnen.
+Ein Notiztyp kann jeweils nur ein Sortierfeld haben.
+
+**Textrichtung umkehren** \
+Verwende diese Funktion für Sprachen, deren Leserichtung von rechts nach links
+verläuft (engl. _"right to left"_ = "RTL"), z. B. Arabisch oder Hebräisch.
+Auch hier gilt: Diese Einstellung betrifft lediglich die Anzeige des
+Feldinhalts im Editor. Für die korrekte Darstellung des Textes sind
+[weitere Anpassungen der Vorlage](templates/styling.md#text-direction) notwendig.
+
+Nachdem du neue Felder hinzugefügt hast, wirst du sie wahrscheinlich auch
+zur Vorder- oder Rückseite deiner Karten hinzufügen wollen. Wie das funktioniert,
+lernst du im Kapitel [Vorlagen](templates/intro.md).
+
+## Stapel oder Notiztyp ändern
+
+Während du Notizen hinzufügst, kannst du mit der Schaltfläche "Typ" (links oben)
+den Notiztyp ändern, der für die nächste Notiz verwendet werden soll. Analog funktioniert
+die Schaltfläche "Stapel" (rechts oben) für die Festlegung des Zielstapels.
+Das jeweilige Fenster erlaubt nicht nur die Auswahl existierender Stapel oder Notiztypen,
+sondern auch das Hinzufügen neuer Stapel/Notiztypen und die Verwaltung bestehender Notiztypen.
+
+## Material strukturieren
+
+### Stapel richtig verwenden
+
+[Stapel](getting-started.md#stapel) haben den Zweck, Material in breite
+Kategorien aufzuteilen, die du unabhängig voneinander lernen willst, z. B.
+Englisch, Geographie usw. Es mag verlockend erscheinen, eine Menge kleiner
+Stapel zu erstellen, um deinem Lernmaterial Struktur zu geben, z. B.
+"Mein Geographie-Lehrbuch Kapitel 1", oder "Essensverben", wir raten jedoch
+aus folgenden Gründen davon ab:
+
+- Eine große Anzahl kleiner Stapel kann bedingen, dass deine Karten in einer
+  erkennbaren Reihenfolge erscheinen. Ältere Versionen des Zeitplaners
+  können neue Karten nämlich nur in der Reihenfolge der Stapel einführen.
+  Und falls du vorhast, jeden Stapel einzeln durchzugehen (was nebenbei bemerkt
+  recht ineffizient ist), würden alle Karten aus "Kapitel 1" bzw. "Essensverben"
+  gemeinsam kommen. Das vereinfacht die Beantwortung der Fragen, weil
+  du die Karten aus ihrem Kontext erraten könntest, was wiederum eine Verschlechterung
+  der Lernqualität bedeuten würde. In realen Testsituationen solltest du auch nicht
+  darauf bauen, Denkanstöße durch verwandte Inhalte zu bekommen!
+
+- Obwohl das Ausmaß dieses Problems in neueren Versionen etwas eingedämmt wurde,
+  können sich hunderte von Stapeln negativ auf die Leistung des Programms auswirken.
+  Bei Anki-Versionen unterhalb von 2.1.50 können übergroße Stapelhierarchien
+  sogar zu Anzeigefehlern in der Stapelübersicht führen.
+
+### Schlagwörter verwenden
+
+Anstatt eine Menge kleiner Stapel zu erstellen, solltest du Schlagwörter und/oder
+Felder verwenden, um dein Lernmaterial zu strukturieren.
+Schlagwörter sind äußerst hilfreich, um Suchergebnisse zu verbessern,
+spezifische Inhalte zu finden und deine Sammlung zu ordnen.
+Es gibt eine Unzahl an Möglichkeiten, Schlagwörter und Flaggen effektiv zu nutzen,
+weshalb es ratsam ist, dir bereits im Vorhinein zu überlegen, wie du sie verwenden willst.
+
+Manche bevorzugen es, Stapel und Unterstapel zur Stukturierung zu verwenden.
+Schlagwörter haben aber einen großen Vorteil: Eine Karte kann beliebig viele
+Schlagwörter beinhalten, sie kann jedoch nur zu einem Stapel gehören. Das macht
+Schlagwörter in den meisten Fällen zu einem wesentlich stärkeren und flexibleren
+Kategorisierungssystem als Unterstapel.
+
+Statt einen Stapel namens "Essensverben" zu erstellen, könntest du diese Karten
+in deinen Hauptstapel für diese Sprache legen und ihnen die Schlagwörter "Essen"
+und "Verb" geben.
+Da jede Karte mehrere Schlagwörter beinhalten kann, eröffnen sich Möglichkeiten wie
+die [Suche](searching.md#tags-decks-cards-and-notes) nach allen Verben, oder allen Vokabeln,
+die etwas mit "Essen" zu tun haben, oder allen Verben, die zum Thema "Essen" gehören.
+
+Du kannst Notizen sowohl im Editor des "Hinzufügen"-Fensters als auch in dem der
+[Kartenverwaltung](browsing.md) Schlagwörter geben. Du kannst
+auch neue Schlagwörter hinzufügen und bestehende umbenennen oder organisieren.
+Bitte beachte, dass Schlagwörter auf der Notiz-Ebene gespeichert werden. Das heißt,
+dass das Hinzufügen eines Schlagworts zu einer Karte automatisch auch
+alle Geschwister dieser Karte betrifft. Um eine einzelne Karte ohne ihre
+Geschwister zu kennzeichnen, kannst du Flaggen verwenden, da diese auf der
+Karten-Ebene gespeichert werden.
+
+### Flaggen verwenden
+
+Flaggen funktionieren ähnlich wie Schlagwörter, werden beim Wiederholen aber
+rechts oben angezeigt. Du kannst auch in der Kartenverwaltung nach Karten mit
+einer bestimmten Flagge suchen, Flaggen in der Seitenleiste umbenennen und Auswahlstapel
+aus Karten erstellen, die mit einer bestimmten Flagge gekennzeichnet wurden.
+Im Gegensatz zu Schlagwörtern kann eine Karte nur eine Flagge auf einmal zugewiesen bekommen. 
+Ein weiterer wichtiger Unterschied besteht darin, dass Flaggen auf der
+[Kartenebene](getting-started.md#karten) gespeichert werden, d. h. das Zuweisen
+einer Flagge zu einer Karte hat keine Auswirkungen auf deren Geschwister.
+
+Du kannst Karten direkt beim Wiederholen eine Flagge zuweisen bzw. diese wieder entfernen,
+indem du das Tastaturkürzel <kbd>Strg</kbd> + <kbd>1-7</kbd> (<kbd>⌘</kbd> + <kbd>1-7</kbd>
+auf dem Mac) drückst. Das funktioniert auch in der [Kartenverwaltung](browsing.md).
+
+
+### Das Schlagwort "marked"
+
+Anki behandelt das Schlagwort "marked" (engl. für "markiert") gesondert.
+Beim Wiederholen und in der Kartenverwaltung gibt es Funktionen, um
+dieses Schlagwort schnell hinzuzufügen oder zu entfernen.
+In der Wiederholungsansicht wird mit einem Stern in der linken oberen Ecke angezeigt,
+ob die aktuelle Karte das Schlagwort "marked" enthält. Karten, deren Notiz
+auf diese Weise markiert ist, werden in der Kartenverwaltung mit einer
+anderen Farbe hinterlegt.
+
+Info: Diese Funktion gibt es nur mehr aus Kompatibilitätsgründen mit älteren
+Versionen. In den meisten Fällen sind Flaggen besser geeignet.
+
+
+### Felder verwenden
+
+Sollten Schlagworte nicht ausreichen, kann man auch designierte Felder zur
+inhaltlichen Klassifizierung verwenden, z. B. "Buch", "Seite" o. ä.
+Man kann die Suche nämlich auf bestimmte Felder einschränken. So sind sehr spezifische
+Suchanfragen möglich, wie z. B. `"Buch:Grimm's Märchen" Seite:63`.
+
+### Benutzerdefiniertes Lernen und Auswahlstapel
+
+Die Funktionen Benutzerdefiniertes Lernen und [Auswahlstapel](filtered-decks.md)
+ermöglichen dir, temporäre Stapel anhand von Suchbegriffen wie Schlagwörtern,
+Flaggen, Markierungen und Feldern zu erstellen. So kannst du im täglichen
+Gebrauch den Großteil deines Lernmaterials durchmischt in einem einzelnen
+Stapel wiederholen, bei Bedarf aber jederzeit temporäre Stapel erstellen, falls
+du einmal vollen Fokus auf ein bestimmtes Fach setzen musst, z. B. vor einer Prüfung.
+Im Allgemeinen gilt die folgende Regel: Wenn du bestimmten Stoff immer getrennt vom
+Rest wiederholen willst, solltest du ihn in einen normalen Stapel geben;
+wenn du ihn hin und wieder separat durchgehen musst (z. B. vor einer Prüfung, oder um
+einen Arbeitsrückstand aufzuholen), sind Auswahlstapel die bessere Wahl.
+
+## Funktionen des Editors
+
+Der Editor wird beim [Hinzufügen von Notizen](editing.md),
+bei deren Bearbeitung im Rahmen der [Wiederholung](studying.md) und in der
+[Kartenverwaltung](browsing.md) angezeigt.
+
+Oben links befinden sich zwei Schaltflächen: Eine öffnet das Fenster für die
+[Felder](editing.md#anpassung-der-felder), die andere die [Kartenvorlagen](templates/intro.md).
+
+Rechts davon schließen sich die Formatierungswerkzeuge an. Fett, Kursiv und Unterstrichen
+funktionieren, wie man es von anderen Textverarbeitungsprogrammen gewohnt ist.
+Mit den nächsten beiden Schaltflächen kannst du Text tief- und hochstellen, was
+praktisch sein kann für chemische Verbindungen wie H<sub>2</sub>0 oder einfache
+mathematische Ausdrücke wie x<sup>2</sup>.
+
+Der Radiergummi entfernt die Formatierung des aktuell markierten Textes -
+einschließlich Farben, Schriftstärke und -stil, usw.
+
+Dahinter reihen sich drei Werkzeuge, die der Erstellung von Listen sowie
+Textausrichtung und -einrückung dienen, und zwei Schaltflächen, mit denen
+du die Schriftfarbe ändern kannst.
+
+Die Schaltfläche \[…\] ist nur sichtbar, wenn ein Lückentext-Notiztyp ausgewählt ist.
+
+Du kannst mit dem Büroklammer-Werkzeug Audiodateien, Bilder und Videos von
+deiner Festplatte auswählen und sie an deine Notiz anhängen.
+Alternativ kannst du Medien auch in die Zwischenablage deines Computers
+geben (z. B. durch einen Rechtsklick auf ein Bild im Internet und die Auswahl
+von "Bild kopieren") und in einem Feld deiner Wahl einfügen.
+Für nähere Informationen zu Medien, siehe das Kapitel [Medien](media.md).
+
+Mit einem Klick auf das Mikrofon kannst du eine Audiodatei über das Mikrofon
+deines Computers aufnehmen und in das aktuelle Feld einfügen.
+
+Die Schaltfläche F<sub>x</sub> öffnet ein Menü, über welches du
+[MathJax oder LaTeX](math.md) in die Notiz einfügen kannst.
+
+Die Schaltfläche `</>` zeigt den zugrundeliegenden HTML-Code eines Feldes an.
+
+Anki 2.1.45+ unterstützt das Anheften von Feldern direkt aus dem Editor.
+Wenn du auf die Reißzwecke rechts oben in einem Feld klickst, wird Anki den
+Inhalt dieses Feldes nach dem Hinzufügen einer Notiz beibehalten.
+Das kann nützlich sein, wenn du oft hintereinander denselben Inhalt eingeben
+musst. In älteren Anki-Versionen wurde diese Funktion vom Felder-Fenster
+aus aktiviert.
+
+Die meisten Bedienelemente können auch über Tataturkürzel aktiviert werden,
+die angezeigt werden, wenn du mit der Maus darüber fährst.
+
+Anki behält beim Einfügen von Inhalten über die Zwischenablage im Normalfall
+den Großteil der Formatierung bei. Wenn du dabei jedoch die Umschalttaste
+gedrückt hältst, werden die Inhalte ohne Formatierung eingefügt.
+In den Einstellungen kannst du dieses Verhalten mit der Option
+"Text aus der Zwischenablage ohne Formatierung einfügen" zum Standard machen.
+
+## Lücken einfügen
+
+In Lückentexten werden ein oder mehrere Wörter eines Satzes ausgeblendet.
+Nehmen wir den folgenden Satz:
+
+    Die Universität Wien wurde 1365 gegründet.
+
+Machen wir "1365" zu einer Lücke, würde der Satz beim Wiederholen so aussehen:
+
+    Die Universität Wien wurde […] gegründet.
+
+"1365" ist auf der Vorderseite ausgeblendet und wird auf der Rückseite
+aufgedeckt.
+
+Siehe Regel 5 [hier](http://supermemo.org/deutsch/articles/20rules.htm),
+um mehr über die Vorteile von Lückentexten zu erfahren.
 
-The editor is shown when [adding notes](editing.md), [editing a
-note](studying.md) during reviews, or [browsing](browsing.md).
-
-On the top left are two buttons, which open the [fields](editing.md#customizing-fields) and
-[cards](templates/intro.md) windows.
-
-On the right are buttons that control formatting. Bold, italic and
-underline work like they do in a word processing program. The next two
-buttons allow you to subscript or superscript text, which is useful for
-chemical compounds like H<sub>2</sub>O or simple mathematical equations like
-x<sup>2</sup>.
-
-The rubber eraser button clears any formatting in the currently selected text — including the colour
-of the text,  whether the selected text is bold, etc.
-
-The next three buttons allow creating lists, text alignment and text indent.
-Then, there are two buttons to allow you to change text colour.
-
-The \[…​\] button is visible when a cloze note type is selected.
-
-You can use the paper-clip button to select audio, images, and videos from
-your computer's hard drive and attach them to your notes. Alternatively, you
-can copy the media onto your computer's clipboard (for instance, by
-right-clicking an image on the web and choosing 'Copy Image') and paste
-it into the field that you want to place it in. For more information
-about media, please see the [media](media.md) section.
-
-The microphone icon allows you to record from your computer's microphone
-and attach the recording to the note.
-
-The Fx button shows shortcuts to add MathJax or
-[LaTeX](math.md) to your notes.
-
-The `</>` button allows editing the underlying HTML of a field.
-
-Anki 2.1.45+ supports adjusting sticky fields directly from the editing screen.
-If you click on the pin icon on the right of a field, Anki will not clear out
-the field's content after a note is added. If you find yourself entering the
-same content into multiple notes, you may find this useful. On previous Anki
-versions, sticky fields were toggled from the Fields screen.
-
-Most of the buttons have shortcut keys. You can hover the mouse cursor
-over a button to see its shortcut.
-
-When pasting text, Anki will keep most formatting by default. If you
-hold down the <kbd>Shift</kbd> key while pasting, Anki will strip most of the
-formatting. Under Preferences, you can toggle "Paste without shift
-key strips formatting" to modify the default behaviour.
-
-## Cloze Deletion
-
-'Cloze deletion' is the process of hiding one or more words in a
-sentence. For example, if you have the sentence:
-
-    Canberra was founded in 1913.
-
-…​and you create a cloze deletion on "1913", then the sentence would
-become:
-
-    Canberra was founded in [...].
-
-Sometimes sections that have been removed in this fashion are said to be
-'occluded'.
-
-For more information on why you might want to use cloze deletion, see
-Rule 5 [here](http://www.supermemo.com/articles/20rules.htm).
-
-Anki provides a special cloze deletion type of note, to make creating
-clozes easy. To create a cloze deletion note, select the Cloze note
-type, and type some text into the "Text" field. Then drag the mouse over
-the text you want to hide to select it, and click the \[…​\] button.
-Anki will replace the text with:
-
-    Canberra was founded in {{c1::1913}}.
-
-The "c1" part means that you have created one cloze deletion on the
-sentence. You can create more than one deletion if you'd like. For
-example, if you select Canberra and click \[…​\] again, the text will
-now look like:
-
-    {{c2::Canberra}} was founded in {{c1::1913}}.
-
-When you add the above note, Anki will create two cards. The first card
-will show:
-
-    Canberra was founded in [...].
-
-…​on the question, with the full sentence on the answer. The other card
-will have the following on the question:
-
-    [...] was founded in 1913.
-
-You can also elide multiple sections on the same card. In the above
-example, if you change c2 to c1, only one card would be created, with
-both Canberra and 1913 hidden. If you hold down <kbd>Alt</kbd> (<kbd>Option</kbd> on a Mac)
-while creating a cloze, Anki will automatically use the same number
-instead of incrementing it.
-
-Cloze deletions don't need to fall on word boundaries, so if you select
-"anberra" rather than "Canberra" in the above example, the question
-would appear as "C\[…​\] was founded in 1913", giving you a hint.
-
-You can also give yourself hints that don't match the text. If you
-replace the original sentence with:
-
-    Canberra::city was founded in 1913
-
-…​and then press \[…​\] after selecting "Canberra::city", Anki will
-treat the text after the two colons as a hint, changing the text into:
-
-    {{c1::Canberra::city}} was founded in 1913
-
-When the card comes up for review, it will appear as:
-
-    [city] was founded in 1913.
-
-For information on testing your ability to type in a cloze deletion
-correctly, please see the section on [typing answers](templates/fields.md#checking-your-answer).
-
-Please note that overlapping clozes are not supported. For example, the
-following field is invalid:
-
-    {{c1::Canberra was {{c2::founded}}}} in 1913
-
-If you need to create clozes from overlapping text, add another Text
-field to your cloze, add it to the [template](templates/intro.md), and then when
-creating notes, paste the text into two separate fields, like so:
-
-    Text1 field: {{c1::Canberra was founded}} in 1913
-
-    Text2 field: {{c2::Canberra}} was founded in 1913
-
-The default cloze note type has a second field called Extra, that is
-shown on the answer side of each card. It can be used for adding some
-usage notes or extra information.
-
-The cloze note type is treated specially by Anki, and cannot be created
-based on a regular note type. If you wish to customize it, please make
-sure to clone the existing Cloze type instead of another type of note.
-Things like formatting can be customized, but it is not possible to add
-extra card templates to the cloze note type.
-
-## Inputting Foreign Characters and Accents
-
-All modern computers have built-in support for typing accents and
-foreign characters, and multiple ways to go about it. The method we
-recommend is by using a keyboard layout for the language you want to learn.
-
-Languages with a separate script like Japanese, Chinese, Thai, and so on,
-have their own layouts specific to that language.
-
-European languages that use accents may have their own layout, but can
-often by typed on a generic "international keyboard" layout. These work
-by typing the accent, then the character you want accented - e.g. an
-apostrophe (') then the letter a (a) gives á.
-
-To add the international keyboard on Windows machines, please see
-<http://www.techlanguage.com/tips/us_international.html>
-
-To add it on Macs, please see
-<http://www.macworld.com/article/1147039/os-x/accentinput.html>
-
-Keyboards for a specific language are added in a similar way, but we can
-not cover them all here. For more information, please try searching
-Google for "input Japanese on a mac", "type Chinese on Windows 10", and
-so on.
-
-If you are learning a right-to-left language, there are lots of other
-things to consider. Please see [this
-page](http://dotancohen.com/howto/rtl_right_to_left.html) for more
-information.
-
-The toolkit on which Anki is built has trouble dealing with a few input
-methods, such as holding down keys to select accented characters on macOS, 
-and typing characters by holding down the <kbd>Alt</kbd> key and typing a
-numeric code on Windows.
-
-## Unicode Normalization
-
-Text like `á` can be represented in multiple ways on a computer, such as
-using a specific code for that symbol, or by using a standard `a` and then
-another code for the accent on top. This causes problems when mixing input
-from different sources, or using different computers - if your computer
-handles keyboard input in one form, but the content is stored in a different
-form, it will not match when searching, even though the end result appears
-identical.
-
-To ensure content can easily be found in searches, Anki normalizes the text
-to a standard form. For most users this process is transparent, but if you
-are studying certain material like archaic Japanese symbols, the normalization
-process can end up converting them to a more modern equivalent.
-
-If you want character variants preserved, the following in the [debug console](./misc.md)
-will turn off normalization:
+Anki bietet einen eigenen Notiztyp, um einfach Lückentexte zu erstellen.
+leicht macht. Um einen Lückentext zu erstellen, wähle zuerst den Notiztyp
+"Lückentext" und gib dann einen Satz in das "Text"-Feld ein.
+Markiere danach mit der Maus den Teil, den du verstecken willst, und klicke auf die
+Schaltfläche \[…\].
+Anki wird den Text dann mit doppelten geschweiften Klammern und einem Index markieren:
+
+    Die Universität Wien wurde {{c1::1365}} gegründet.
+
+Das "c1" bedeutet, dass du eine Lücke mit dem Index 1 erstellt hast.
+Du kannst auch mehrere Lücken erstellen, wenn du willst. Wenn du in unserem
+Beispiel "Die Universität Wien" auswählst und noch einmal auf \[…\] klickst, wird der
+Satz nun so aussehen:
+
+    Die {{c2::Universität Wien}} wurde {{c1::1365}} gegründet.
+
+Fügst du diese Notiz hinzu, wird Anki zwei Karten erstellen. Die erste Karte zeigt:
+
+    Die Universität Wien wurde […] gegründet.
+
+… auf der Vorderseite und den vollständigen Satz auf der Rückseite. Die zweite Karte
+wird auf der Vorderseite so aussehen:
+
+    Die […] wurde 1365 gegründet.
+
+Du kannst auch mehrere Lücken auf derselben Karte erstellen. Änderst du im obigen
+Beispiel den Index c2 auf c1, wird nur eine Karte erstellt, auf der sowohl "Die Universität Wien"
+als auch "1365" ausgeblendet sind. Wenn du beim Einfügen einer Lücke die <kbd>Alt</kbd>-Taste
+(<kbd>Option</kbd> auf dem Mac) gedrückt hältst, behält Anki den aktuellen Index bei,
+anstatt ihn zu erhöhen.
+
+Lücken werden strikt um den markierten Text gesetzt, Wortgrenzen werden also nicht beachtet.
+Wählst du "niversität Wien" statt "Universität Wien" aus, würde die Lücke in der
+Wiederholung als `Die U[…] wurde 1365 gegründet.` erscheinen, was dir einen Hinweis gäbe.
+
+Du kannst aber auch Tipps erstellen, die nicht im Text vorkommen. Wenn du den ursprünglichen
+Text so eingibst:
+
+    Die Universität Wien::Bildungseinrichtung wurde 1365 gegründet.
+
+… und dann nach Auswahl von "Die Universität Wien::Bildungseinrichtung" auf \[…\] klickst,
+wird Anki den Text hinter den zwei Doppelpunkten als Tipp interpretieren.
+Das Resultat sieht dann so aus:
+
+    Die {{c1::Universität Wien::Bildungseinrichtung}} wurde 1365 gegründet.
+
+Bei der Wiederholung wird die Karte so erscheinen:
+
+    Die [Bildungseinrichtung] wurde 1365 gegründet.
+
+Es gibt auch die Möglichkeit, den Lückeninhalt bei der Wiederholung einzutippen.
+Für nähere Informationen, siehe [Antworten eingeben](templates/fields.md#checking-your-answer).
+
+Bitte beachte, dass die Verschachtelung von Lücken nicht unterstützt wird.
+Die folgende Eingabe wäre also ungültig:
+
+    Die {{c1::Universität {{c2::Wien}}}} wurde 1365 gegründet.
+
+Wenn du überlappende Lückentexte brauchst, musst du ein zweites Feld erzeugen,
+dieses in die [Vorlage](templates/intro.md) des Notiztyps einfügen und den Text
+folgendermaßen in beide Felder kopieren:
+
+    Feld 1: Die {{c1::Universität Wien}} wurde 1365 gegründet.
+
+    Feld 2: Die {{c2::Universität}} Wien wurde 1365 gegründet.
+
+Der Standardnotiztyp für Lückentexte hat ein zweites Feld namens "Extra",
+dessen Inhalt nur auf der Rückseite der Karte erscheint.
+Damit kannst du zusätzliche Informationen in deine Notiz einbauen.
+
+"Lückentext"-Notiztypen werden von Anki besonders behandelt und können deswegen
+nicht auf einem regulären Notiztyp basieren. Um einen solchen Notiztyp anzupassen,
+musst du den Standardnotiztyp "Lückentext" klonen.
+Formatierung und Stil können wie bei regulären Notiztypen angepasst werden,
+es ist jedoch nicht möglich, zusätzliche Kartenvorlagen zu einem Notiztyp
+hinzuzufügen, der auf dem Typ "Lückentext" basiert.
+
+## Sonderzeichen und Akzente eingeben
+
+Alle modernen Computer unterstützen die Eingabe fremder Symbole und Akzente
+auf unterschiedliche Art und Weise. Wir empfehlen, die Tastaturbelegung der
+Sprache zu verwenden, die du lernen willst.
+
+Sprachen, die ihre eigene Schrift haben (z. B. Japanisch, Chinesisch, Russisch usw.)
+haben stets auch spezifische Tastaturbelegungen.
+
+Europäische Sprachen, die Akzente benutzen, haben oftmals auch eigene Belegungen,
+können aber auch mit der deutschen Tastaturbelegung geschrieben werden.
+Hierfür musst du zuerst den gewünschten Akzent und dann den Buchstaben eingeben,
+der den Akzent erhalten soll - z. B. ergeben <kbd>`</kbd> und <kbd>A</kbd> das Symbol à.
+
+<!-- deleted paragraph -->
+
+<!-- deleted paragraph -->
+
+Um herauszufinden, wie du fremde Tastaturbelegungen auf deinem Betriebssystem installieren
+kannst, gib in Google Suchbegriffe wie "Japanische Tastaturbelegung Mac" oder
+"Chinesische Tastaturbelegung Windows" ein.
+
+Für Sprachen mit umgekehrter Leserichtung (RTL) wird es etwas komplizierter.
+Diese [Website](http://dotancohen.com/howto/rtl_right_to_left.html) (Englisch)
+bietet einen guten Ausgangspunkt.
+
+Das Toolkit, auf dem Ankis Editor aufgebaut ist, hat Schwierigkeiten mit manchen
+Eingabemethoden wie z. B. auf dem Mac das Gedrückthalten von Tasten, um akzentuierte
+Buchstaben auszuwählen, oder die Eingabe von Schriftzeichen durch Kombination der
+<kbd>Alt</kbd>-Taste und numerischer Codes auf Windows.
+
+## Unicode-Normalisierung
+
+Zeichen wie `à` können auf einem Computer auf unterschiedliche Arten gespeichert werden,
+beispielsweise mit einem für das Symbol spezifischen Code, oder mit einem normalen `a`
+und einem weiteren Code für den Akzent darüber. Das kann beim Mischen von Code
+aus unterschiedlichen Quellen oder bei der Verwendung verschiedener Computer
+Probleme verursachen. Wenn dein Computer Tastatureingaben in einer bestimmten
+Form handhabt, der Inhalt aber auf eine andere Art gespeichert wird, so werden
+Sonderzeichen bei Sucheingaben entsprechend der Art deines Computers nicht
+gefunden, obwohl die visuelle Ausgabe beider Varianten dieselbe ist.
+
+Um eine problemlose Suche zu gewährleisten, normalisiert Anki den Text in einen
+Standard. Für die meisten Nutzer:innen ist dieser Vorgang unbemerkbar. Wenn du jedoch
+sehr spezifisches Material wie altertümliche japanische Symbole lernst, kann der
+Normalisierungsprozess sie ungewollt in ein moderneres Äquivalent umwandeln.
+
+Willst du, dass Anki deine Buchstabencodes exakt beibehält - trotz des Risikos, dass
+Sucheingaben fehlschlagen könnten - so kannst du das mit dem folgenden Befehl
+in der [Debugging-Konsole](./misc.md) bewerkstelligen:
 
 ```python
 mw.col.conf["normalize_note_text"] = False
 ```
 
-Any content added after that will remain untouched. The trade-off is that you may
-find it difficult to search for the content if you're switching between operating
-systems, or pasting content from mixed sources.
+Jeglicher Inhalt, der nach der Eingabe dieses Befehls hinzugefügt wird, bleibt von
+der Normalisierung unberührt. Es sei hier noch einmal ausrücklich erwähnt, dass es
+sich um einen Kompromiss für Spezialfälle handelt, der die Suche nach Inhalten
+bei der Verwendung unterschiedlicher Betriebssysteme oder gemischter Quellen erschweren kann.
