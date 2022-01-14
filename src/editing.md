@@ -102,7 +102,7 @@ Um einen neuen **Notiztyp** zu erstellen, wähle den Eintrag
 `Werkzeuge → Notiztypen verwalten` in der Hauptansicht von Anki und klicke auf "Hinzufügen".
 Es öffnet sich ein neues Fenster, das eine Auswahl an Notiztypen
 anbietet, auf denen der neue Notiztyp basieren soll.
-"Hinzufügen" bedeutet also, einen Notiztyp nach einer von Anki's Vorlagen zu erstellen.
+"Hinzufügen" bedeutet also, einen Notiztyp nach einer von Ankis Vorlagen zu erstellen.
 Soll der neue Notiztyp auf einem Notitzyp aus deiner Sammlung basieren,
 wähle stattdessen "Klonen" aus. Hast du z. B. bereits einen Notiztyp für
 Französischvokabeln, könntest du einen Klon für Spanischvokabeln erstellen.
@@ -454,7 +454,7 @@ Für Sprachen mit umgekehrter Leserichtung (RTL) wird es etwas komplizierter.
 Diese [Website](http://dotancohen.com/howto/rtl_right_to_left.html) (Englisch)
 bietet einen guten Ausgangspunkt.
 
-Das Toolkit, auf dem Anki's Editor aufgebaut ist, hat Schwierigkeiten mit manchen
+Das Toolkit, auf dem Ankis Editor aufgebaut ist, hat Schwierigkeiten mit manchen
 Eingabemethoden wie z. B. auf dem Mac das Gedrückthalten von Tasten, um akzentuierte
 Buchstaben auszuwählen, oder die Eingabe von Schriftzeichen durch Kombination der
 <kbd>Alt</kbd>-Taste und numerischer Codes auf Windows.
