@@ -25,7 +25,7 @@
     - [Wayland](platform/linux/wayland.md)
     - [Input Methods](platform/linux/input-methods.md)
 - [Loslegen](getting-started.md)
-- [Studying](studying.md)
+- [Lernen](studying.md)
 - [Hinzufügen/Bearbeiten](editing.md)
 - [Card Templates](templates/intro.md)
   - [Field Replacements](templates/fields.md)

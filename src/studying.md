@@ -1,350 +1,360 @@
-# Studying
+# Lernen
 
 <!-- toc -->
 
-When you have found a deck you like or entered some notes in, it’s time
-to start studying.
-
-## Decks
+Wenn du einen Stapel gefunden hast, der dir gefällt, oder ein paar Notizen
+erstellt hast, ist es an der Zeit, mit dem Lernen zu beginnen.
 
-Study in Anki is limited to the currently selected deck as well as any
-subdecks it contains.
+## Stapel
 
-On the decks screen, your decks will be displayed in a list. There are
-three columns. 'New' is the number of new
-cards that are ready to be learnt that day. The second column shows
-the number of cards currently in learning. 'Due' is the count of waiting
-reviews. 
+In Anki lernst du immer nur den gerade ausgewählten Stapel und dessen Unterstapel.
 
-When you click on a deck, it will become the 'current deck', and Anki
-will change to the study screen. You can return to the deck list to
-change the currently selected deck at any time by clicking on “Decks” at
-the top of the main window. (You can also use the Study
-Deck action in the menu to select a new deck from the keyboard, or you
-can press the <kbd>s</kbd> key to study the currently selected deck.)
+In der Stapelansicht werden deine Stapel mit drei Spalten aufgelistet: "Neu"
+gibt die Anzahl neuer Karten an, die heute gelernt werden können. Die zweite
+Spalte zeigt die Anzahl der Karten, die sich gerade in der Lernphase befinden.
+"Fällig" ist die Zahl anstehender Wiederholungen.
 
-You can click the gears button to the right of a deck to rename or
-delete a deck, change its [options](deck-options.md), or [export](exporting.md) it.
+Wenn du einen Stapel anklickst, wird er zum *aktuellen Stapel* und Anki wechselt
+in die Lernansicht. Um den aktuellen Stapel zu wechseln, kannst du jederzeit zur
+Stapelansicht zurückkehren, indem du auf die entsprechende Schaltfläche am oberen
+Rand des Hauptfensters klickst. Dort kannst du auch den Menüpunkt "Stapel lernen"
+benutzen, um einen neuen Stapel per Tastatur auszuwählen, oder du kannst 
+<kbd>S</kbd> drücken, um den aktuellen Stapel zu lernen.
 
-## Study Overview
-
-After clicking on a deck to study, you’ll see a screen that shows you
-how many cards are due today. This is called the 'deck overview' screen.
-The cards are split into three types:
-
-- **New** refers to cards that you have downloaded or entered in, but
-  have never been studied before.
+Du kannst das Zahnradsymbol rechts neben einem Stapel anklicken, um den Stapel
+umzubenennen, zu löschen, seine Einstellungen zu bearbeiten oder ihn zu exportieren.
+
+## Stapelübersicht
 
-- **Learning** refers to cards that were seen for the first time
-  recently, and are still being learnt.
+Nachdem du in der Stapelansicht auf einen Stapel geklickt hast, wird dir die
+sogenannte *Stapelübersicht* angezeigt. Dort kannst du sehen, wie viele Karten
+heute fällig sind. Die Karten sind dabei in drei Kategorien aufgeteilt:
+
+- *Neu* bezieht sich auf Karten, die du heruntergeladen oder selbst angelegt,
+  aber noch nie gelernt hast.
+
+- *Lernen* bezieht sich auf Karten, die du schon mal gesehen hast, aber immer
+  noch lernst.
+
+- *Wiederholen* bezieht sich auf Karten, die du bereits gelernt hast und die
+  nun wiederholt werden müssen, damit du sie nicht wieder vergisst.
+
+Klick auf "Jetzt lernen", um zu beginnen. Anki wird dir solange Karten zeigen, bis
+es keine heute fälligen mehr gibt.
 
-- **To Review** refers to cards that were previously learnt, and now
-  need to be reviewed so you don’t forget them.
+Während des Lernens kannst du mit der Taste <kbd>S</kbd> zur Übersicht zurückkehren.
+
+## Fragen
+
+Für jede Karte wird zuerst nur die Frage gezeigt. Klick auf "Antowort zeigen"
+oder betätige die <kbd>Leertaste</kbd>, nachdem du über die Antwort nachgedacht
+hast. Es ist nicht schlimm, wenn du eine Weile brauchst, bis dir die Antwort
+einfällt, aber als Faustregel solltest du besser aufgeben, wenn sie dir nach
+etwa 10 Sekunden noch nicht eingefallen ist, anstatt dich weiter zu versuchen
+zu erinnern.
+
+Wenn die Antwort gezeigt wird, solltest du sie mit der, an die du gedacht hast,
+vergleichen und Anki mitteilen, wie gut du dich erinnern konntest. Wenn du dir
+nicht zutraust, deine Antwort korrekt abzugleichen, kannst du Anki dich nach
+der [Eingabe deiner Antwort](templates/fields.md#checking-your-answer) fragen
+lassen, anstatt dir nur Frage und Antwort zu zeigen.
+
+## Karten (erneut) lernen
+
+Wenn du Karten lernst oder erneut lernst, nachdem du sie vergessen hattest, zeigt
+Anki sie dir mehrmals, um dir zu helfen, sie im Gedächtnis zu behalten.
+Diese Abfragen heißen *Lernstufen*. Standardmäßig gibt es zwei: 1 Minute und 10
+Minuten. Du kannst die Anzahl und Abstände der Stufen in den
+[Stapeleinstellungen](deck-options.md#new-cards) ändern.
+
+Beim Lernen gibt es vier Bewertungsschaltflächen:
+
+1. *Nochmal* schickt die Karte zurück zur ersten Lernstufe.
+
+2. *Schwierig* lässt die Karte die aktuelle Lernstufe wiederholen, außer es handelt
+  sich um die erst Lernstufe, in welchem Fall das neue Intervall der Durchschnitt
+  von *Nochmal* und *Gut* ist.
+
+3. *Gut* schickt die Karte zur nächsten [Lernstufe](deck-options.md#learning-steps).
+  Wenn sich die Karte auf der letzten Lernstufe befand, wird sie in eine
+  Wiederholungskarte umgewandelt, sie *steigt auf*. Standardmäßig wird eine
+  aufgestiegene Karte am nächsten Tag und dann in größer werdenden Abständen wieder
+  gezeigt (siehe den nächsten Abschnitt).
+
+4. *Einfach* wandelt die Karte sofort in eine Wiederholungskarte um, auch wenn
+  noch Lernstufen übrig sind. [Standardmäßig](deck-options.md#easy-interval) wird
+  die Karte nach 4 Tagen und dann in größer werdenden Abständen wieder
+  gezeigt. Mit dem Zeitplaner V1 ist die *Einfach*-Schaltfläche beim erneuten Lernen
+  von Karten nicht sichtbar, da sie das gleiche Intervall wie *Gut* liefern würde.
+  Mit dem [Zeitplaner V2+](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html)
+  erhöht sie das Intervall beim erneuten Lernen um einen zusätzlichen Tag.
+
+Erstmalig gezeigte Karten beginnen auf der ersten Lernstufe. Wenn du also eine
+Karte beim ersten Mal, das du sie siehst, mit *Gut* bewertest, wird sie nach
+10 Minuten ein weiteres Mal gezeigt und die erste Lernstufe von einer Minute wird
+übersprungen.
+
+Du kannst die Tasten <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> und <kbd>4</kbd>
+benutzen, um die entsprechende Schaltfläche auszuwählen. Die <kbd>Leertaste</kbd>
+und <kbd>Enter</kbd> stehen ebenfalls  für *Gut*.
+
+Wenn keine anderen Karten anstehen, zeigt Anki dir Lernkarten selbst dann, wenn
+ihr Intervall noch nicht vollständig abgelaufen ist. Falls du das Intervall
+lieber zur Gänze abwarten möchtest, kannst du dieses Verhalten unter
+*[Einstellungen](preferences.md) > Neu planen > Grenzwert für vorgezogenes Lernen*
+anpassen.
+
+## Karten wiederholen
+
+Wenn eine Karte zuvor gelernt wurde und zur Wiederholung ansteht, gibt es vier
+Bewertungsschaltflächen:
+
+1. *Nochmal* kennzeichnet deine Antwort als falsch und weist Anki an, dir die
+  Karte in Zukunft öfter zu zeigen. Die Wiederholung wird als *Fehlschlag*
+  bezeichnet. Siehe den Abschnitt [Fehlschläge](deck-options.md#lapses) für
+  Informationen darüber, wie mit gescheiterten Wiederholungen verfahren wird.
+
+2. *Schwierig* zeigt die Karte standardmäßig nach einem
+  [etwas längeren Zeitraum](deck-options.md#hard-interval) wieder und weist Anki
+  an, dir die Karte in Zukunft öfter zu zeigen.
+
+3. *Good* teilt Anki mit, dass das letzte Intervall in etwa angemessen war und
+  die Leichtigkeit der Karte nicht nach oben oder unten angepasst werden muss.
+  Mit der [voreingestellten Leichtigkeit](deck-options.md#starting-ease) ist der
+  Zeitraum bis zur nächsten Wiederholung ungefähr der zweieinhalb-fache des letzten
+  Zeitraums. Wenn du also zuletzt 10 Tage gewartet hast, bis die Karte gezeigt
+  wurde, werden es nun 25 Tage sein.
+
+4. *Einfach* teilt Anki mit, dass der Zeitraum zu kurz war. Die Karte wird für
+  einen [späteren Zeitpunkt als mit *Gut*](deck-options.md#easy-bonus) geplant
+  und seltener gezeigt werden. Da *Einfach* das Intervall rapide ansteigen lässt,
+  sollte es nur für die allereinfachsten Karten benutzt werden. Üblicherweise
+  solltest du stattdessen mit *Gut* bewerten.
+
+Wie schon bei Lernkarten kannst du die Tasten <kbd>1</kbd>, <kbd>2</kbd>,
+<kbd>3</kbd> und <kbd>4</kbd> zur Bewertung nutzen. <kbd>Leertaste</kbd> und
+<kbd>Enter</kbd> bewerten mit *Gut*.
+
+Siehe [Stapeleinstellungen](deck-options.md) und die
+[FAQs](https://faqs.ankiweb.net/what-spaced-repetition-algorithm.html), um mehr
+über die Funktionsweise des Algorithmus zu lernen.
+
+## Anzahl fälliger Karten
+
+Während nur die Frage zu sehen ist, zeigt Anki drei Zahlen am unteren Ende des
+Bildschirms an, z.B. `12 + 34 + 56`. Sie stehen für neue Karten, Karten in der
+Lernphase und zu wiederholende Karten. Wenn du sie lieber nicht sehen würdest,
+kannst du sie in Ankis [Einstellungen](preferences.md) abschalten.
+
+Mit dem V1-Zeitplaner zählen die *Wiederholungen*, die nötig sind, bis alle
+anstehenden Karten abgearbeitet sind, nicht die Anzahl der *Karten*. Wenn du
+mehrere Lernstufen für fehlgeschlagene Wiederholungen eingestellt hast, steigt
+die Zahl bei einem Fehlschlag um mehr als 1, da die Karte nun mehrfach gezeigt
+werden muss.
+
+Ab dem V2-Zeitplaner zählen *Karten*, sodass die Anzahl immer um 1 steigt, egal
+wie viele Lernstufen verbleiben.
 
-To start a study session, click the **Study Now** button. Anki will
-proceed to show you cards until the cards to be shown for the day have
-run out.
+Sobald die Antwort sichtbar ist, zeigt Anki über jeder Schaltfläche eine
+Schätzung davon, wann die Karte das nächste Mal gezeigt werden wird.
+Wenn du das lieber nicht sehen würdest, kannst du es in Ankis
+[Einstellungen](preferences.md) abschalten.
 
-While studying, you can return to the overview by pressing the <kbd>s</kbd> key
-on your keyboard.
-
-## Questions
+## Zufallsfaktor
 
-When a card is shown, only the question is shown at first. After
-thinking about the answer, either click the **Show Answer** button, or
-press the spacebar. The answer will then be shown. It’s okay if it takes
-you a little while to recall the answer, but as a general rule if you
-can’t answer within about 10 seconds, it’s probably better to give up
-and show the answer than keep struggling to remember.
+Wenn du eine Wiederholungskarte bewertest, wendet Anki zudem einen geringen
+Zufallsfaktor ("*Fuzz*") an, um zu vermeiden, dass Karten, die gleichzeitig
+eingeführt wurden, zusammebleiben und auch in Zukunft stets am selben Tag
+angezeigt werden.
+Seit dem V3-Zeitplaner wird dieser Zufallsfaktor auf den Schaltflächenbeschriftungen
+berücksichtigt. Wenn du also einen der vorherigen Zeitplaner benutzt und eine
+geringe Abweichung zwischen den Bewertungsschaltflächen und den tatsächlichen
+Intervallen feststellst, ist das vermutlich die Ursache.
 
-When the answer is shown, you should compare the answer you thought of
-with the answer which is shown and tell Anki how well you remembered. If
-you don’t trust yourself to compare your answer accurately, you can ask
-Anki to [prompt you to type in the answer](templates/fields.md#checking-your-answer) rather than
-just showing it to you.
-
-## Learning/Relearning Cards
-
-When learning new cards, or when relearning cards that you have
-forgotten, Anki will show you the cards one or more times to help you
-memorize them. Each time is called a 'learning step'. By default there
-are two steps: 1 minute and 10 minutes. You can change the number of
-steps and the delays between them in the [deck options](deck-options.md#new-cards).
-
-There are four rating buttons when learning:
-
-**Again** moves the card back to the first step.
-
-**Hard**  repeats the current step after the first step, and is the average 
-of Again and Good on the first step.
-
-**Good** moves the card to the [next step](deck-options.md#learning-steps). If the card was on the final
-step, the card is converted into a review card (it 'graduates'). By
-default, once the card has reached the end of the learning steps, the
-card will be shown again the next day, then at increasingly long delays
-(see the next section).
-
-**Easy** immediately converts the card into a review card, even if there
-were steps remaining. [By default](deck-options.md#easy-interval), the card will be shown again 4 days
-later, and then at increasingly long delays. In the v1 scheduler, the "Easy" button will not be
-shown if you are in relearning mode as it would give the same interval
-as “Good.” With the [v2 scheduler+](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
-when cards are in relearning, the "Easy" button boosts the interval by 1 day.
-
-When cards are seen for the first time, they start at step one. This
-means answering **Good** on a card for the first time will show it one
-more time in 10 minutes, and the initial 1 minute step will be skipped.
-If you push Again, though, the card will come back in 1 minute.
-
-You can use the <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> and <kbd>4</kbd> keys on your keyboard to select a particular
-button, where <kbd>1</kbd> is **Again**. Pressing <kbd>Space</kbd> or <kbd>Enter</kbd> will select
-**Good**.
-
-If there are no other cards to show you, Anki will show learning cards
-again even if their delay has not elapsed completely. If you’d prefer to
-wait the full learning delay, you can change this behaviour in 
-[Preferences>Scheduling>Learn Ahead Limit](preferences.md).
-
-## Review Cards
-
-When a card has been previously learnt and is ready to be reviewed
-again, there are four buttons to rate your answer:
-
-**Again** marks your answer as incorrect and asks Anki to show the card
-more frequently in the future. The card is said to have 'lapsed'. Please
-see the [lapses](deck-options.md#lapses) section for more information about how lapsed
-reviews are handled.
-
-**Hard** by default, shows the card at a [slightly longer delay](deck-options.md#hard-interval) 
-than last time, and tells Anki to show the card more frequently in the future.
-
-**Good** tells Anki that the last delay was about right, and the card
-easiness doesn’t need to be adjusted down or up. At the [default starting
-easiness](deck-options.md#starting-ease), the card will be shown again approximately 2 1/2 times longer
-than the previous time, so if you had waited 10 days to see the card
-previously, the next delay would be about 25 days.
-
-**Easy** tells Anki you found the delay too short. The card will be
-scheduled [further into the future than 'Good'](deck-options.md#easy-bonus), and Anki will schedule
-the card less frequently in the future. Because 'Easy' rapidly increases
-the delay, it’s best used for only the easiest of cards. Usually you
-should find yourself answering 'Good' instead.
-
-As with learning cards, you can use <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> and <kbd>4</kbd> on the keyboard to select an
-answer. Pressing the <kbd>spacebar</kbd> or <kbd>Enter</kbd> will select **Good**.
-
-See [Deck Options](deck-options.md) and the [FAQ](https://faqs.ankiweb.net/what-spaced-repetition-algorithm.html)
-to learn more about how the algorithm works. 
-
-## Due Counts 
-
-When only the question is shown, Anki shows three numbers like 12 + 34 +
-56 at the bottom of the screen. These represent the new cards, cards in
-learning, and cards to review. If you’d prefer not to see the numbers,
-you can turn them off in Anki’s preferences.
-
-In the v1 scheduler, the numbers count _reviews_ needed to finish all the
-cards in that queue, not the number of _cards_. If you have multiple
-steps configured for lapsed cards, the number will increase by more than
-one when you fail a card, since that card needs to be shown several times.
-
-From the v2 scheduler, the numbers count _cards_, so the number will always
-increase by one regardless of the steps remaining.
-
-When the answer is shown, Anki shows an estimate of the next time a card
-will be shown above each button. If you’d prefer not to see the
-estimates, you can disable them in Anki’s [preferences](preferences.md).
-
-## Fuzz Factor
-
-When you select an ease button on a review card, Anki also applies a small amount of random “fuzz”
-to prevent cards that were introduced at the same time and given the same ratings
-from sticking together and always coming up for review on the same day. This fuzz
-will appear on the answer buttons when the [v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html) is enabled, so if
-you are using a previous version and you’re noticing a slight discrepancy between
-what you select and the intervals your cards actually get, this is probably the
-cause.
-
-Learning cards are also given up to 5 minutes of extra delay so that they 
-don’t always appear in the same order, but answer buttons won't reflect that. It 
-is not possible to turn this feature off.
-
-## Editing and More
-
-You can click the **Edit** button in the bottom left to edit the current
-note. When you finish editing, you’ll be returned to study. The editing
-screen works very similarly to the [add notes](editing.md) screen.
-
-At the bottom right of the review screen is a button labeled **More**.
-This button provides some other operations you can do on the current
-card or note:
-
-- [**Flag Card**](editing.md#using-flags): Adds a colored marker to the card, or toggles it off. Flags will appear during
-study, and you can search for flagged cards in the Browse screen. This is useful
-when you want to take some action on the card at a later date, such as looking
-up a word when you get home. If you're using Anki 2.1.45+, you can also rename flags 
-from the [browser](browsing.md).    
-
-- **Bury Card / Note**: Hides a card or all of the note’s cards from review until the next day.
-(If you want to unbury cards before then, you can click the “unbury”
-button on the [deck overview](studying.md#study-overview) screen.) This is useful if
-you cannot answer the card at the moment or you want to come back to it
-another time. Burying can also [happen automatically](studying.md#siblings-and-burying) for
-cards of the same note.
-
-   With the old scheduler, if cards were in learning when they are buried,
-   they are moved back to the new card queue or review queue prior to being
-   buried.
-
-   With the [2.1 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
-   however, burying cards does not reset a card's learning steps.
-
-- **Set Due Card**: Make cards review cards, and [make them due on a certain date.](browsing.md#cards)
-
-- **Suspend Card / Note**: Hides a card or all of the note’s cards from review until they are
-   manually unsuspended (by clicking the suspend button in the browser).
-   This is useful if you want to avoid reviewing the note for some time,
-   but don’t want to delete it.
-   With the old scheduler, if cards were in learning when they are
-   suspended, they are moved back to the new card queue or review queue
-   prior to being suspended.
-
-   With the [2.1 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
-   however, suspending cards does not reset a card's learning steps.
-
-- **Options**: Edit the [options](deck-options.md) for the current deck.
-
-- **Card Info**: Displays [statistical information](stats.md#card-info) about the card.
-
-- [**Mark Note**](editing.md#the-marked-tag): Adds a “marked” tag to the current note, so it can be easily found in the
-browser. This is similar to flagging individual cards, but works with a tag
-instead, so if the note has multiple cards, all cards will appear in a search
-for the marked tag. Most users will want to use flags instead. 
-
-- **Delete Note**: Deletes the note and all of its cards.
-
-- **Replay Audio**: If the card has audio on the front or back, play it again.
-
-- **Pause Audio**: Pauses the audio if it is playing.
-
-- **Audio -5s / +5s**: Jump backwards / forward 5 seconds in the currently playing audio.
-
-- **Record Own Voice**: Record from your microphone for the purposes of checking your
-pronunciation. This recording is temporary and will go away when you
-move to the next card. If you want to add audio to a card permanently,
-you can do that in the edit window.
-
-- **Replay Own Voice**: Replay the previous recording of your voice (presumably after showing
-the answer).
-
-## Display Order
-
-Studying will show cards from the selected deck and any decks it
-contains. Thus, if you select your “French” deck, the subdecks
-“French::Vocab” and “French::My Textbook::Lesson 1” will be shown as
-well.
-
-The way Anki Anki fetches cards from the decks depends on the algorithm used:
-
-- With the v1 scheduler, when a deck has subdecks, the cards will appear from [each deck in
-turn](studying.md#display-order).
-
-- With the [v2 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
-when a deck has subdecks, reviews are taken from all children decks
-at once. The review limit of the child decks is ignored - only the limit of the
-deck you clicked on applies.
-
-- With the [v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html)
-each child deck's limit is also enforced, and you do not need to see the cards 
-in deck order either. See the [deck options](deck-options.md#review-sort-order) section of the manual for more information.
-
-By default, for new cards, Anki fetches cards from the decks in
-alphabetical order. So in the above example, you would get cards first
-from “French”, then “My Textbook”, and finally “Vocab”. You can use this
-to control the order cards appear in, placing high priority cards in
-decks that appear higher in the list. When computers sort text
-alphabetically, the “-” character comes before alphabetical characters,
-and “\~” comes after them. So you could call the deck “-Vocab” to make
-them appear first, and you could call the other deck “\~My Textbook” to
-force it to appear after everything else.
-
-New cards and reviews are fetched separately, and Anki won’t wait until
-both queues are empty before moving on to the next deck, so it’s
-possible you’ll be exposed to new cards from one deck while seeing
-reviews from another deck, or vice versa. If you don’t want this, click
-directly on the deck you want to study instead of one of the parent
-decks.
-
-Since cards in learning are somewhat time-critical, they are fetched
-from all decks at once and shown in the order they are due.
-
-To control the order reviews from a given deck appear in, or change new
-cards from ordered to random order, please see the [deck
-options](deck-options.md). For more fine-grained ordering of new cards, you
-can change the order in the [browser](browsing.md).
-
-## Siblings and Burying
-
-Recall from [the basics](getting-started.md) that Anki can create more than one
-card for each thing you input, such as a front→back card and a
-back→front card, or two different cloze deletions from the same text.
-These related cards are called 'siblings'.
-
-When you answer a card that has siblings, Anki can prevent the card’s
-siblings from being shown in the same session by automatically 'burying'
-them. Buried cards are hidden from review until the clock rolls over to
-a new day or you manually unbury them using the “Unbury” button that’s
-visible at the bottom of the [deck overview](studying.md#study-overview) screen. Anki
-will bury siblings even if the siblings are not in the same deck (for
-instance, if you use the [deck override](templates/intro.md) feature).
-
-You can enable burying from the [deck options](deck-options.md) screen -
-there are separate settings for new cards and reviews.
-
-Anki will only bury siblings that are new or review cards. It will not
-hide cards in learning, as time is of the essence for those cards. On
-the other hand, when you study a learning card, any new/review siblings
-will be buried.
-
-Note: A card cannot be buried and suspended at the same time. Suspending a
-buried card will unbury it. Burying a suspended card does not work on Anki
-2.1.49+, whereas on earlier versions, it will unsuspend the card.
-
-## Keyboard Shortcuts
-
-Most of the common operations in Anki have keyboard shortcuts. Most of
-them are discoverable in the interface: menu items list their shortcuts
-next to them, and hovering the mouse cursor over a button will generally
-show its shortcut in a tooltip.
-
-When studying, either <kbd>Space</kbd> or <kbd>Enter</kbd> will show the answer. When the
-answer is shown, you can use <kbd>Space</kbd> or <kbd>Enter</kbd> to select the Good button.
-You can use the <kbd>1</kbd>-<kbd>4</kbd> keys to select a specific ease button. Many people
-find it convenient to answer most cards with <kbd>Space</kbd> and keep one finger
-on <kbd>1</kbd> for when they forget.
-
-The "Study Deck" item in the Tools menu allows you to quickly switch to
-a deck with the keyboard. You can trigger it with the '/' key. When
-opened, it will display all of your decks and show a filter area at the
-top. As you type characters, Anki will display only decks matching the
-characters you type. You can add a space to separate multiple search
-terms, and Anki will show only decks that match all the terms. So “ja 1”
-or “on1 ja” would both match a deck called “Japanese::Lesson1”.
-
-## Falling Behind
-
-If you fall behind in your reviews, Anki will prioritize cards that have
-been waiting the longest. It does this by taking the cards that have
-been waiting the longest and showing them to you in a random order up
-until your daily review limit. This ordering ensures that no cards will
-be left waiting indefinitely, but it means that if you introduce new
-cards, their reviews won’t appear until you’ve gotten through your
-backlog.
-
-If you wish to change the order of the overdue reviews, you can do so by
-creating a [filtered deck](filtered-decks.md).
-
-When you answer cards that have been waiting for a while, Anki factors
-in that delay when determining the next time a card should be shown.
-Please see the section on Anki’s spaced-repetition
-[algorithm](https://faqs.ankiweb.net/due-times-after-a-break.html) for more information.
+Lernkarten werden ebenfalls mit bis zu 5 Minuten Verzögerung angezeigt, damit
+sie nicht immer in derselben Reihenfolge erscheinen, allerdings wird das von den
+Bewertungsschaltflächen nicht berücksichtigt. Diese Funktion kann nicht abgeschaltet
+werden.
+
+## Bearbeiten und Sonstiges
+
+Du kannst auf die Schaltfläche **Bearbeiten** in der linken unteren Ecke klicken,
+um die aktuelle Notiz zu bearbeiten. Anschließend kannst du weiterlernen.
+Das Bearbeiten-Fenster funktioniert ganz ähnlich wie das [Hinzufügen-Fenster](editing.md).
+
+In der rechten unteren Ecke des Wiederholungsfenster befindet sich die Schaltfläche
+**Mehr**. Sie bietet einige weitere Funktionen für die aktuelle Karte oder Notiz:
+
+- [**Markieren**](editing.md#using-flags): Fügt der Karte eine farbige Markierung
+hinzu oder entfernt sie wieder. Diese Markierungen sind beim Lernen sichtbar und
+können zur Suche in der Kartenverwaltung verwendet werden. Das ist nützlich,
+wenn du mit der Karte zu einem späteren Zeitpunkt noch etwas machen möchtest,
+z.B. ein Wort nachschlagen, sobald du zuhause bist.
+Ab Anki 2.1.45+ kannst du den Markierungen von der [Kartenverwaltung](browsing.md)
+aus Namen geben.
+
+- **Karte / Notiz zurückstellen**: Verbirgt die Karte bzw. alle Karten der Notiz bis
+  zum nächsten Tag. (Wenn du Karten schon früher wieder sehen möchtest, kannst du
+  auf die Schaltfläche *Zurückstellen aufheben* in der
+  [Stapelübersicht](studying.md#study-overview) klicken.)
+  Das ist nützlich, wenn du die Karte gerade nicht beantworten kannst oder später
+  auf sie zurückkommen möchtest. Eine Zurückstellung kann auch
+  [automatisch](studying.md#siblings-and-burying) für Karten derselben Notiz erfolgen.
+
+    Mit dem alten Zeitplaner wurden zurückgestellte Lernkarten wieder als neue
+    oder Wiederholungskarten eingereiht.
+
+    Mit dem [Zeitplaner 2.1](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html)
+    werden die Lernstufen durch eine Zurückstellung hingegen nicht zurückgesetzt.
+
+- **Fälligkeitsdatum auswählen**: Macht die Karte zur Wiederholungskarte und
+  lässt sie [zu einem bestimmten Datum fällig](browsing.md#cards) werden.
+
+- **Karte / Notiz aussetzen**: Verbirgt die Karte bzw. alle Karten der Notiz bis
+  sie manuell wieder eingesetzt wird ("wieder einsetzen" in der Kartenverwaltung).
+  Das ist nützlich, wenn du die Karte erstmal nicht wiederholen, aber auch nicht
+  löschen möchtest.
+    Mit dem alten Zeitplaner wurden ausgesetzte Lernkarten wieder als neue
+    oder Wiederholungskarten eingereiht.
+
+    Mit dem [Zeitplaner 2.1](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html)
+    werden die Lernstufen durch eine Aussetzung hingegen nicht zurückgesetzt.
+
+- **Optionen**: Erlaubt die Bearbeitung der [Optionen](deck-options.md) des aktuellen
+  Stapels.
+
+- **Karteninformation**: Zeigt [statistische Daten](stats.md#card-info) zur Karte.
+
+- [**Notiz kennzeichnen**](editing.md#the-marked-tag): Fügt der Notiz das Schlagwort
+  *marked* ("markiert") hinzu, sodass sie leicht in der Kartenverwaltung
+  wiedergefunden werden kann. Das ist ähnlich, wie einzelnen Karten Flaggen zuzuweisen,
+  aber da es sich hier um ein Schlagwort handelt, werden bei einer Suche danach
+  alle Karten einer Notiz angezeigt. Für die meisten Benutzer sind Flaggen angemessener.
+
+- **Notiz löschen**: Löscht die Notiz und all ihre Karten.
+
+- **Erneut abspielen**: Spielt eventuell vorhandene Audiodateien auf der Vor- oder
+  Rückseite erneut ab.
+
+- **Audio anhalten**: Hält eine eventuell abspielende Audiodatei an.
+
+- **Audio -5s / +5s**: Springt in der abspielenden Audiodatei 5 Sekunden zurück bzw. vor.
+
+- **Eigene Stimme aufzeichnen**: Zeichnet den Ton deines Mikrofons auf, damit du
+  deine Aussprache prüfen kannst. Diese Aufnahme is temporär und verschwindet,
+  sobald du zur nächsten Karte übergehst. Wenn du einer Karte dauerhaft Ton
+  hinzufügen willst, kannst du das im Bearbeiten-Fenster machen.
+
+- **Aufnahme abspielen**: Spielt deine Aufnahme erneut ab. (Für gewöhnlich nach
+  Zeigen der Antwort.)
+
+## Anzeigereihenfolge
+
+Beim Lernen werden Karten des ausgewählten Stapels und aller enthaltenen Stapel
+angezeigt. Wenn du also den Stapel "Französisch" auswählst, werden auch die
+Stapel "Französisch::Vokabeln" und "Französisch::Mein Lehrbuch::Lektion 1" angezeigt.
+
+Wie Anki Karten aus den Stapeln entnimmt, hängt vom verwendeten Algorithmus ab:
+
+- Mit dem V1-Zeitplaner erscheinen die Karten
+  [der Reihe nach aus jedem Stapel](studying.md#display-order).
+
+- Mit dem [V2-Zeitplaner](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html)
+  werden aus allen Unterstapeln gleichzeitig Karten entnommen. Die Wiederholungsgrenzwerte
+  der Unterstapel werden ignoriert - nur der des ausgewählten Stapels wird
+  berücksichtigt.
+
+- Mit dem [V3-Zeitplaner](https://faqs.ankiweb.net/the-2021-scheduler.html)
+  werden die Grenzwerte der Unterstapel ebenfalls berücksichtigt und die Karten
+  müssen auch nicht in der Reihenfolge der Stapel angezeigt werden.
+  Siehe das Kapitel [Stapeloptionen](deck-options.md#review-sort-order) für
+  weitere Informationen.
+
+Standardmäßig entnimmt Anki neue Karten aus den Stapeln in alphabetischer Reihenfolge.
+Im obigen Beispiel würdest du also erst die Karten von "Französisch", dann die von
+"Französisch::Mein Lehrbuch" und schließlich die von "Französisch::Vokabeln" sehen.
+Das kannst du dir zunutze machen, um die Anzeigereihenfolge der Karten zu kontrollieren,
+indem du wichtige Karten in Stapeln ganz oben auf der Liste platzierst.
+Wenn Computer Text sortieren, kommt das Symbol "`-`" vor allen Buchstaben des
+Alphabets und das Symbol "`~`" danach. Du könntest den Stapel also "-Vokabeln"
+nennen, damit er zuerst erscheint, und den anderen Stapel "\~Mein Lehrbuch",
+damit er als allerletztes erscheint.
+
+Neue und Wiederholungskarten werden unabhängig entnommen und Anki wartet nicht,
+bis beides erschöpft ist, bevor es zum nächsten Stapel übergeht. Es kann also
+passieren, dass du neue Karten von einem Stapel und Wiederholungskarten von einem
+anderen siehst, oder umgekehrt. Wenn du das vermeiden willst, solltest du anstelle
+des Oberstapels direkt den Stapel, den du lernen möchtest, auswählen.
+
+Da Lernkarten in gewisser Weise zeitkritisch sind, werden sie aus allen Stapeln
+gleichzeitig entnommen und in der Reihenfolge ihrer Fälligkeit angezeigt.
+
+Um die Anzeigereihenfolge eines bestimmten Stapels zu beeinflussen oder neue
+Karten in zufälliger Reihenfolge erscheinen zu lassen, siehe bitte die
+[Stapeloptionen](deck-options.md). Für eine präzisere Anordnung neuer Karten kannst
+du ihre Reihenfolge in der [Kartenverwaltung](browsing.md) festlegen.
+
+## Geschwister und Zurückstellen
+
+Im Kapitel [Grundlagen](getting-started.md) haben wir gesehen, dass Anki für jeden
+Eingabenblock mehr als eine Karte erzeugen kann, z.B. eine Karte Vorderseite→Rückseite
+und eine Rückseite→Vorderseite oder zwei Lückentexte zum selben Text.
+Diese zusammengehörigen Karten heißen *Geschwister*. 
+
+Wenn du eine Karte mit Geschwistern beantwortest, kann Anki verhindern, dass diese
+Geschwister in derselben Lerneinheit gezeigt werden, in dem es sie automatisch
+zurückstellt. Zurückgestellte Karten sind von der Wiederholung ausgenommen, bis
+ein neuer Tag beginnt oder du sie mit der Option "Zurückstellen aufheben" am unteren
+Ende der Stapelübersicht zurückholst.
+Anki stellt sogar Geschwister zurück, die nicht im selben Stapel sind (z.B. weil
+du die Funktion [*Stapel überschreiben*](templates/intro.md) benutzt). 
+
+Du kannst das Zurückstellen von den [Stapeloptionen](deck-options.md) aus aktivieren.
+Es gibt getrennte Einstellungen für neue und Wiederholungskarten.
+
+Anki stellt nur neue und Wiederholungskarten zurück. Lernkarten sind nicht betroffen,
+da der zeitliche Abstand für sie entscheidend ist. Wenn du andererseits eine
+Lernkarte beantwortest, werden ihre Geschwister, die neue oder Wiederholungskarten
+sind, zurückgestellt.
+
+Anmerkung: Eine Karte kann nicht zugleich ausgesetzt und zurückgestellt sein.
+Das Aussetzen einer Karte hebt ihre Zurückstellung auf. Ausgesetzte Karten
+können in Anki 2.1.49+ nicht zurückgestellt werden, wohingegen es in früheren Versionen
+die Aussetzung aufhebt.
+
+## Tastenkombinationen
+
+Die meisten gebräuchlichen Funktionen in Anki haben Tastenkombinationen, die über
+die Benutzeroberfläche in Erfahrung gebracht werden können: Menüpunkte führen ihre
+Tastenkombinationen rechts neben sich auf und Schaltflächen offenbaren sie meistens,
+wenn die Maus über sie bewegt wird.
+
+Beim Lernen zeigen <kbd>Leertaste</kbd> oder <kbd>Enter</kbd> die Antwort.
+Anschließend können die Tasten <kbd>1</kbd> bis <kbd>4</kbd> benutzt werden,
+um eine bestimmte Bewertung zu wählen. Viele Benutzer finden es praktisch, die
+meisten Karten mit <kbd>Leertaste</kbd> zu bewerten und einen Finger auf <kbd>1</kbd>
+zu halten, für den Fall, dass sie eine Karte vergessen.
+
+Die Funktion *Stapel lernen* im Werkzeugmenü erlaubt es, schnell mit der Tastatur
+den Stapel zu wechseln. Du kannst sie mit der Taste <kbd>/</kbd> auslösen.
+Es werden alle deine Stapel und oben ein Filterbereich angezeigt. Während du tippst,
+begrenzt Anki die Anzeige auf passende Stapel. Mit einem Leerzeichen kannst
+du mehrere Suchbegriffen angeben, die alle zutreffen müssen.
+Zu "ja 1" und "on1 ja" würde beidem ein Stapel namens "Japanisch::Lektion1" passen.
+
+## Rückstände
+
+Wenn du mit deinen Wiederholungen in Verzug gerätst, priorisiert Anki die Karten,
+die schon am längsten gewartet haben, und zeigt sie in zufälliger Reihenfolge,
+bis dein täglicher Wiederholungsgrenzwert erreicht ist. Das garantiert, dass keine
+Karte für immer wartet, bedeutet aber auch, dass neue Karten, die du einführst,
+nicht wiederholt werden, bis du deinen Rückstand aufgeholt hast.
+
+Wenn du die Anzeigereihenfolge der überfälligen Wiederholungen ändern möchtest,
+kannst du zu diesem Zweck einen [Auswahlstapel](filtered-decks.md) erstellen.
+
+Wenn du überfällige Karten beantwortest, bezieht Anki die zusätzlich verstrichene
+Zeit bei der Berechnung, wann die Karte das nächste Mal gezeigt werden soll, mit
+ein. Siehe bitte den Abschnitt über Ankis
+[*Spaced-Repetition*-Algorithmus](https://faqs.ankiweb.net/due-times-after-a-break.html)
+für weitere Informationen.
