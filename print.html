@@ -412,6 +412,7 @@ Version benutzen. Um mit der Installation fortfahren zu können, benutz bitte
 ausgeben.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="startprobleme"><a class="header" href="#startprobleme">Startprobleme</a></h1>
 <ul>
+<li><a href="platform/windows/startup-issues.html#kein-fehler-aber-programm-erscheint-nicht">Kein Fehler, aber Programm erscheint nicht</a></li>
 <li><a href="platform/windows/startup-issues.html#windows-updates">Windows-Updates</a></li>
 <li><a href="platform/windows/startup-issues.html#windows-78">Windows 7/8</a></li>
 <li><a href="platform/windows/startup-issues.html#videotreiber">Videotreiber</a></li>
@@ -421,6 +422,17 @@ ausgeben.</p>
 <li><a href="platform/windows/startup-issues.html#mehrere-anki-installationen-nach-update">Mehrere Anki-Installationen nach Update</a></li>
 <li><a href="platform/windows/startup-issues.html#debuggen">Debuggen</a></li>
 <li><a href="platform/windows/startup-issues.html#wenn-alles-andere-versagt">Wenn alles andere versagt</a></li>
+</ul>
+<h2 id="kein-fehler-aber-programm-erscheint-nicht"><a class="header" href="#kein-fehler-aber-programm-erscheint-nicht">Kein Fehler, aber Programm erscheint nicht</a></h2>
+<p>In jüngerer Zeit gab es Berichte darüber, dass Anki nicht erscheint, ohne dass
+eine Fehlermeldung angezeigt wird. In dieser Situation kannst du eines der folgenden
+Dinge tun:</p>
+<ul>
+<li>Die neuste <a href="https://apps.ankiweb.net/downloads/beta/?C=N&amp;O=D">Windows-Qt6-Beta</a>
+installieren. (Bei Kompatibilitätsproblemen mit Erweiterungen, versuch Qt5.)</li>
+<li>Das <a href="https://forums.ankiweb.net/t/windows-update-broke-anki/1822/75">Dezimaltrennzeichen</a>
+ändern, wenn es kein Punkt ist.</li>
+<li>Die alte Anki-Version 2.1.35-alternate installieren.</li>
 </ul>
 <h2 id="windows-updates"><a class="header" href="#windows-updates">Windows-Updates</a></h2>
 <p>Wenn du Anki startest, erhältst du vielleicht eine solche Meldung:</p>
@@ -1026,6 +1038,11 @@ Erzeugt eine Karte mit &quot;Vorderseite&quot;→&quot;Rückseite&quot; und opti
 &quot;Gegenrichtung hinzufügen&quot;. Gibst du in dieses Feld Text ein, so wird die
 umgekehrte Karte erzeugt. Mehr Informationen finden sich im Abschnitt
 <a href="templates/intro.html">Kartenvorlagen</a>.</p>
+<p><strong>Einfach (Antwort eintippen)</strong><br />
+Fast wie einfach, hat aber einen Kasten auf der Vorderseite, in den du deine
+Antwort eingegeben kannst. Beim Anzeigen der Rückseite wird deine Eingabe überprüft
+und mit der Antwort verglichen. Weitere Informationen findest du im Abschnitt
+<a href="templates/fields.html#checking-your-answer">Deine Antwort überprüfen</a>.</p>
 <p><strong>Lückentext</strong><br />
 Erlaubt es, Text in einen Lückentext zu verwandeln. Zum Beispiel:
 &quot;Die Mondlandung geschah im Jahre [...].&quot; → &quot;Die Mondlandung geschah im Jahre
@@ -1658,7 +1675,9 @@ weshalb es ratsam ist, dir bereits im Vorhinein zu überlegen, wie du sie verwen
 Schlagwörter haben aber einen großen Vorteil: Eine Karte kann beliebig viele
 Schlagwörter beinhalten, sie kann jedoch nur zu einem Stapel gehören. Das macht
 Schlagwörter in den meisten Fällen zu einem wesentlich stärkeren und flexibleren
-Kategorisierungssystem als Unterstapel.</p>
+Kategorisierungssystem als Unterstapel.
+<a href="getting-started.html#decks">Genau wie Stapel</a>, kannst du Schlagwörter auch in einem
+Stammbaum anordnen.</p>
 <p>Statt einen Stapel namens &quot;Essensverben&quot; zu erstellen, könntest du diese Karten
 in deinen Hauptstapel für diese Sprache legen und ihnen die Schlagwörter &quot;Essen&quot;
 und &quot;Verb&quot; geben.
@@ -4133,7 +4152,7 @@ find notes that have a Front field, empty or not</p>
 find notes in a field starting with &quot;fr&quot;. Requires Anki 2.1.24+ or AnkiMobile 2.1.60+.</p>
 <h2 id="tags-decks-cards-and-notes"><a class="header" href="#tags-decks-cards-and-notes">Tags, decks, cards and notes</a></h2>
 <p><code>tag:animal</code><br />
-find notes with the tag &quot;animal&quot;</p>
+find notes with the tag &quot;animal&quot;, or subtags like &quot;animal::mammal&quot;</p>
 <p><code>tag:none</code><br />
 find notes with no tags</p>
 <p><code>tag:ani*</code><br />
@@ -5474,7 +5493,11 @@ deck's page.</p>
 location as before. If you shared a deck when it was called &quot;Korean
 Verbs&quot; for example, and then renamed it to &quot;Korean::Korean Verbs&quot;,
 resharing will not be able to update the existing copy. If you have
-forgotten the original name, please contact support.</p>
+forgotten the original name, you can guess it by downloading the
+deck on ankiweb and importing it (File &gt; Import) in a new profile
+(File &gt; Switch profile &gt; Add). Then you can copy the exact name of the
+deck when it was first shared. If this doesn't work, please contact 
+support.</p>
 <p>When you update a shared deck, users who downloaded the deck previously
 will not automatically receive updates. If they download the deck again
 and re-import it, newly added material will be imported without altering
