@@ -230,6 +230,12 @@ Erzeugt eine Karte mit "Vorderseite"→"Rückseite" und optional eine Karte mit
 umgekehrte Karte erzeugt. Mehr Informationen finden sich im Abschnitt
 [Kartenvorlagen](templates/intro.md).
 
+**Einfach (Antwort eintippen)**  
+Fast wie einfach, hat aber einen Kasten auf der Vorderseite, in den du deine
+Antwort eingegeben kannst. Beim Anzeigen der Rückseite wird deine Eingabe überprüft
+und mit der Antwort verglichen. Weitere Informationen findest du im Abschnitt
+[Deine Antwort überprüfen](templates/fields.md#checking-your-answer).
+
 **Lückentext**  
 Erlaubt es, Text in einen Lückentext zu verwandeln. Zum Beispiel:
 "Die Mondlandung geschah im Jahre \[...\]." → "Die Mondlandung geschah im Jahre

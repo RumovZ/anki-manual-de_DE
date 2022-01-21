@@ -2,6 +2,18 @@
 
 <!-- toc -->
 
+## Kein Fehler, aber Programm erscheint nicht
+
+In jüngerer Zeit gab es Berichte darüber, dass Anki nicht erscheint, ohne dass
+eine Fehlermeldung angezeigt wird. In dieser Situation kannst du eines der folgenden
+Dinge tun:
+
+- Die neuste [Windows-Qt6-Beta](https://apps.ankiweb.net/downloads/beta/?C=N&O=D)
+  installieren. (Bei Kompatibilitätsproblemen mit Erweiterungen, versuch Qt5.)
+- Das [Dezimaltrennzeichen](https://forums.ankiweb.net/t/windows-update-broke-anki/1822/75)
+  ändern, wenn es kein Punkt ist.
+- Die alte Anki-Version 2.1.35-alternate installieren.
+
 ## Windows-Updates
 
 Wenn du Anki startest, erhältst du vielleicht eine solche Meldung:

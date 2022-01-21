@@ -212,6 +212,8 @@ Schlagwörter haben aber einen großen Vorteil: Eine Karte kann beliebig viele
 Schlagwörter beinhalten, sie kann jedoch nur zu einem Stapel gehören. Das macht
 Schlagwörter in den meisten Fällen zu einem wesentlich stärkeren und flexibleren
 Kategorisierungssystem als Unterstapel.
+[Genau wie Stapel](getting-started.md#decks), kannst du Schlagwörter auch in einem
+Stammbaum anordnen.
 
 Statt einen Stapel namens "Essensverben" zu erstellen, könntest du diese Karten
 in deinen Hauptstapel für diese Sprache legen und ihnen die Schlagwörter "Essen"
