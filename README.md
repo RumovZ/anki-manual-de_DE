@@ -22,10 +22,20 @@ Contributions can be made in three ways.
     A simple PR will do, but please see [conventions](#conventions) below.
 
 3. **Incorporating updates from the official manual.**
-    To ensure synchronisation with the official manual, updates to it will be handled
-    by the maintainers, until a reasonable workflow has been decided on.
-    More extensive updates may be incorporated as-is (in English), and issues opened
-    for the new untranslated parts.
+    First, merge in the original manual (upstream):
+      ```sh
+      git fetch upstream
+      git merge upstream/main
+      ```
+    There will be merge conflicts with any already translated files that have
+    been updated in the original manual. The shown diff is usually not very helpful.
+    Instead we are interested in the diff between the current state of upstream
+    and the last merged in state (let's say we're on branch `local`):
+    ```sh
+    git diff local...upstream/main
+    ```
+    With that we can resolve the conflicts by updating the translation and discarding
+    the incoming changes.
 
 ## Conventions
 
