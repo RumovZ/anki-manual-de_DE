@@ -1,304 +1,315 @@
-# Browsing
+# Kartenverwaltung
 
 <!-- toc -->
 
-The Browse window allows you to search through your cards and notes, and edit
-them. It is opened by clicking **Browse** in the main window, or by pressing
-<kbd>B</kbd>. It is comprised of three sections: the _sidebar_ on the
-left, the _card/note table_ on the top right, and the _editing area_ on the bottom
-right. By positioning the mouse between two sections, it is possible to click
-and drag to expand one section and shrink the other.
+Mit der Kartenverwaltung kannst du in deinen Karten und Notizen stöbern und sie
+bearbeiten. Du öffnest sie, indem du im Hauptfenster auf *Kartenverwaltung* klickst
+oder <kbd>B</kbd> drückst. Sie besteht aus drei Bereichen: der Seitenleiste links,
+der Karten- bzw. Notiztabelle oben rechts und dem Bearbeitungsbereich unten rechts.
+Du kannst einen Bereich vergrößern und einen anderen verkleinern, indem du auf
+den Bereich dazwischen klickst und ziehst.
 
-## Table Modes
+## Tabellenmodi
 
-Anki 2.1.45+ offers two modes: either cards or notes are shown in the data table.
-You can change the current mode by clicking the switch at the top, to the left
-of the search area, or pressing <kbd>Alt</kbd>+<kbd>T</kbd>. The switch also
-indicates if **C**ards or **N**otes are currently shown.
+Anki 2.1.45+ bietet zwei Modi: Entwerden werden Karten oder Notizen in der Tabelle
+angezeigt. Du kannst den aktuellen Modus ändern, indem du den Schalter oben, links
+neben dem Suchbereich anklickst oder <kbd>Alt</kbd>+<kbd>T</kbd> drückst.
+Der Schalter gibt auch Auskunft darüber, ob gerade **K**arten oder **N**otizen
+angezeigt werden.
 
-**Note**: For the sake of simplicity, this manual generally assumes the Cards
-mode to be the active one. Whenever selecting/finding/etc. "cards" is mentioned,
-the reader may substitute it for "cards or notes depending on the active mode".
+**Anmerkung**: Der Einfachheit halber wird in diesem Leitfaden meistens angenommen,
+dass der Kartenmodus aktiv ist. Wenn davon die Rede ist, Karten auszuwählen, zu
+finden usw., gilt das dementsprechend auch für Notizen, wenn der Notizmodus
+aktiv ist.
 
-## Sidebar
+## Seitenleiste
 
-The _sidebar_ on the left allows quick access to common search terms. On Anki
-2.1.45+, it also provides a searchbar, facilities to edit tags and decks, and a
-choice of two different tools, which are discussed in the following sections.
-You can switch tools using the toolbar at the top of the sidebar or the shortcuts
-<kbd>Alt</kbd>+<kbd>1</kbd>/<kbd>2</kbd>.
+Die Seitenleiste links gewährt schnellen Zugriff auf gebräuchliche Suchbegriffe.
+In Anki 2.1.45+ bietet sie auch eine Suchleiste, Funktionen, um Schlagwörter und
+Stapel zu bearbeiten, und eine Auswahl von zwei Werkzeugen, die in den nächsten
+Abschnitten erklärt werden. Du kannst zwsichen den Werkzeugen mit der Werkzeugleiste
+oben in der Seitenleiste oder mit den Tastenkombinationen
+<kbd>Alt</kbd>+<kbd>1</kbd>/<kbd>2</kbd> wechseln.
 
-### Search Tool
+### Suchwerkzeug
 
-With this tool, the sidebar behaves as in previous versions: Clicking on an item
-will search for it.
+Mit diesem Werkzeug verhält sich die Leistenleiste wie in früheren Versionen:
+Auf einen Eintrag zu klicken, löst eine Suche danach aus.
 
-You can hold down <kbd>Ctrl</kbd> (<kbd>Command</kbd> on Mac) while clicking in
-order to append the clicked item to the current search with an AND condition,
-instead of starting a new search. If you wanted to show _learning_ cards that were
-also in the German deck for instance, you could click on "Learning",
-then <kbd>Ctrl</kbd>-click on "German".
+Du kannst <kbd>Strg</kbd> (<kbd>Befehl</kbd> auf dem Mac) gedrückt halten, um
+den angeklickten Eintrag mit einer *AND*-Bedingung ("und") an die aktuelle Suche
+anzuhängen, anstatt eine neue zu starten. Wenn du z.B. Lernkarten sehen wolltest,
+die sich außerdem im Englisch-Stapel befinden, könntest du auf *Lernen* klicken
+und dann auf *Englisch* <kbd>Strg</kbd>-klicken.
 
-You can hold down <kbd>Shift</kbd> to create an OR search instead of an AND. For
-example, you could click one deck, then <kbd>Shift</kbd>-click another to show
-cards from either of the decks in the same view.
+Du kannst die <kbd>Umschalttaste</kbd> gedrückt halten, um eine *OR*- ("oder") statt
+eine *AND*-Suche zu erzeugen. Indem du mehrere Stapel mit <kbd>Umschalttaste</kbd>
+anklickst, kannst du so alle Karten gleichzeitig anzeigen lassen, die sich in einem
+dieser Stapel befinden.
 
-You can hold down <kbd>Alt</kbd> (<kbd>Option</kbd> on Mac) in order to reverse the
-search (prepend a `-`): for example, to show all cards in a current deck that
-do _not_ have a certain tag. <kbd>Alt</kbd>/<kbd>Option</kbd> can be combined with
-either <kbd>Ctrl</kbd> or <kbd>Shift</kbd> (e.g. clicking with <kbd>Ctrl</kbd>+<kbd>Alt</kbd>
-will result in adding a new search term that is negated).
+Du kannst <kbd>Alt</kbd> (<kbd>Wahl</kbd> auf dem Mac) gedrückt halten, um
+die Suche umzukehren (`-` voranzustellen), z.B. um alle Karten anzuzeigen, die
+ein bestimmtes Schlagwort *nicht* haben. <kbd>Alt</kbd> / <kbd>Wahl</kbd> können
+mit <kbd>Strg</kbd> oder <kbd>Umschalttaste</kbd> kombiniert werden. So wird
+das Klicken mit <kbd>Strg</kbd>+<kbd>Alt</kbd> einen negierten Ausdruck an die
+Suche anhängen.
 
-On Anki 2.1.39+, you can also hold down both <kbd>Ctrl</kbd> and
-<kbd>Shift</kbd> together when clicking a search term to replace all occurrences of the
-same kind of search with the new one.
-Let's say you had previously typed in a complicated search expression like
-`deck:Swahili (is:due or tag:important)`
-and now want to perform the same search for your Urdu deck. You can hold down
-<kbd>Ctrl</kbd>+<kbd>Shift</kbd> while clicking the Urdu deck in the sidebar to obtain the
-following search expression:
-`deck:Urdu (is:due or tag:important)`.
+In Anki 2.1.39+ kannst du auch <kbd>Strg</kbd> und <kbd>Umschalttaste</kbd>
+gedrückt halten, um alle Suchausdrücke derselben Art mit dem neuen zu ersetzen.
+Angenommen, du hast eine komplexe Suche wie `deck:Swahili (is:due or tag:wichtig)`
+eingegeben und möchtest dieselbe Suche nun für deinen Urdu-Stapel durchführen.
+Du kannst <kbd>Strg</kbd>+<kbd>Umschalttaste</kbd> gedrückt halten, während du
+auf den Urdu-Stapel in der Seitenleiste klickst, um die folgende Suche zu erhalten:
+`deck:Urdu (is:due or tag:wichtig)`.
 
-### Selection Tool
+### Auswahlwerkzeug
 
-The Selection tool allows for selecting multiple items at the same time by holding down <kbd>Ctrl</kbd>
-or <kbd>Shift</kbd> while clicking. It also enables drag-and-drop to reorder decks and
-tags.
+Das Auswahlwerkzeug ermöglicht es, mehrere Einträge gleichzeitig auszuwählen,
+indem beim Klicken <kbd>Strg</kbd> oder <kbd>Umschalttaste</kbd> gedrückt wird.
+Es unterstützt auch *Drag-and-drop* ("Ziehen und Ablegen"), um Stapel und Schlagwörter
+neu anzuordnen.
 
-Here is an example: Say you have the tags `Math`, `Calculus`, and `Algebra`.
-Click on the `Calculus` tag, then <kbd>Ctrl</kbd>-click on the `Algebra` tag. Now both
-tags are selected, click and drag any of the two onto the `Math` tag to make them
-both children of this tag. Behind the scene, Anki has renamed the two tags to
-`Math::Calculus` and `Math::Algebra` respectively and updated your notes accordingly.
+Dazu ein Beispiel: Angenommen, du hast die Schlagwörter `Mathe`, `Analysis` und
+`Algebra`. Klick das Schlagwort `Analysis` und dann mit <kbd>Strg</kbd> `Algebra`
+an. Nun sind beide ausgewählt und du kannst eines von beiden anklicken und auf
+`Mathe` ziehen, um beide zu Kindern von diesem Schlagwort zu machen.
+Hinter den Kulissen hat Anki die beiden Schlagwörter zu `Mathe::Analysis` bzw.
+`Mathe::Algebra` umbenannt und deine Notizen entsprechend aktualisiert.
 
-Another use case for selecting multiple items is searching: If you right-click on
-a selection of items, you can choose **Search &gt; All/Any Selected**. This
-can be combined with keyboard modifiers as described in [Search Tool](#search-tool)
-to append the resulting search to the current search.
+Auch beim Suchen ist die Auswahl mehrerer Einträge nützlich: Wenn du eine Auswahl
+rechtsklickst, gibt es die Optionen *Suchen &gt; Alle ausgewählten / Eins der ausgewählten*.
+Das kann mit den verschiedenen Umschalttasten wie im Abschnitt [Suchwerkzeug](#search-tool)
+beschrieben kombiniert werden, um das Ergebnis an die aktuelle Suche anzuhängen.
 
-### Saved Searches
+### Gespeicherte Suchen
 
-If you regularly search for the same thing,
-you can save the current search by right-clicking the topmost item in the sidebar,
-choosing “Save Current Search” and typing in a name.
-You can also drag and drop any sidebar item onto this area to add an equivalent
-saved search, effectively pinning it at the top.
+Wenn du oft nach demselben suchst, kansnt du deine aktuelle Suche speichern, indem
+du den obersten Eintrag in der Seitenleiste rechtsklickst, "Aktuelle Suche speichern"
+auswählst und einen Namen eingibst.
 
-### Editing Items
+### Einträge bearbeiten
 
-You can delete or rename tags, decks, and saved searches directly from the sidebar,
-from the right-click menu, or by using a shortcut key (<kbd>Del</kbd> and
-<kbd>F2</kbd> on Windows). Deletion even works for multiple items at once
-(see [Selection Tool](#selection-tool)).
+Du kannst Schlagwörter, Stapel und gespeicherte Suchen direkt von der Seitenleiste
+aus entfernen oder umbenennen. Das geht vom Rechtsklickmenü aus oder unter
+Benutzung der jeweiligen Taste (in Windows <kbd>Entf</kbd> bzw. <kbd>F2</kbd>).
+Es können sogar mehrere Einträge gleichzeitig gelöscht werden (siehe
+[Auswahlwerkzeug](#selection-tool)).
 
-### Finding Items
+### Einträge finden
 
-To find a certain item in the sidebar tree, type part of its name into the searchbar
-at the top to temporarily hide all items not matching the search.
+Um einen bestimmten Eintrag im Seitenleistenbaum zu finden, kannst du einen Teil
+seines Namens oben in die Suchleiste eingeben, wodurch unpassende Einträge zeitweise
+ausgeblendet werden.
 
-## Search Box
+## Suchleiste
 
-Above the card list is a search box. You can type in various things
-there to search for cards. For information on the search syntax,
-see [Searching](searching.md).
+Über der Kartentabelle befindet sich eine Suchleiste, in die du Verschiedenes
+eingeben kannst, um nach Karten zu suchen. Für weitere Informationen zur Syntax
+siehe bitte das Kapitel [Suchen](searching.md).
 
-## Card/Note Table
+## Karten-/Notiz-Tabelle
 
-The table's rows represent cards or notes that match the current search.
-When you click on a row, the corresponding note will be shown in the bottom section.
+Die Reihen der Tabelle zeigen Karten oder Notizen, die zur aktuellen Suche passen.
+Wenn du eine Reihe anklickst, wird die dazugehörige Notiz im Bereich darunter
+angezeigt.
 
-### Rows
+### Reihen
 
-If you drag the mouse or hold <kbd>Ctrl</kbd> or <kbd>Command</kbd> to select multiple
-rows, the editor will be temporarily hidden. Various operations (such as
-changing the deck) can operate on multiple cards or notes at once, independent
-of the active mode. Therefore in Cards mode, a note is considered to be selected
-if any of its cards is selected, and in Notes mode, a card is considered to be selected
-if its note is selected.
+Wenn du mit der Maus ziehst oder <kbd>Strg</kbd> bzw. <kbd>Command</kbd> benutzt,
+um mehrere Reihen auszuwählen, wird der Bearbeitungsbereich ausgeblendet.
+Verschiedene Funktionen (wie das Ändern des Stapels) können für mehrere Karten
+oder Notizen gleichzeitig ausgeführt werden, unabhängig vom aktuellen Modus.
+Dafür gilt im Kartenmodus eine Notiz als ausgewählt, wenn eine ihrer Karten
+ausgewählt ist, und im Notizmodus gilt eine Karte als ausgewählt, wenn ihre
+Notiz ausgewählt ist.
 
-Other operations (like showing card information) only operate on a single card
-or note. This is called the _current_ card or note, which is usually the one that
-was last selected or clicked.
-In Cards Mode, again, the current note is the note of the current card and in Notes
-mode, the current card is the first card of the current note.
+Andere Funktionen (wie das Zeigen der Kartenstatisik) werden nur für eine einzelne
+Karte oder Notiz ausgeführt. Diese wird als *aktuelle* Karte bzw. Notiz bezeichnet
+und ist im Normalfall die zuletzt ausgewählte oder angeklickte.
+Im Kartenmodus ist die aktuelle Notiz wieder die der aktuellen Karte und im
+Notizmodus ist die aktuelle Karte die erste Karte der aktuellen Notiz.
 
-The background colour will change depending on the card and note. In Cards mode,
-the first match will be used:
+Die Hintergrundfarbe hängt von Karte und Notiz ab. Im Kartenmodus gelten folgende
+Regeln (nach Priorität):
 
-1. if the card is flagged, use the flag colour,
-2. if the card is suspended, yellow,
-3. if the card's note is marked, purple.
+1. Die Farbe der Kartenmarkierung, falls vorhanden.
+2. Gelb, falls die Karte ausgesetzt ist.
+3. Lila, falls die Karte zurückgestellt ist.
 
-In Notes mode, colour is only applied to marked notes.  
-For more information about marked notes and suspended cards, see [Editing and
-More](studying.md#editing-and-more).
+Im Notizmodus werden nur [gekennzeichnete](editing.md#das-schlagwort-marked)
+Notizen farbig hinterlegt. Für weitere Informationen über gekennzeichnete Notizen
+und ausgesetzte Karten, siehe den Abschnitt
+[Bearbeiten und Sonstiges](studying.md#bearbeiten-und-sonstiges).
 
-### Columns
+### Spalten
 
-The columns are configurable: right click on one (or <kbd>Ctrl</kbd>-click on a
-Mac) to choose which columns you'd like to see.
-You can drag columns to reorder them. Clicking on a column will sort by that column;
-click again to reverse the sort order. Note that you cannot sort by the Question
-and Answer columns.
+Du kannst festlegen, welche Spalten angezeigt werden sollen, indem du einen
+Spaltenkopf rechtsklickst (auf einem Mac mit <kbd>Strg</kbd> anklickst).
+Durch Ziehen mit der Maus kannst du die Reihenfolge festlegen. Durch Klicken
+auf einen Spaltenkopf kannst du nach der jeweiligen Spalte sortieren lassen,
+ein weitere Klick kehrt die Reihenfolge um.
+Du kannst allerdings nicht nach den Spalten Frage oder Antwort sortieren lassen.
 
-All columns are available for both [Cards and Notes mode](#table-modes)
-but sometimes with slightly different names and data. The following table lists
-the behaviours for both modes.
+Alle Spalten sind sowohl im [Karten- als auch im Notizmodus](#table-modes) verfügbar,
+jedoch manchmal mit leicht unterschiedlichen Namen oder Daten. Die folgende Tabelle
+listet das Verhalten in beiden Modi auf:
 
 <!-- prettier-ignore -->
-| Column | Cards mode | Notes mode |
+| Spalte | Kartenmodus | Notizmodus |
 |-|-|-|
-| Answer | The back side of the card in one line with the question stripped. You can also choose a [custom format](templates/styling.md#browser-appearance) in the card type editor instead. | The same as in Cards mode, only for the first card of the note. |
-| Card(s) | The name of the card's template. | The number of cards the note has. |
-| Card Modified | The last time changes were made to the card (e.g. when you reviewed the card and the review history and interval were updated). | The last time changes were made to one of the note's cards. |
-| Created | The same as in Notes mode for the card's note. | The date the note was created. |
-| Deck | The name of the deck the card is in. | The number of different decks the note's cards are in, or the deck name if all cards are in the same deck. |
-| Due | The due date for cards in review or (re)learning, and the position in the new card queue for new cards. The line is wrapped in brackets if the card is suspended or buried. Sorting is done by type and only then by date or position. | The due date for the note's next due review or (re)learning card that is not suspended, buried or in a filtered deck. |
-| (Avg.) Ease | The card's ease if it is not new. | The average ease for the note's cards that are not new. |
-| (Avg.) Interval | The card's interval if the card is in review or relearning. | The average interval for the note's cards that are in review or relearning. |
-| Lapses | How often the card was rated “Again”. | The total lapses for all cards of the note. |
-| Note | The same as in Notes mode for the card's note. | The name of the note's notetype. |
-| Note Modified | The same as in Notes mode for the card's note. | The last time the note (e.g. the content of a field) was edited. |
-| Question | The front side of the card in one line. You can also choose a [custom format](templates/styling.md#browser-appearance) in the card type editor instead. | The same as in Cards mode, only for the first card of the note. |
-| Reviews | How often the card has been reviewed. | The total review count for all cards of the note. |
-| Sort Field | The same as in Notes mode for the card's note. | The content of the note's field that is defined as the notetype's sort field. Only this one field can be displayed and sorted by. You can change the sort field by clicking **Fields...** in the editing area. |
-| Tags | The same as in Notes mode for the card's note. | The note's tags. |
+| Antwort | Die Kartenrückseite ohne die Frage als Einzeiler. Im Kartentypeneditor kann ein [alternatives Format](templates/styling.md#browser-appearance) festgelegt werden. | Wie im Kartenmodus für die erste Karte der Notiz. |
+| Karte(n) | Der Name der Kartenvorlage. | Die Anzahl der Karten der Notiz. |
+| Karte verändert | Das letzte Mal, dass an der Karte Änderungen vorgenommen wurden (z.B. wenn du die Karte wiederholt hast und die Kartenhistorie aktualisiert wurde). | Das letzte Mal, dass an einer der Karten der Notiz Änderungen vorgenommen wurden. |
+| Erstellt | Wie im Notizmodus für die Notiz der Karte. | Wann die Notiz erstellt wurde. |
+| Stapel | Der Name des Stapels, in dem sich die Karte befindet. | Die Anzahl verschiedener Stapel, die Karten der Notiz enthalten, oder der Name des Stapels, wenn sich alle Karten im selben befinden. |
+| Fällig | Das Fälligkeitsdatum für Wiederholungs- und Wiedererlernungskarten und für neue Karten die Position in der Schlange ebendieser Karten. Die Zeile ist eingeklammert, wenn die Karte ausgesetzt oder zurückgestellt ist. Sortiert wird zuerst nach Typ und erst dann nach Datum oder Position. | Das Fälligkeitsdatum für die nächste fällige Wiederholungs- oder Wiedererlernungskarten der Notiz, die nicht ausgesetzt, zurückgestellt oder in einem Auswahlstapel ist. |
+| (Durchschn.) Leichtigkeit | Die Leichtigkeit der Karte, sofern sie nicht neu ist. | Die durchschnittliche Leichtigkeit der nicht neuen Karten der Notiz. |
+| (Durchschn.) Intervall | Das Intervall, sofern es sich um eine Wiederholungs- oder Wiedererlernungskarte handelt. | Das durchschnittliche Intervall de Wiederholungs- und Wiedererlernungskarten der Notiz. |
+| Fehlschläge | Wie oft die Karte mit "Nochmal" bewertet wurde. | Die Summe aller Fehlschläge von Karten der Notiz. |
+| Notiz | Wie im Notizmodus für die Notiz der Karte. | Der Name des Notiztyps der Notiz. |
+| Notiz verändert | Wie im Notizmodus für die Notiz der Karte. | Wann die Notiz (z.B. der Inhalt eines Felds) zuletzt bearbeitet wurde. |
+| Frage | Die Vorderseite der Karte als Einzeiler. Im Kartentypeneditor kann ein [alternatives Format](templates/styling.md#browser-appearance) festgelegt werden. | Wie im Kartenmodus für die erste Karte der Notiz. |
+| Wiederholungen | Wie oft die Karte wiederholt wurde. | Die Summe aller Wiederholungen von Karten der Notiz. |
+| Sortierfeld | Wie im Notizmodus für die Notiz der Karte. | Der Inhalt desjenigen Felds der Notiz, das im Notiztyp als Sortierfeld festgelegt wurde. Nur dieses Feld kann angezeigt und für die Sortierung genutzt werden. Du kannst das Sortierfeld ändern, indem du im Bearbeitungsbereich auf *Felder* klickst. |
+| Schlagwörter | Wie im Notizmodus für die Notiz der Karte. | Die Schlagwörter der Notiz. |
 
-## Editing Area
+## Bearbeitungsbereich
 
-The bottom right area displays the note of the currently selected row. For
-more information about cards and notes, see [Getting Started](getting-started.md).
-For more information on formatting buttons, see [Editing](editing.md).
+Der Bereich unten rechts zeigt die aktuell ausgewählte Notiz an. Für mehr
+Informationen zu Karten und Notizen, siehe [Loslegen](getting-started.md).
+Für mehr Informationen zu Bearbeitungsschaltflächen, siehe [Bearbeiten](editing.md).
 
-You can see a preview of what the currently selected card would look
-like when reviewing by clicking the **Preview** button at the top of the editing area.
-Note that this will not display any type-the-answer fields on your
-cards, which makes it easier to preview the cards quickly.
-In Notes mode, the preview is shown for the first card of the selected note.
+Du kannst auf *Vorschau* oben im Bearbeitungsbereich klicken, um zu sehen, wie
+die aktuell ausgewählte Karte beim Lernen aussehen würde. Es werden allerdings
+keine Antwort-Eingeben-Felder angezeigt, wodurch du die Karten leichter schnell
+durchschauen kannst.
+Im Notizmodus wird die erste Karte der aktuellen Notiz angezeigt.
 
-## Menus and Actions
+## Menüs und Aktionen
 
-At the top of the browser window, you find a toolbar with various menus which in
-turn offer various actions that can be performed in the browser.
+Am oberen Rand des Kartenverwaltungsfensters findest du eine Werkzeugleiste mit
+verschiedenen Menüs, die wiederum verschiedene Aktionen bieten.
 
-### Edit
-
-<!-- prettier-ignore -->
-| Name | Action |
-|-|-|
-| Undo | Revert the most recently performed operation. |
-| Select All | Select all rows displayed. |
-| Select Notes | Show only the currently selected notes and select all rows.  |
-| Invert Selection | Select those rows not selected, and deselect the currently selected rows. |
-| Create Filtered Deck | Show the [filtered deck](filtered-decks.md#creating-manually) dialog and set the current browser search as a filter. Use <kbd>Alt</kbd> / <kbd>Option</kbd> to set the second filter instead (requires scheduler version 2+). |
-
-### Notes
-
-Most of the following actions operate on the selected notes. They are also available through
-a context menu when a selected row is right-clicked in Notes mode. In Cards mode,
-they can be found in a submenu of the context menu.
+### Bearbeiten
 
 <!-- prettier-ignore -->
-| Name | Action |
+| Name | Aktion |
 |-|-|
-| Add Notes | Open the [Add](editing.md#adding-cards-and-notes) dialog. |
-| Export Notes | Open the [Export](exporting.md) dialog. |
-| Add Tags | Add provided tags to all selected notes. |
-| Remove Tags | Enter tags and remove them from all selected notes. |
-| Clear Unused Tags | Remove all tags from the sidebar that are not used by any notes. |
-| Toggle Mark | If the current note is marked (i.e., has the *Marked* tag), unmark all selected notes. If the current is not marked, mark all selected notes. |
-| Change Notetype | Convert the selected notes from one type to another. For example, imagine you have a *Russian* notetype and a *Computer* notetype, and you accidentally added some computer-related text into a *Russian* note. You can use this option to fix that mistake. The scheduling of cards is not affected. Changing the type of a note requires a one-way sync. |
-| Find Duplicates | Open the [Duplicates](#finding-duplicates) dialog. |
-| Find and Replace | Open the [Find and Replace](#find-and-replace) dialog. |
-| Manage Notetypes | Open the [Notetypes](editing.md#adding-a-note-type) dialog. |
-| Delete | Delete all selected notes and their cards. It is not possible to remove individual cards, as individual cards are controlled by the [templates](templates/intro.md). |
+| Rückgängig machen | Macht die zuletzt ausgeführte Operation rückgängig. |
+| Alle auswählen | Wählt alle angezeigten Reihen aus. |
+| Notizen auswählen | Lässt nur die ausgewählten Notizen anzeigen und wählt sie aus.  |
+| Auswahl umkehren | Wählt nicht ausgewählte Reihen aus und hebt die Auswahl ausgewählter Reihen auf. |
+| Auswahlstapel erstellen | Zeigt das [Auswahlstapel-Fenster](filtered-decks.md#creating-manually) an und setzt die aktuelle Kartenverwaltungssuche als Filter. Mit <kbd>Alt</kbd> / <kbd>Option</kbd> wird stattdessen der zweite Filter gesetzt (benötigt Zeitplanerversion 2+). |
 
-### Cards
+### Notizen
 
-The following actions operate on the currently selected cards. They are also available through
-a context menu when a selected row is rightclicked in Cards mode. In Notes mode,
-they can be found in a submenu of the context menu.
+Die meisten der folgenden Aktionen operieren auf den ausgewählten Notizen. Sie
+stehen auch über ein Kontextmenü zur Verfügung, wenn eine ausgewählte Reihe im
+Notizmodus mit rechts angeklickt wird. Im Kartenmodus sind sie in einem Untermenü
+des Kontextmenüs zu finden.
 
 <!-- prettier-ignore -->
-| Name | Action |
+| Name | Aktion |
 |-|-|
-| Change Deck | Move currently selected cards to a different deck. |
-| Set Due Date | Turn cards into review cards, and make them due on a certain date. This can be useful for moving cards forward or back a few days when your study schedule is interrupted. Entering a range like `60-90` will make the selected cards due between 60 and 90 days from now. New cards will have their interval set to the same delay, but reviews will be rescheduled without changing their current interval, unless '!' is included at the end of the range.
-| Forget | Move currently selected cards to the end of the new queue. The existing review history is preserved. |
-| Reposition | Change the order new cards will appear in. You can find out the existing positions by enabling the _due_ column, as described in the [table](#cardnote-table) section above. If you run the reposition command when multiple cards are selected, it will apply increasing numbers to each card in turn. By default the number increases by one for each card, but this can be adjusted by changing the "step" setting. The **Shift position of existing cards** option allows you to insert cards between currently existing ones, pushing the currently existing ones apart. For instance, if you have five cards and you want to move 3, 4, and 5 between 1 and 2, selecting this setting would cause the cards to end up in the order 1, 3, 4, 5, 2. By contrast, if you turn this option off, 1 and 2 will get the same position number (and it will thus be unpredictable which of the cards with the same number comes up first). Please note that when enabled, any card with a higher position will be modified, and all of those changed cards will need to be sent the next time you sync. |
-| Toggle Suspend | [Suspend](studying.md#editing-and-more) or unsuspend all selected cards, depending on whether the current card is suspended or not. |
-| Flag | Toggle the flags of all selected cards. Whether a flag is added or removed depends on whether the current card has the chosen flag. |
-| Info | Show various information about the current card, including its review history. For more information, see [Card Info](stats.md#card-info). |
+| Notiz hinzufügen | Öffnet das [Hinzufügen-Fenster](editing.md#adding-cards-and-notes). |
+| Notizen exportieren | Öffnet das [Export-Fenster](exporting.md). |
+| Schlagwörter hinzufügen | Fügt die angegebenen Schlagwörter allen ausgewählten Notizen hinzu. |
+| Schlagwörter entfernen | Entfernt die angegebenen Schlagwörter von allen ausgewählten Notizen. |
+| Verwaiste Schlagwörter löschen | Entfernt alle Schlagwörter von der Seitenleiste, die von keiner Notiz benutzt werden. |
+| Kennzeichnung umschalten | Entfernt die Kennzeichnung von allen ausgewählten Notizen, wenn die aktuelle Notiz gekennzeichnet ist (d.h. das Schlagwort *Marked* hat). Kennzeichnet die Notizen andernfalls. |
+| Notitzyp ändern | Konvertiert die ausgewählten Notizen von einem Typ zum andern. Z.B. angenommen, du hast die Notiztypen *Russich* und *Computer* und hast aus Versehen *Computer*-Stoff als *Russich*-Notiz hinzugefügt. Mit dieser Aktion kannst du den Fehler beheben. Die Zeitplanung der Karten wird nicht beeinflusst. Eine Änderung des Notitzyps erfordert eine einseitige Synchroniserung. |
+| Duplikate finden | Öffnet das [Duplikate-Fenster](#finding-duplicates). |
+| Suchen und ersetzen | Öffnet das [Finden-und-ersetzen-Fenster](#find-and-replace). |
+| Notiztypen verwalten | Öffnet das [Notiztyp-Fenster](editing.md#adding-a-note-type). |
+| Löschen | Löscht alle ausgewählten Notizen und deren Karten. Es nicht möglich, einzelne Karten zu löschen, da deren Existenz durch die [Kartenvorlagen](templates/intro.md) bestimmt wird. |
 
-### Go
+### Karten
 
-This menu exists to provide keyboard shortcuts to jump to various
-parts of the browser, and to go up and down the card list.
+Die meisten der folgenden Aktionen operieren auf den ausgewählten Karten. Sie
+stehen auch über ein Kontextmenü zur Verfügung, wenn eine ausgewählte Reihe im
+Kartenmodus mit rechts angeklickt wird. Im Notizmodus sind sie in einem Untermenü
+des Kontextmenüs zu finden.
 
-## Find and Replace
+<!-- prettier-ignore -->
+| Name | Aktion |
+|-|-|
+| Stapel wechseln | Verschiebt die aktuell ausgewählten Karten in einen anderen Stapel. |
+| Fälligkeitsdatum bestimmen | Macht Karten zu Wiederholungskarten und lässt sie zu einem bestimmten Datum fällig werden. Das kann hilfreich sein, um Karten ein paar Tage vor- oder nach hinten zu verlegen, wenn dein Lernrhythmus unterbrochen wurde. Ein Bereich wie `60-90` lässt die Karten in 60 bis 90 Tagen vom aktuellen Tag an fällig werden. Neue Karten erhalten auch ein dementsprechendes Intervall, wohingegen Wiederholungskarten ohne Änderung des Intervalls neu geplant werden, es sei denn es wurde ein `!` angehängt.
+| Vergessen | Platziert die ausgewählten Karten am Ende der Schlange der neuer Karten. Die Wiederholungshistorie wird beibehalten. |
+| Position ändern | Ändert die Reihenfolge, in der neue Karten erscheinen. Die aktuelle Position lässt sich durch Aktivieren der Spalte *Fällig* ermitteln, siehe dazu den Abschnitt über die [Tabelle](#cardnote-table). Wenn du diese Funktion ausführst, während mehrere Karten ausgewählt sind, werden diesen der Reihe nach aufsteigende Nummern zugewiesen. Standardmäßig steigt die Nummer mit jeder Karte um 1, aber das lässt sich mit der Einstellung *Schrittweite* anpassen. Die Option *Position existierender Karten verschieben* ermöglicht die Positionierung zwischen existierenden Karten, wodurch jene auseinander geschoben werden. Wenn du z.B. fünf Karten hast und 3, 4 und 5 zwischen 1 und 2 verschieben möchtest, werden die Karten mit dieser Option in die Reihenfolge 1, 3, 4, 5, 2 gebracht. Im Gegensatz dazu erhalten 1 und 2 ohne diese Option dieselbe Positionsnummer (womit unvorhersehbar ist, welche dieser beiden Karten zuerst erscheinen wird). Bitte beachte, dass mit dieser Option jede Karte mit einer höheren Position verändert wird und all diese Karten bei der nächsten Synchroniserung gesendet werden müssen. |
+| Aussetzung umschalten | [Setzt die ausgewählten Karten aus](studying.md#editing-and-more) oder hebt die Aussetzung auf je nachdem, ob die aktuelle Karte ausgesetzt ist oder nicht. |
+| Markierung | Schaltet die Markierungen der ausgewählten Karten um. Ob eine Markierung hinzugefügt oder entfernt wird, hängt davon ob, die aktuelle Karte die gewählte Markierung besitzt. |
+| Statistik | Zeigt verschiedene Informationen zur aktuellen Karte, wie die Wiederholungshistorie. Siehe den Abschnitt [Kartenstatisik](stats.md#card-info) für weitere Informationen. |
 
-This dialog allows for replacing text on notes. As described above, it is available
-from the toolbar and the table's context menu.
+### Gehe zu
 
-The first input field is for the text that is going to be replaced, the second
-one for the replacement. Next, there is a dropdown menu that allows you to specify
-where Anki should look for text to replace: in a note's tags (requires Anki 2.1.45+),
-in all fields, or just in a specific field (only fields belonging to a selected
-note will be listed).
+Dieses Menü existiert, um Tastenkombinationen zur Verfügung zu stellen, mit denen
+zu verschiedenen Bereichen der Kartenverwaltung gesprungen und sich in der Tabelle
+herauf und herunter bewegt werden kann.
 
-By default, only selected notes will be affected. If you want to lift that
-restriction, you can untick the "selected notes only" checkbox (requires Anki 2.1.45+).
+## Suchen und ersetzen
 
-The regular expression option allows you to perform complex replacements.
-For example, assume there is the following text in a field:
+Mit diesem Fenster kann Text auf Notizen ersetzt werden. Wie oben erwähnt kann es
+von der Werkzeugleiste oder vom Tabellenkontextmenü aus geöffnet werden.
 
-    <img src="pic.jpg" />
+Das erste Eingabefeld ist für den zu ersetzenden Text, das zweite für den Ersatz.
+Darunter befindet sich ein Aufklappmenü, mit dem sich bestimmen lässt, wo Anki
+nach dem zu ersetzenden Text suchen soll: in den Schlagwörtern einer Notiz (benötigt
+Anki 2.1.45+), in allen Feldern oder nur in einem bestimmten Feld (es werden nur
+Felder aufgelistet, die zu einer ausgewählten Notiz gehören).
 
-We use these settings:
+Standardmäßig wird nur auf ausgewählten Notizen ersetzt. Wenn du diese Beschräknung
+aufheben willst, kannst du den Haken bei "Nur ausgewählte Notizen" entfernen
+(erfordert Anki 2.1.45+).
 
-![Find and Replace dialog](media/find_and_replace.png)
+Die Option für reguläre Ausdrücke ermöglicht komplexe Ersetzungen.
+Nimm z.B. an, in einem Feld befände sich der folgende Text:
 
-(Note that on Anki versions prior to 2.1.28, you would need to replace `${1}`
-with `\1`.)
+    <img src="bild.jpg" />
 
-Then the assumed field content will change to:
+Wir benutzen die folgenden Einstellungen:
 
-    pic.jpg
+![Suchen-und-ersetzen-Fenster](media/find_and_replace.png)
 
-A full discussion on regular expressions is outside the scope of this document.
-There are a number of syntax guides available on the web:
+(Beachte, dass du in Anki-Versionen vor 2.1.28 `${1}` durch `\1` ersetzen müsstest.)
 
-- For Anki 2.1.28+, see <https://docs.rs/regex/latest/regex/index.html#syntax>.
-- For older Anki versions, see <http://docs.python.org/library/re.html>.
+Dann wird der angenommene Feldinhalt geändert zu:
 
-## Finding Duplicates
+    bild.jpg
 
-You can use the **Notes > Find Duplicates** option to search for notes that
-have the same content. When you open the window, Anki will look at all
-of your note types and present a list of all possible fields. If you
-want to look for duplicates in the _Back_ field, you’d select it from
-the list and then click **Search**.
+Eine vollständige Einführung in reguläre Ausdrücke würde den Rahmen dieser Anleitung
+sprengen. Es gibt zahlreiche Leitfäden zur Syntax im Internet:
 
-By default, it will search in all note types that have the field you provided.
-This differs from the duplicate check when you add cards manually, which
-is limited to a single note type.
+- Für Anki 2.1.28+ siehe <https://docs.rs/regex/latest/regex/index.html#syntax>.
+- Für ältere Versionen siehe <http://docs.python.org/library/re.html>.
 
-The **Optional filter** text box allows you to narrow down where Anki will
-look for duplicates. If you only want to search for duplicates in the
-"French Vocab" and "French Verbs" note types, you would enter:
+## Duplikate suchen
 
-    "note:french vocab" or "note:french verbs"
+Mit der Funktion *Notizen > Duplikate suchen* lassen sich Notizen mit demselben
+Inhalt finden. Das Fenster zeigt eine Liste der Felder aller Notitzypen in deiner
+Sammlung. Wenn du Notizen finden wolltest, die im Feld *Rückseite* übereinstimmen,
+würdest du dieses Feld aus der Liste auswählen und auf *Suchen* klicken.
 
-Or you might want to look only for duplicates in a particular deck, so
-you could use:
+Standardmäßig wird in allen Notiztypen gesucht, die das angegebene Feld besitzen.
+Damit unterscheidet sich die Funktion von der Duplikatsprüfung beim Eingeben neuer
+Notizen, die auf einen Notiztyp beschränkt ist.
 
-    "deck:myDeck"
+Das Eingabefeld *Optionaler Filter* ermöglicht es, die Suche einzugrenzen.
+Wenn du nur in den Notiztypen "Französischvokabeln" und "Französische Verben"
+nach Duplikaten suchen wolltest, würdest du hier
 
-The search syntax is the same as used when searching in the browser.
-For more information, see [Searching](searching.md).
+    "note:french vocab" OR "note:french verbs"
 
-You can click one of the links in the search results list to display the
-duplicate notes in that set. If the search brings up a large number of
-duplicates, you may wish to instead click the **Tag Duplicates** button,
-which will tag all matching notes with _duplicate_. You can then search
-for this tag in the browser and handle them all from the same screen.
+eingeben. Um nur in einem bestimmten Stapel zu suchen, könntest du
+
+    "deck:Mein Stapel"
+
+benutzen. Die Suchsyntax ist dieselbe wie bei der Suche in der Kartenverwaltung,
+siehe [Suchen](searching.md).
+
+Du kannst die Links in der Suchergebnisliste anklicken, um die Notizen dieser Gruppe
+anzeigen zu lassen. Wenn die Suche sehr viele Duplikate zutage fördert, möchtest
+du vielleicht lieber die Schalfläche *Duplikate verschlagworten* benutzen, wodurch
+allen gefundenen Notizen das Schlagwort "doppelt" zugewiesen wird.
+Anschließend kannst du in der Kartenverwaltung danach suchen (`tag:doppelt`)
+und alle Duplikate von einem Fenster aus behandeln.
