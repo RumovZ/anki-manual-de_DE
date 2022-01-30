@@ -46,7 +46,7 @@ Während des Lernens kannst du mit der Taste <kbd>S</kbd> zur Übersicht zurück
 
 ## Fragen
 
-Für jede Karte wird zuerst nur die Frage gezeigt. Klick auf "Antowort zeigen"
+Für jede Karte wird zuerst nur die Frage gezeigt. Klick auf "Antwort zeigen"
 oder betätige die <kbd>Leertaste</kbd>, nachdem du über die Antwort nachgedacht
 hast. Es ist nicht schlimm, wenn du eine Weile brauchst, bis dir die Antwort
 einfällt, aber als Faustregel solltest du besser aufgeben, wenn sie dir nach
