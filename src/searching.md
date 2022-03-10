@@ -1,403 +1,395 @@
-# Searching
+# Suchen
 
 <!-- toc -->
 
-Anki's Browse screen and the Filtered Deck feature use a common method
-of searching for specific cards/notes.
+Ankis Kartenverwaltung und die Auswahlstapelfunktion benutzen die gleiche
+Methode, um nach bestimmten Karten oder Notizen zu suchen.
 
-## Simple searches
+## Einfache Suchen
 
-When you type some text into the search box, Anki finds matching notes
-and displays their cards. Anki searches in all fields of the notes, but
-does not search for tags (see later in this section for how to search
-for tags). Some examples:
+Wenn du Text in die Suchleiste eingibst, findet Anki passende Notizen und
+zeigt ihre Karten. Anki sucht in allen Feldern der Notizen, aber nicht in ihren
+Schlagwörtern (siehe dafür weiter unten). Ein paar Beispiele:
 
-`dog`  
-search for "dog" - will match words like "doggy" and "underdog" too.
+`hund`  
+Sucht nach "Hund", findet auch Wörter wie "hundert" und "Wachhund".
 
-`dog cat`  
-finds notes that have both "dog" and "cat" on them, such as "raining
-cats and dogs".
+`hund katze`  
+Findet Notizen, die sowohl "Hund" als auch "Katze" beinhalten, z.B. "wie Hund und
+Katze".
 
-`dog or cat`  
-finds notes with either "dog" or "cat".
+`hund or katze`  
+Findet Notizen mit "Hund" _oder_ (Englisch "or") "Katze".
 
-`dog (cat or mouse)`  
-finds notes with dog and cat, or dog and mouse.
+`hund (katze or maus)`  
+Findet Notizen mit "Hund" und "Katze" oder mit "Hund" und "Maus".
 
-`-cat`  
-finds notes without the word "cat".
+`-katze`  
+Findet Notizen _ohne_ das Wort "Katze".
 
-`-cat -mouse`  
-finds notes with neither "cat" nor "mouse".
+`-katze -maus`  
+Findet Notizen, die weder "Katze" noch "Maus" beinhalten.
 
-`-(cat or mouse)`  
-same as the above.
+`-(katze or maus)`  
+Wie darüber.
 
-`"a dog"`  
-finds notes with the exact sequence of characters "a dog" on them, such
-as "atta dog", but not "dog a" or "adog".
+`"ein hund"`  
+Findet Notizen mit der exakten Buchstabenfolge "ein Hund" wie "mein Hund", aber
+nicht "Hund ein" oder "einhundert".
 
-`-"a dog"`  
-finds notes without the exact phrase "a dog"
+`-"ein hund"`  
+Findet Notizen ohne den exakten Ausdruck "ein Hund"
 
-`d_g`  
-finds notes with d, &lt;a letter&gt;, g, like dog, dig, dug, and so on.
+`h_nd`  
+Findet Notizen mit "h", dann einem beliebigen Buchstaben und dann "nd", z.B.
+"Hund" und "Hand".
 
-`d*g`  
-finds notes with d, &lt;zero or more letters&gt;, g, like dg, dog, dung,
-etc.
+`h*nd`  
+Findet Notizen mit "h", dann beliebigen Buchstaben und dann "nd" wie "hnd",
+"Hund", "hängend" usw.
 
-`w:dog`  
-search for "dog" on a word boundary - will match "dog", but not "doggy"
-or "underdog". Requires Anki 2.1.24+ or AnkiMobile 2.1.61+.
+`w:hund`  
+Sucht nach "Hund" umgeben von Wortgrenzen, z.B. "Hund, der", aber nicht "hundert" oder
+"Wachhund". Benötigt Anki 2.1.24+ oder AnkiMobile 2.1.61+.
 
-`w:dog*`  
-will match "dog" and "doggy", but not "underdog".
+`w:hund*`  
+Findet "Hund" und "hundert", aber nicht "Wachhund".
 
-`w:*dog`  
-will match "dog" and "underdog", but not "doggy".
+`w:*hund`  
+Findet "Hund" und "Wachhund", aber nicht "hundert".
 
-Things to note from the above:
+An diesen Beispielen lässt sich Folgendes beobachten:
 
-- Search terms are separated by spaces.
+- Suchbegriffe werden durch Leerzeichen getrennt.
 
-- When multiple search terms are provided, Anki looks for notes that
-  match all of the terms - an implicit 'and' is inserted between each
-  term. On Anki 2.1.24+ and AnkiMobile 2.0.60+ you can be explicit
-  if you like ("dog and cat" is the same as "dog cat"), but older
-  Anki versions will treat "and" as just another word to search for.
+- Wenn mehrere Suchebegriffe angegeben werden, sucht Anki nach Notizen mit ihnen allen -
+  ein implizites `and` ("und") wird zwischen je zwei Begriffen eingefügt. In Anki 2.1.24+
+  und AnkiMobile 2.0.60+ kannst du das explizit angeben, wenn du möchtest (`hund and katze` ist
+  das gleiche wie `hund katze`), aber ältere Anki-Versionen werden `and` einfach wie einen
+  weiteren Suchbegriff behandeln.
 
-- You can use "or" if you only need one of the terms to match.
+- Du kannst `or` benutzen, wenn nur einer von zwei Suchbegriffen passen muss.
 
-- You can prepend a minus sign to a term to find notes that don’t
-  match.
+- Du kannst `-`, ein Minus, voranstellen, um Notizen zu finden, die nicht passen.
 
-- You can group search terms by placing them in parentheses, as in the
-  **dog (cat or mouse)** example. This becomes important when
-  combining OR and AND searches — in the example, with the
-  parentheses, it matches either 'dog cat' or 'dog mouse', whereas
-  without them it would match either 'dog and cat' or 'mouse'.
+- Du kannst Suchbegriffe gruppieren, indem du sie einklammerst, wie im Beispiel `hund (katze or maus)`.
+  Das ist wichtig, wenn du `or` und `and` kombinierst. Das Beispiel findet Notizen mit "Hund Katze"
+  oder "Hund Maus", aber ohne die Klammern würde es Notizen mit "Hund Katze" oder "Maus" finden.
 
-- Anki is only able to search within formatting in the [sort
-  field](editing.md#customizing-fields) you’ve configured. For example, if you add
-  "**exa**mple" to one of your fields, this will not be matched when
-  searching for "example" unless that field is the sort field. If a
-  word is not formatted, or the formatting does not change in the
-  middle of the word, then Anki will be able to find it in any field.
+- Anki kann innerhalb Formatierung nur im eingestellten [Sortierfeld](editing.md#customizing-fields)
+  suchen. Wenn du in einem Feld z.B. "**Bei**spiel" schreibst, wird Anki diese Notiz bei einer Suche
+  nach `beispiel` nicht finden, es sei denn, es handelt sich um das Sortierfeld.
+  Ändert sich die Formatierung eines Wortes nicht zwischendrin, kann Anki dieses Wort in jedem beliebigen
+  Feld finden.
 
-- Standard searches are case insensitive for Latin characters - a-z will
-  match A-Z, and vice versa. Other characters such as Cyrillic are case sensitive
-  in a standard search, but can be made case insensitive by searching on a word
-  boundary or regular expression (w:, re:).
+- Einfache Suchen ignorieren Groß-/Kleinschreibung von lateinischen Buchstaben: a-z impliziert A-Z
+  und umgekehrt. Für andere Buchstaben wie Umlaute gilt das nicht: `Öl` findet keine Notizen mit "ölig".
+  Um auch hier Groß-/Kleinschreibung zu ignorieren, können die Suchen nach Wortgrenzen oder regulären
+  Ausdrücken genutzt werden (`w:`, `re:`).
 
-## Limiting to a field
+## Eingrenzung auf Felder
 
-You can also ask Anki to match only if a particular field contains some
-text. Unlike the searches above, searching on fields requires an 'exact
-match' by default.
+Du kannst Anki auch nur in einem bestimmten Feld suchen lassen. Anders als die Suchen oben erfordert
+diese Variante eine exakte Übereinstimmung.
 
-`front:dog`  
-find notes with a Front field of exactly "dog". A field that says "a
-dog" will not match.
+`vorderseite:hund`  
+Findet Notizen mit einem Feld _Vorderseite_, das genau "Hund" enthält. Ein Feld mit Inhalt "ein Hund"
+würde nicht gefunden werden.
 
-`front:*dog*`  
-find notes with Front field containing dog somewhere
+`vorderseite:*hund*`  
+Findet Notizen mit einem Feld _Vorderseite_, in dem irgendwo "Hund" vorkommt.
 
-`front:`  
-find notes that have an empty Front field
+`vorderseite:`  
+Findet Notizen mit einem leeren Feld _Vorderseite_.
 
-`front:_*`  
-find notes that have a non-empty Front field
+`vorderseite:_*`  
+Findet Notizen mit einem nicht leeren Feld _Vorderseite_.
 
-`front:*`  
-find notes that have a Front field, empty or not
+`vorderseite:*`  
+Findet Notizen mit einem Feld _Vorderseite_, egal ob leer oder nicht.
 
-`fr*:text`
-find notes in a field starting with "fr". Requires Anki 2.1.24+ or AnkiMobile 2.1.60+.
+`vor*:text`
+Findet Notizen mit einem Feld, das mit mit "Vor" beginnt. Benötigt Anki 2.1.24+ oder AnkiMobile 2.1.60+.
 
-## Tags, decks, cards and notes
+## Schlagwörter, Stapel, Karten- und Notiztypen
 
-`tag:animal`  
-find notes with the tag "animal", or subtags like "animal::mammal"
+`tag:tier`  
+Findet Notizen mit dem Schlagwort "Tier" oder einem Unterschlagwort wie "Tier::Säugetier".
 
 `tag:none`  
-find notes with no tags
+Findet Notizen ohne Schlagwörter.
 
-`tag:ani*`  
-find notes with tags starting with ani
+`tag:ti*`  
+Findet Notizen mit Schlagwörtern, die mit "Ti" beginnen.
 
-`deck:french`  
-find cards in a French deck, or subdecks like French::Vocab
+`deck:französisch`  
+Findet Karten in dem Stapel _Französisch_ oder in einem Unterstapel wie _Französisch::Vokabeln_.
 
-`deck:french -deck:french::*`  
-find cards in French, but not subdecks
+`deck:französisch -deck:französisch::*`  
+Findet Karten in dem Stapel _Französisch_, aber nicht in seinen Unterstapel.
 
-`deck:"french vocab"`  
-searching when a deck has a space
+`deck:"vokabeln französisch"`  
+Für Stapelnamen mit Leerzeichen.
 
-`"deck:french vocab"`  
-also ok
+`"deck:vokabeln französisch"`  
+Alternative zu oben.
 
 `deck:filtered`  
-filtered decks only
+Nur Auswahlstapel.
 
 `-deck:filtered`  
-normal decks only
+Nur reguläre Stapel.
 
-`card:forward`  
-search for Forward cards
+`card:vorwärts`  
+Findet Karten mit dem Kartentyp _Vorwärts_.
 
 `card:1`  
-search for cards by template number - eg, to find the second cloze
-deletion for a note, you’d use card:2
+Findet Karten mit Kartentyp Nummer 1. Um z.B. die Karte mit dem zweiten Lückentext einer Notiz zu
+finden, könntest du `card:2` benutzen.
 
-`note:basic`  
-search for cards with a Basic note type
+`note:einfach`  
+Findet Notizen mit dem Notiztyp _Einfach_.
 
-## Ignoring accents/combining characters
+## Akzente / kombinierende Zeichen ignorieren
 
-Requires Anki 2.1.24+ or AnkiMobile 2.0.60+.
+Benötigt Anki 2.1.24+ oder AnkiMobile 2.0.60+.
 
-You can use `nc:` to remove combining characters ("no combining"). For example:
+Du kannst `nc:` benutzen, um kombinierende Zeichen zu ignorieren (für Englisch "*n*o *c*ombining").
+Beispiel:
 
 `nc:uber`  
-matches notes with "uber", "über", "Über" and so on.
+Findet Notizen mit "uber", "über", "Über" usw.
 
 `nc:は`  
-matches "は", "ば", and "ぱ"
+Findet "は", "ば" und "ぱ".
 
-Searches that ignore combining characters are slower than regular searches.
+Diese Suchen sind langsamer als reguläre Suchen.
 
-## Regular expressions
+## Reguläre Ausdrücke
 
-Anki 2.1.24+ and AnkiMobile 2.0.60+ support searching in notes with "regular expressions",
-a standard and powerful way of searching in text.
+Anki 2.1.24+ und AnkiMobile 2.0.60+ unterstützen die Suche mit _regulären Ausdrücken_, einem
+standardisierten und mächtigen Verfahren, um Text zu durchsuchen.
 
-Start a search with `re:` to search by regular expression. To make things easier, Anki will
-treat the following as [raw input](#raw-input), so bear in mind the rules listed there.
+Beginne eine Suche dafür mit `re:`. Zur Erleichterung wird Anki das Folgende als [Roheingaben](#raw-input)
+betrachten, also beachte die dort aufgelisteten Regeln.
 
-Some examples:
+Beispiele:
 
-`"re:(some|another).*thing"`  
-find notes that have "some" or "another" on them, followed by 0 or more characters, and then "thing"
+`"re:(k|irgend).*ein"`  
+Findet Notizen, die "k" oder "irgend" beinhalten, dann 0 oder mehr beliebige Zeichen und schließlich "ein".
 
 `re:\d{3}`  
-find notes that have 3 digits in a row
+Findet Notizen mit drei Zahlen hintereinander.
 
-Regular expressions can also be limited to a specific field. Please note that unlike the normal searches
-in a specific field, regular expressions in fields don't require an exact match. Eg:
+Reguläre Ausdrücke können ebenfalls auf ein Feld eingegrenzt werden. Bitte beachte, dass das anders
+als normale Suchen keine exakte Übereinstimmung erfordert. Beispiel:
 
-`front:re:[a-c]1`  
-matches uppercase or lowercase a1, B1 or c1 that occurs anywhere in the "Front" field
+`vorderseite:re:[a-c]1`  
+Findet "a1", "b1" und "c1", auch groß geschrieben, irgendwo in einem Feld _Vorderseite_.
 
 `front:re:^[a-c]1$`  
-like the above, but will not match if any other text falls before or after a1/b1/c1.
+Wie oben, erfordert aber, dass vor und nach "a1", "b1" bzw. "c1" kein weiterer Text steht.
 
-You can learn more about regular expressions here: <https://regexone.com/lesson/introduction_abcs>
+Mehr über reguläre Ausdrücke findest du z.B. hier:
+<https://www.ionos.de/digitalguide/websites/webseiten-erstellen/regulaere-ausdruecke/>
 
-Some things to be aware of:
+Ein paar Anmerkungen:
 
-- The search is case-insensitive by default; use (?-i) at the start to turn on case sensitivity.
-- Some text like spaces and newlines may be represented differently in HTML - you can
-  use the HTML editor in the editing screen to see the underlying HTML contents.
-- For the specifics of Anki's regex support, please see the regex crate documentation: <https://docs.rs/regex/1.3.9/regex/#syntax>
+- Standardmäßig ignoriert die Suche Groß-/Kleinschreibung. Durch das Voranstellen von `(?-i)` kann
+  das geändert werden.
+- Manche Zeichen wie Zeilenumbrüche oder Leerzeichen werden in HTML anders dargestellt. Du kannst
+  den HTML-Editor des Editor-Fensters benutzen, um das zugrundeliegende HTML zu sehen.
+- Für Details zu den von Anki unterstützten regulären Ausdrücken, siehe die Dokumentation des Crates _regex_:
+  <https://docs.rs/regex/1.3.9/regex/#syntax> (Englisch)
 
-## Card state
+## Kartenstatus
 
 `is:due`  
-review cards and learning cards waiting to be studied
+Fällige Wiederholungs- und Lernkarten.
 
 `is:new`  
-new cards
+Neue Karten.
 
 `is:learn`  
-cards in learning
+Lernkarten.
 
 `is:review`  
-reviews (both due and not due) and lapsed cards
+Wiederholungskarten (fällig oder nicht), auch gescheiterte.
 
 `is:suspended`  
-cards that have been manually suspended
+Karten, die manuell ausgesetzt wurden.
 
 `is:buried`  
-cards that have been buried, either [automatically](studying.md#siblings-and-burying) or
-manually
+Karten, die entweder [automatisch](studying.md#siblings-and-burying) oder manuell zurückgestellt wurden.
 
-Note that with the [new scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
-Anki now distinguishes between manually and automatically buried cards so you can
-unbury one set without the other.
+Beachte, dass der neue [Zeitplaner](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html) zwischen
+manuell und automatisch zurückgestellten Karten unterscheidet, sodass du die einen ohne die anderen
+wiedereinstellen kannst.
 
-Cards that have lapsed fall into several of these categories, so it may
-be useful to combine them to get more precise results:
+Karten, deren Wiederholung gescheitert ist, fallen in mehrere dieser Kategorien, weshalb es nützlich
+sein kann, Kombinationen von ihnen zu verwenden, um genauere Ergebnisse zu erzielen:
 
 `is:learn is:review`  
-cards that have lapsed and are awaiting relearning
+Gescheiterte Karten, die in der Wiedererlernphase sind.
 
 `-is:learn is:review`  
-review cards, not including lapsed cards
+Wiederholungskarten, aber keine gescheiterten.
 
 `is:learn -is:review`  
-cards that are in learning for the first time
+Karten, die erstmalig gelernt werden.
 
 `flag:1`  
-cards with a red flag
+Karten mit der roten Markierung.
 
 `flag:2`  
-cards with an orange flag
+Karten mit der orangen Markierung.
 
 `flag:3`  
-cards with a green flag
+Karten mit der grünen Markierung.
 
 `flag:4`  
-cards with a blue flag
+Karten mit der blauen Markierung.
 
 `flag:5`  
-cards with a pink flag
+Karten mit der rosa Markierung.
 
 `flag:6`  
-cards with a turquoise flag
+Karten mit der türkisen Markierung.
 
 `flag:7`  
-cards with a purple flag
+Karten mit der lilanen Markierung.
 
-## Card properties
+## Karteneigenschaften
 
 `prop:ivl>=10`  
-cards with interval of 10 days or more
+Karten mit einem Intervall von 10 Tagen oder mehr.
 
 `prop:due=1`  
-cards due tomorrow
+Karten, die morgen fällig sind.
 
 `prop:due=-1`  
-cards due yesterday that haven’t been answered yet
+Gestern fällige Karten, die noch nicht beantwortet wurden.
 
 `prop:due>-1 prop:due<1`  
-cards due between yesterday and tomorrow
+Karten, die zwischen gestern und morgen fällig sind.
 
 `prop:reps<10`  
-cards that have been answered less than 10 times
+Karten, die seltener als zehn mal beantwortet wurden.
 
 `prop:lapses>3`  
-cards that have moved into relearning more than 3 times
+Karten, die öfter als drei mal gescheitert sind.
 
 `prop:ease!=2.5`  
-cards easier or harder than default
+Karten, die schwieriger oder leichter sind als der Standardwert.
 
-Note that due only matches review cards and learning cards with an
+<!-- Note that due only matches review cards and learning cards with an
 interval of a day or more: cards in learning with small intervals like
-10 minutes are not included.
+10 minutes are not included. -->
 
-## Recent Events
+## Jüngste Ereignisse
 
-### Added
+### Hinzugefügt
 
 `added:1`  
-cards added today
+Heute hinzugefügte Karten.
 
 `added:7`  
-cards added in last week
+In der letzten Woche hinzugefügte Karten.
 
-The check is made against card creation time rather than note creation
-time, so cards that were generated within the time frame will be
-included even if their notes were added a long time ago.
+Dieses Kriterium prüft das Datum der Karten-, nicht der Notizerstellung. Daher werden kürzlich erstellte
+Karten eingeschlossen, auch wenn ihre Notizen schon vor langer Zeit hinzugefügt wurden.
 
-### Edited
+### Bearbeitet
 
-`edited:n`  
-cards where the note text was added/edited in the last n days.
+`edited:3`  
+Karten, deren Notiztext in den letzten drei Tagen hinzugefügt oder bearbeitet wurde.
 
-This requires Anki 2.1.28+ / AnkiMobile 2.0.64+.
+Anki 2.1.28+ / AnkiMobile 2.0.64+ wird benötigt.
 
-### Answered
+### Beantwortet
 
 `rated:1`  
-cards answered today
+Heute beantwortete Karten.
 
 `rated:1:2`  
-cards answered Hard (2) today
+Heute mit _Schwer_ (2) beantwortete Karten.
 
 `rated:7:1`  
-cards answered Again (1) over the last 7 days
+In der letzten Woche mit _Nochmal_ (1) beantwortete Karten.
 
 `rated:31:4`  
-cards answered Easy (4) in the last month
+Im letzten Monat mit _Einfach_ (4) beantwortete Karten.
 
-Rating searches had been limited to 31 days before version 2.1.39.
+Vor Version 2.1.39 war diese Suche auf 31 Tage begrenzt.
 
-### First Answered
+### Erstmalig beantwortet
 
-On version 2.1.45+, you can also search for the very first review only:
+Mit Version 2.1.45+ lässt sich auch gezielt nach der allerersten Beantwortung suchen:
 
 `introduced:1`  
-cards answered for the first time today
+Karten, die heute das erste Mal beantwortet wurden.
 
 `introduced:365`  
-cards answered for the first time within the last 365 days
+Karten, die das erste Mal in den letzten 365 Tagen beantwortet wurden.
 
-## Matching special characters
+## Nach Sonderzeichen suchen
 
-This section was written for Anki 2.1.36+ - earlier versions did not support escaping
-characters in certain situations.
+Dieser Abschnitt wurde für Anki 2.1.36+ geschrieben - in früheren Versionen war das Maskieren von
+Sonderzeichen in bestimmten Fällen nicht möglich.
 
-As shown in the previous section, some characters like `*`, `_` and `"` have a
-special meaning in Anki. If you need to locate those characters in a search,
-you need to tell Anki not to treat them specially.
+Wie bereits gesehen haben manche Zeichen wie `*`, `_` oder `"` eine besondere Bedeutung in Anki.
+Wenn du diese Zeichen mit einer Suche ausfindig machen willst, musst du Anki anweisen, sie nicht
+besonders zu behandeln.
 
-- _Space_  
-  To match something including spaces, enclose the `"entire term"` in double
-  quotes. If it is a colon search, you also have the option to only quote the
-  `part:"after the colon"`.
+- _Leerzeichen_  
+  Um etwas mit Leerzeichen zu finden, muss der `"gesamte Ausdruck"` in Anführungszeichen gesetzt werden.
+  Bei einer Doppelpunktsuche kann auch nur der `Teil:"nach dem Doppelpunkt"` umfasst werden.
 
-- `"`, `*` and `_`  
-  Add a backslash before these characters to treat them literally. For example,
-  `_` will match any single character, but `\_` matches only an actual underscore.
+- `"`, `*` und `_`  
+  Stell diesen Zeichen einen umgekehrten Schrägstrich voran, um nach ihnen zu suchen. Z.B. findet
+  `_` ein einzelnes beliebiges Zeichen, aber `\_` nur den Unterstrich.
 
 - `\`  
-  Because a backlash is used to remove the special meaning from other characters,
-  it too is treated specially. If you need to search for an actual backslash,
-  use `\\` instead of `\`.
+  Da der umgekehrte Schrägstrich benutzt wird, um Zeichen ihre besondere Bedeutung zu nehmen, wird
+  auch er gesondert behandelt. Um nach dem Zeichen an sich zu suchen, kannst du `\\` statt `\` benutzen.
 
-- `(` and `)`  
-  You can search for parentheses either by enclosing the full term in quotes,
-  and/or by using a backslash. That is, `"some(text)"`, `some\(text\)` and
-  `"some\(text\)"` are all equivalent, but `some(text)` is not.
+- `(` und `)`  
+  Um nach Klammern zu suchen, kann entweder der gesamte Ausdruck in Anführungszeichen gesetzt und/oder
+  ein umgekehrter Schrägstrich verwendet werden. D.h. `"ein(Wort)"`, `ein\(Wort\)` und
+  `"ein\(Wort\)"` bedeuten alle das Gleiche, aber `ein(Wort)` nicht.
 
 - `-`  
-  Starting a search term with `-` usually inverts it: `-dog` matches everything
-  except dog for example. If you instead wish to include an actual hyphen,
-  you can either use a backslash, or include the text in quotes, such as
-  `\-.-` or `"-.-"`.
+  Einen Ausdruck mit `-` zu beginnen, kehrt ihn normalerweise um: `-hund` findet alles außer "Hund".
+  Wenn du einen Bindestrich selbst finden willst, kannst du entweder einen umgekehrten Schrägstrich
+  verwenden oder den gesamten Ausdruck in Anführungszeichen setzen: `\-.-` oder `"-.-"`.
 
 - `:`  
-  Colons have to be escaped unless they are preceded by another, unescaped colon.
-  So `w:e:b` is a word boundary search for `e:b`, `w\:e\:b` searches literally for
-  `w:e:b` and `w\:e:b` searches the field `w:e` for `b` (see
-  [field searches](#limiting-to-a-field)).
+  Doppelpunkte müssen maskiert werden, außer es steht bereits davor ein unmaskierter Doppelpunkt.
+  `w:e:g` ist also eine Wortgrenzensuche nach `e:g`, `w\:e\:g` findet buchstäblich `w:e:g` und `w\:e:g`
+  sucht in einem Feld `w:e` nach `g` (siehe [Eingrenzung auf Felder](#limiting-to-a-field)).
 
-### Raw input
+### Roheingaben
 
-Text preceded by certain keywords (like `re:`) will be treated as raw input. That is,
-the charcters listed above largely lose their special meaning. In such a context, only
-a minimum of escaping is required to prevent ambiguity:
+Nach bestimmten Schlüsselwörtern (wie `re:`) wird folgender Text als Roheingabe behandelt.
+Das bedeutet, die oben aufgelisteten Sonderzeichen verlieren zum Großteil ihre besondere Bedeutung.
+Nur ein Minimum an Maskierung ist notwendig, um Mehrdeutigkeit zu vermeiden:
 
-- `"` must be escaped.
+- `"` muss maskiert werden.
 
-- Spaces and unescaped parentheses require the search term to be quoted.
+- Leerzeichen und unmaskierte Klammern erfordern, dass der Ausdruck in Anführungszeichen gesetzt wird.
 
-- The search term must not end in an odd number of backslashes.
+- Ein Ausdruck darf nicht in einer ungeraden Anzahl von umgekehrten Schrägstrichen enden.
 
-## Object IDs
+## Kennnummern
 
 `nid:123`  
-all cards of the note with note id 123
+Die Notiz mit Kennnummer 123.
 
 `cid:123,456,789`  
-all cards with card ids 123, 456 or 789
+Die Karten mit Kennnummern 123, 456 oder 789.
 
-Note and card IDs can be found in the [card info](stats.md) dialog in the
-browser. These searches may also be helpful when doing add-on
-development or otherwise working closely with the database.
+Notiz- und Kartenkennnummern werden in der [Kartenstatistik](stats.md) angezeigt.
+Diese Suchen können bei der Add-on-Entwicklung oder anderen datenbanknahen Arbeiten nützlich sein.
 
-Object IDs will not work in the mobile clients, and are not intended to
-be used in filtered decks at the moment.
+Kennnummern funktionieren nicht in Ankimobile und sind derzeit nicht für die Verwendung in Auswahlstapeln
+vorgesehen.
