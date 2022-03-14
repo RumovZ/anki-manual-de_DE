@@ -14,11 +14,11 @@ gibt die Anzahl neuer Karten an, die heute gelernt werden können. Die zweite
 Spalte zeigt die Anzahl der Karten, die sich gerade in der Lernphase befinden.
 "Fällig" ist die Zahl anstehender Wiederholungen.
 
-Wenn du einen Stapel anklickst, wird er zum *aktuellen Stapel* und Anki wechselt
+Wenn du einen Stapel anklickst, wird er zum _aktuellen Stapel_ und Anki wechselt
 in die Lernansicht. Um den aktuellen Stapel zu wechseln, kannst du jederzeit zur
 Stapelansicht zurückkehren, indem du auf die entsprechende Schaltfläche am oberen
 Rand des Hauptfensters klickst. Dort kannst du auch den Menüpunkt "Stapel lernen"
-benutzen, um einen neuen Stapel per Tastatur auszuwählen, oder du kannst 
+benutzen, um einen neuen Stapel per Tastatur auszuwählen, oder du kannst
 <kbd>S</kbd> drücken, um den aktuellen Stapel zu lernen.
 
 Du kannst das Zahnradsymbol rechts neben einem Stapel anklicken, um den Stapel
@@ -27,16 +27,16 @@ umzubenennen, zu löschen, seine Einstellungen zu bearbeiten oder ihn zu exporti
 ## Stapelübersicht
 
 Nachdem du in der Stapelansicht auf einen Stapel geklickt hast, wird dir die
-sogenannte *Stapelübersicht* angezeigt. Dort kannst du sehen, wie viele Karten
+sogenannte _Stapelübersicht_ angezeigt. Dort kannst du sehen, wie viele Karten
 heute fällig sind. Die Karten sind dabei in drei Kategorien aufgeteilt:
 
-- *Neu* bezieht sich auf Karten, die du heruntergeladen oder selbst angelegt,
+- _Neu_ bezieht sich auf Karten, die du heruntergeladen oder selbst angelegt,
   aber noch nie gelernt hast.
 
-- *Lernen* bezieht sich auf Karten, die du schon mal gesehen hast, aber immer
+- _Lernen_ bezieht sich auf Karten, die du schon mal gesehen hast, aber immer
   noch lernst.
 
-- *Wiederholen* bezieht sich auf Karten, die du bereits gelernt hast und die
+- _Wiederholen_ bezieht sich auf Karten, die du bereits gelernt hast und die
   nun wiederholt werden müssen, damit du sie nicht wieder vergisst.
 
 Klick auf "Jetzt lernen", um zu beginnen. Anki wird dir solange Karten zeigen, bis
@@ -63,45 +63,45 @@ lassen, anstatt dir nur Frage und Antwort zu zeigen.
 
 Wenn du Karten lernst oder erneut lernst, nachdem du sie vergessen hattest, zeigt
 Anki sie dir mehrmals, um dir zu helfen, sie im Gedächtnis zu behalten.
-Diese Abfragen heißen *Lernstufen*. Standardmäßig gibt es zwei: 1 Minute und 10
+Diese Abfragen heißen _Lernstufen_. Standardmäßig gibt es zwei: 1 Minute und 10
 Minuten. Du kannst die Anzahl und Abstände der Stufen in den
 [Stapeleinstellungen](deck-options.md#new-cards) ändern.
 
 Beim Lernen gibt es vier Bewertungsschaltflächen:
 
-1. *Nochmal* schickt die Karte zurück zur ersten Lernstufe.
+1. _Nochmal_ schickt die Karte zurück zur ersten Lernstufe.
 
-2. *Schwierig* lässt die Karte die aktuelle Lernstufe wiederholen, außer es handelt
-  sich um die erst Lernstufe, in welchem Fall das neue Intervall der Durchschnitt
-  von *Nochmal* und *Gut* ist.
+2. _Schwierig_ lässt die Karte die aktuelle Lernstufe wiederholen, außer es handelt
+   sich um die erst Lernstufe, in welchem Fall das neue Intervall der Durchschnitt
+   von _Nochmal_ und _Gut_ ist.
 
-3. *Gut* schickt die Karte zur nächsten [Lernstufe](deck-options.md#learning-steps).
-  Wenn sich die Karte auf der letzten Lernstufe befand, wird sie in eine
-  Wiederholungskarte umgewandelt, sie *steigt auf*. Standardmäßig wird eine
-  aufgestiegene Karte am nächsten Tag und dann in größer werdenden Abständen wieder
-  gezeigt (siehe den nächsten Abschnitt).
+3. _Gut_ schickt die Karte zur nächsten [Lernstufe](deck-options.md#learning-steps).
+   Wenn sich die Karte auf der letzten Lernstufe befand, wird sie in eine
+   Wiederholungskarte umgewandelt, sie _steigt auf_. Standardmäßig wird eine
+   aufgestiegene Karte am nächsten Tag und dann in größer werdenden Abständen wieder
+   gezeigt (siehe den nächsten Abschnitt).
 
-4. *Einfach* wandelt die Karte sofort in eine Wiederholungskarte um, auch wenn
-  noch Lernstufen übrig sind. [Standardmäßig](deck-options.md#easy-interval) wird
-  die Karte nach 4 Tagen und dann in größer werdenden Abständen wieder
-  gezeigt. Mit dem Zeitplaner V1 ist die *Einfach*-Schaltfläche beim erneuten Lernen
-  von Karten nicht sichtbar, da sie das gleiche Intervall wie *Gut* liefern würde.
-  Mit dem [Zeitplaner V2+](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html)
-  erhöht sie das Intervall beim erneuten Lernen um einen zusätzlichen Tag.
+4. _Einfach_ wandelt die Karte sofort in eine Wiederholungskarte um, auch wenn
+   noch Lernstufen übrig sind. [Standardmäßig](deck-options.md#easy-interval) wird
+   die Karte nach 4 Tagen und dann in größer werdenden Abständen wieder
+   gezeigt. Mit dem Zeitplaner V1 ist die _Einfach_-Schaltfläche beim erneuten Lernen
+   von Karten nicht sichtbar, da sie das gleiche Intervall wie _Gut_ liefern würde.
+   Mit dem [Zeitplaner V2+](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html)
+   erhöht sie das Intervall beim erneuten Lernen um einen zusätzlichen Tag.
 
 Erstmalig gezeigte Karten beginnen auf der ersten Lernstufe. Wenn du also eine
-Karte beim ersten Mal, das du sie siehst, mit *Gut* bewertest, wird sie nach
+Karte beim ersten Mal, das du sie siehst, mit _Gut_ bewertest, wird sie nach
 10 Minuten ein weiteres Mal gezeigt und die erste Lernstufe von einer Minute wird
 übersprungen.
 
 Du kannst die Tasten <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> und <kbd>4</kbd>
 benutzen, um die entsprechende Schaltfläche auszuwählen. Die <kbd>Leertaste</kbd>
-und <kbd>Enter</kbd> stehen ebenfalls  für *Gut*.
+und <kbd>Enter</kbd> stehen ebenfalls für _Gut_.
 
 Wenn keine anderen Karten anstehen, zeigt Anki dir Lernkarten selbst dann, wenn
 ihr Intervall noch nicht vollständig abgelaufen ist. Falls du das Intervall
 lieber zur Gänze abwarten möchtest, kannst du dieses Verhalten unter
-*[Einstellungen](preferences.md) > Neu planen > Grenzwert für vorgezogenes Lernen*
+_[Einstellungen](preferences.md) > Neu planen > Grenzwert für vorgezogenes Lernen_
 anpassen.
 
 ## Karten wiederholen
@@ -109,31 +109,31 @@ anpassen.
 Wenn eine Karte zuvor gelernt wurde und zur Wiederholung ansteht, gibt es vier
 Bewertungsschaltflächen:
 
-1. *Nochmal* kennzeichnet deine Antwort als falsch und weist Anki an, dir die
-  Karte in Zukunft öfter zu zeigen. Die Wiederholung wird als *Fehlschlag*
-  bezeichnet. Siehe den Abschnitt [Fehlschläge](deck-options.md#lapses) für
-  Informationen darüber, wie mit gescheiterten Wiederholungen verfahren wird.
+1. _Nochmal_ kennzeichnet deine Antwort als falsch und weist Anki an, dir die
+   Karte in Zukunft öfter zu zeigen. Die Wiederholung wird als _Fehlschlag_
+   bezeichnet. Siehe den Abschnitt [Fehlschläge](deck-options.md#lapses) für
+   Informationen darüber, wie mit gescheiterten Wiederholungen verfahren wird.
 
-2. *Schwierig* zeigt die Karte standardmäßig nach einem
-  [etwas längeren Zeitraum](deck-options.md#hard-interval) wieder und weist Anki
-  an, dir die Karte in Zukunft öfter zu zeigen.
+2. _Schwierig_ zeigt die Karte standardmäßig nach einem
+   [etwas längeren Zeitraum](deck-options.md#hard-interval) wieder und weist Anki
+   an, dir die Karte in Zukunft öfter zu zeigen.
 
-3. *Good* teilt Anki mit, dass das letzte Intervall in etwa angemessen war und
-  die Leichtigkeit der Karte nicht nach oben oder unten angepasst werden muss.
-  Mit der [voreingestellten Leichtigkeit](deck-options.md#starting-ease) ist der
-  Zeitraum bis zur nächsten Wiederholung ungefähr der zweieinhalb-fache des letzten
-  Zeitraums. Wenn du also zuletzt 10 Tage gewartet hast, bis die Karte gezeigt
-  wurde, werden es nun 25 Tage sein.
+3. _Good_ teilt Anki mit, dass das letzte Intervall in etwa angemessen war und
+   die Leichtigkeit der Karte nicht nach oben oder unten angepasst werden muss.
+   Mit der [voreingestellten Leichtigkeit](deck-options.md#starting-ease) ist der
+   Zeitraum bis zur nächsten Wiederholung ungefähr der zweieinhalb-fache des letzten
+   Zeitraums. Wenn du also zuletzt 10 Tage gewartet hast, bis die Karte gezeigt
+   wurde, werden es nun 25 Tage sein.
 
-4. *Einfach* teilt Anki mit, dass der Zeitraum zu kurz war. Die Karte wird für
-  einen [späteren Zeitpunkt als mit *Gut*](deck-options.md#easy-bonus) geplant
-  und seltener gezeigt werden. Da *Einfach* das Intervall rapide ansteigen lässt,
-  sollte es nur für die allereinfachsten Karten benutzt werden. Üblicherweise
-  solltest du stattdessen mit *Gut* bewerten.
+4. _Einfach_ teilt Anki mit, dass der Zeitraum zu kurz war. Die Karte wird für
+   einen [späteren Zeitpunkt als mit _Gut_](deck-options.md#easy-bonus) geplant
+   und seltener gezeigt werden. Da _Einfach_ das Intervall rapide ansteigen lässt,
+   sollte es nur für die allereinfachsten Karten benutzt werden. Üblicherweise
+   solltest du stattdessen mit _Gut_ bewerten.
 
 Wie schon bei Lernkarten kannst du die Tasten <kbd>1</kbd>, <kbd>2</kbd>,
 <kbd>3</kbd> und <kbd>4</kbd> zur Bewertung nutzen. <kbd>Leertaste</kbd> und
-<kbd>Enter</kbd> bewerten mit *Gut*.
+<kbd>Enter</kbd> bewerten mit _Gut_.
 
 Siehe [Stapeleinstellungen](deck-options.md) und die
 [FAQs](https://faqs.ankiweb.net/what-spaced-repetition-algorithm.html), um mehr
@@ -146,13 +146,13 @@ Bildschirms an, z.B. `12 + 34 + 56`. Sie stehen für neue Karten, Karten in der
 Lernphase und zu wiederholende Karten. Wenn du sie lieber nicht sehen würdest,
 kannst du sie in Ankis [Einstellungen](preferences.md) abschalten.
 
-Mit dem V1-Zeitplaner zählen die *Wiederholungen*, die nötig sind, bis alle
-anstehenden Karten abgearbeitet sind, nicht die Anzahl der *Karten*. Wenn du
+Mit dem V1-Zeitplaner zählen die _Wiederholungen_, die nötig sind, bis alle
+anstehenden Karten abgearbeitet sind, nicht die Anzahl der _Karten_. Wenn du
 mehrere Lernstufen für fehlgeschlagene Wiederholungen eingestellt hast, steigt
 die Zahl bei einem Fehlschlag um mehr als 1, da die Karte nun mehrfach gezeigt
 werden muss.
 
-Ab dem V2-Zeitplaner zählen *Karten*, sodass die Anzahl immer um 1 steigt, egal
+Ab dem V2-Zeitplaner zählen _Karten_, sodass die Anzahl immer um 1 steigt, egal
 wie viele Lernstufen verbleiben.
 
 Sobald die Antwort sichtbar ist, zeigt Anki über jeder Schaltfläche eine
@@ -163,7 +163,7 @@ Wenn du das lieber nicht sehen würdest, kannst du es in Ankis
 ## Zufallsfaktor
 
 Wenn du eine Wiederholungskarte bewertest, wendet Anki zudem einen geringen
-Zufallsfaktor ("*Fuzz*") an, um zu vermeiden, dass Karten, die gleichzeitig
+Zufallsfaktor ("_Fuzz_") an, um zu vermeiden, dass Karten, die gleichzeitig
 eingeführt wurden, zusammebleiben und auch in Zukunft stets am selben Tag
 angezeigt werden.
 Seit dem V3-Zeitplaner wird dieser Zufallsfaktor auf den Schaltflächenbeschriftungen
@@ -186,39 +186,39 @@ In der rechten unteren Ecke des Wiederholungsfenster befindet sich die Schaltfl�
 **Mehr**. Sie bietet einige weitere Funktionen für die aktuelle Karte oder Notiz:
 
 - [**Markieren**](editing.md#using-flags): Fügt der Karte eine farbige Markierung
-hinzu oder entfernt sie wieder. Diese Markierungen sind beim Lernen sichtbar und
-können zur Suche in der Kartenverwaltung verwendet werden. Das ist nützlich,
-wenn du mit der Karte zu einem späteren Zeitpunkt noch etwas machen möchtest,
-z.B. ein Wort nachschlagen, sobald du zuhause bist.
-Ab Anki 2.1.45+ kannst du den Markierungen von der [Kartenverwaltung](browsing.md)
-aus Namen geben.
+  hinzu oder entfernt sie wieder. Diese Markierungen sind beim Lernen sichtbar und
+  können zur Suche in der Kartenverwaltung verwendet werden. Das ist nützlich,
+  wenn du mit der Karte zu einem späteren Zeitpunkt noch etwas machen möchtest,
+  z.B. ein Wort nachschlagen, sobald du zuhause bist.
+  Ab Anki 2.1.45+ kannst du den Markierungen von der [Kartenverwaltung](browsing.md)
+  aus Namen geben.
 
 - **Karte / Notiz zurückstellen**: Verbirgt die Karte bzw. alle Karten der Notiz bis
   zum nächsten Tag. (Wenn du Karten schon früher wieder sehen möchtest, kannst du
-  auf die Schaltfläche *Zurückstellen aufheben* in der
+  auf die Schaltfläche _Zurückstellen aufheben_ in der
   [Stapelübersicht](studying.md#study-overview) klicken.)
   Das ist nützlich, wenn du die Karte gerade nicht beantworten kannst oder später
   auf sie zurückkommen möchtest. Eine Zurückstellung kann auch
   [automatisch](studying.md#siblings-and-burying) für Karten derselben Notiz erfolgen.
 
-    Mit dem alten Zeitplaner wurden zurückgestellte Lernkarten wieder als neue
-    oder Wiederholungskarten eingereiht.
+  Mit dem alten Zeitplaner wurden zurückgestellte Lernkarten wieder als neue
+  oder Wiederholungskarten eingereiht.
 
-    Mit dem [Zeitplaner 2.1](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html)
-    werden die Lernstufen durch eine Zurückstellung hingegen nicht zurückgesetzt.
+  Mit dem [Zeitplaner 2.1](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html)
+  werden die Lernstufen durch eine Zurückstellung hingegen nicht zurückgesetzt.
 
-- **Fälligkeitsdatum auswählen**: Macht die Karte zur Wiederholungskarte und
+- **Fälligkeitsdatum auswählen**: Reiht die Karte in die Wiederholungsschlange ein und
   lässt sie [zu einem bestimmten Datum fällig](browsing.md#cards) werden.
 
 - **Karte / Notiz aussetzen**: Verbirgt die Karte bzw. alle Karten der Notiz bis
   sie manuell wieder eingesetzt wird ("wieder einsetzen" in der Kartenverwaltung).
   Das ist nützlich, wenn du die Karte erstmal nicht wiederholen, aber auch nicht
   löschen möchtest.
-    Mit dem alten Zeitplaner wurden ausgesetzte Lernkarten wieder als neue
-    oder Wiederholungskarten eingereiht.
+  Mit dem alten Zeitplaner wurden ausgesetzte Lernkarten wieder als neue
+  oder Wiederholungskarten eingereiht.
 
-    Mit dem [Zeitplaner 2.1](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html)
-    werden die Lernstufen durch eine Aussetzung hingegen nicht zurückgesetzt.
+  Mit dem [Zeitplaner 2.1](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html)
+  werden die Lernstufen durch eine Aussetzung hingegen nicht zurückgesetzt.
 
 - **Optionen**: Erlaubt die Bearbeitung der [Optionen](deck-options.md) des aktuellen
   Stapels.
@@ -226,7 +226,7 @@ aus Namen geben.
 - **Karteninformation**: Zeigt [statistische Daten](stats.md#card-info) zur Karte.
 
 - [**Notiz kennzeichnen**](editing.md#the-marked-tag): Fügt der Notiz das Schlagwort
-  *marked* ("markiert") hinzu, sodass sie leicht in der Kartenverwaltung
+  _marked_ ("markiert") hinzu, sodass sie leicht in der Kartenverwaltung
   wiedergefunden werden kann. Das ist ähnlich, wie einzelnen Karten Flaggen zuzuweisen,
   aber da es sich hier um ein Schlagwort handelt, werden bei einer Suche danach
   alle Karten einer Notiz angezeigt. Für die meisten Benutzer sind Flaggen angemessener.
@@ -299,7 +299,7 @@ du ihre Reihenfolge in der [Kartenverwaltung](browsing.md) festlegen.
 Im Kapitel [Grundlagen](getting-started.md) haben wir gesehen, dass Anki für jeden
 Eingabenblock mehr als eine Karte erzeugen kann, z.B. eine Karte Vorderseite→Rückseite
 und eine Rückseite→Vorderseite oder zwei Lückentexte zum selben Text.
-Diese zusammengehörigen Karten heißen *Geschwister*. 
+Diese zusammengehörigen Karten heißen _Geschwister_.
 
 Wenn du eine Karte mit Geschwistern beantwortest, kann Anki verhindern, dass diese
 Geschwister in derselben Lerneinheit gezeigt werden, in dem es sie automatisch
@@ -307,7 +307,7 @@ zurückstellt. Zurückgestellte Karten sind von der Wiederholung ausgenommen, bi
 ein neuer Tag beginnt oder du sie mit der Option "Zurückstellen aufheben" am unteren
 Ende der Stapelübersicht zurückholst.
 Anki stellt sogar Geschwister zurück, die nicht im selben Stapel sind (z.B. weil
-du die Funktion [*Stapel überschreiben*](templates/intro.md) benutzt). 
+du die Funktion [_Stapel überschreiben_](templates/intro.md) benutzt).
 
 Du kannst das Zurückstellen von den [Stapeloptionen](deck-options.md) aus aktivieren.
 Es gibt getrennte Einstellungen für neue und Wiederholungskarten.
@@ -335,7 +335,7 @@ um eine bestimmte Bewertung zu wählen. Viele Benutzer finden es praktisch, die
 meisten Karten mit <kbd>Leertaste</kbd> zu bewerten und einen Finger auf <kbd>1</kbd>
 zu halten, für den Fall, dass sie eine Karte vergessen.
 
-Die Funktion *Stapel lernen* im Werkzeugmenü erlaubt es, schnell mit der Tastatur
+Die Funktion _Stapel lernen_ im Werkzeugmenü erlaubt es, schnell mit der Tastatur
 den Stapel zu wechseln. Du kannst sie mit der Taste <kbd>/</kbd> auslösen.
 Es werden alle deine Stapel und oben ein Filterbereich angezeigt. Während du tippst,
 begrenzt Anki die Anzeige auf passende Stapel. Mit einem Leerzeichen kannst
@@ -356,5 +356,5 @@ kannst du zu diesem Zweck einen [Auswahlstapel](filtered-decks.md) erstellen.
 Wenn du überfällige Karten beantwortest, bezieht Anki die zusätzlich verstrichene
 Zeit bei der Berechnung, wann die Karte das nächste Mal gezeigt werden soll, mit
 ein. Siehe bitte den Abschnitt über Ankis
-[*Spaced-Repetition*-Algorithmus](https://faqs.ankiweb.net/due-times-after-a-break.html)
+[_Spaced-Repetition_-Algorithmus](https://faqs.ankiweb.net/due-times-after-a-break.html)
 für weitere Informationen.

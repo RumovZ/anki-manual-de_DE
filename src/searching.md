@@ -190,6 +190,15 @@ Findet "a1", "b1" und "c1", auch groß geschrieben, irgendwo in einem Feld _Vord
 `front:re:^[a-c]1$`  
 Wie oben, erfordert aber, dass vor und nach "a1", "b1" bzw. "c1" kein weiterer Text steht.
 
+Seit Anki 2.1.50 können reguläre Ausdrücke auch für Schlagwörter benutzt werden:
+
+`tag:re:^vorfahr$`  
+Findet Notizen mit dem exakten Schlagwort "Vorfahr", ohne Unterschlagwörter wie "Vorfahr::Nachfahre"
+zu berücksichtigen.
+
+`"tag:re:lektion-(1[7-9]|2[0-5])"`  
+Findet Notizen mit den Schlagwörtern "Lektion-17" bis "Lektion-25".
+
 Mehr über reguläre Ausdrücke findest du z.B. hier:
 <https://www.ionos.de/digitalguide/websites/webseiten-erstellen/regulaere-ausdruecke/>
 
@@ -282,10 +291,6 @@ Karten, die öfter als drei mal gescheitert sind.
 `prop:ease!=2.5`  
 Karten, die schwieriger oder leichter sind als der Standardwert.
 
-<!-- Note that due only matches review cards and learning cards with an
-interval of a day or more: cards in learning with small intervals like
-10 minutes are not included. -->
-
 ## Jüngste Ereignisse
 
 ### Hinzugefügt
@@ -368,6 +373,12 @@ besonders zu behandeln.
   `w:e:g` ist also eine Wortgrenzensuche nach `e:g`, `w\:e\:g` findet buchstäblich `w:e:g` und `w\:e:g`
   sucht in einem Feld `w:e` nach `g` (siehe [Eingrenzung auf Felder](#limiting-to-a-field)).
 
+- `&`, `<` und `>`  
+  `&`, `<` und `>` werden beim Suchen als HTML behandelt, weshalb Suchen mit ihnen nicht wie erwartet
+  funktionieren. Du kannst nach ihnen aber mithilfe ihrer HTML-Entität-Namen suchen (`&amp;` für `&`,
+  `&lt;` für `<` und `&gt;` für `>`). Z.B. findet `&lt;&amp;text&gt;` Notizen mit `<&text>` in einem
+  Feld.
+
 ### Roheingaben
 
 Nach bestimmten Schlüsselwörtern (wie `re:`) wird folgender Text als Roheingabe behandelt.
@@ -390,6 +401,3 @@ Die Karten mit Kennnummern 123, 456 oder 789.
 
 Notiz- und Kartenkennnummern werden in der [Kartenstatistik](stats.md) angezeigt.
 Diese Suchen können bei der Add-on-Entwicklung oder anderen datenbanknahen Arbeiten nützlich sein.
-
-Kennnummern funktionieren nicht in Ankimobile und sind derzeit nicht für die Verwendung in Auswahlstapeln
-vorgesehen.
