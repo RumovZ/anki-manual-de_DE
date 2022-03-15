@@ -1,115 +1,109 @@
-# Preferences
+# Einstellungen
 
 <!-- toc -->
 
-The preferences are available from the Tools menu on Windows/Linux, or
-the Anki menu on a Mac.
+Die Einstellungen finden sich im Menü _Werkzeuge_ auf Windows/Linux und im Anki-Menü auf einem Mac.
 
-## Basic
+## Einfach
 
-**Video driver**  
-Anki's libraries need a video driver to draw content on the screen.
-Due to different hardware and software configurations, the driver that
-works best on your machine may vary. ANGLE and OpenGL will perform better
-than the software option, but they may not function correctly on some
-systems. On Macs, you will almost always want to use the OpenGL option.
+**Videotreiber**  
+Ankis Programmbibliotheken benötogen einen Videotreiber, um Inhalte auf dem Bildschirm darstellen zu
+können. Aufgrund unterschiedlicher Hardware- und Software-Konfigurationen hängt es von deinem Rechner
+ab, welcher Treiber am besten funktioniert. ANGLE und OpenGL sind schneller als die Option Software,
+aber funktionieren auf manchen Systemen vielleicht nicht richtig. Auf einem Mac ist OpenGL fast immer
+die beste Wahl.
 
-**Show play buttons**  
-Whether a clickable (re)play button will be shown in the review screen
-for cards with audio.
+**Wiedergabesteuerelemente auf Karten mit Audiodateien anzeigen**  
+Ob eine anklickbare Schaltfläche zum (erneuten) Abspielen beim Lernen von Karten mit Ton angezeigt
+werden soll.
 
-**Interrupt current audio**  
-Whether a currently playing audio file should be stopped when answering
-a card.
+**Audiowiedergabe beim Antworten unterbrechen**  
+Ob eine aktuelle Audioausgabe beendet werden soll, wenn eine Karte beantwortet wird.
 
-**Paste clipboard images as PNG**  
-By default Anki pastes images on the clipboard as JPG files, to save disk space.
-You can use the option to paste as PNG images instead. PNG images support
-transparent backgrounds and are lossless, but they usually result in much larger
-file sizes.
+**Bilder aus der Zwischenablage im PNG-Bildformat einfügen**  
+Standardmäßig fügt Anki Bilder aus der Zwischenablage als JPG-Dateien ein, um Speicherplatz zu sparen.
+Mit dieser Option kannst du stattdessen PNG-Dateien einfügen lassen. PNG-Bilder unterstützen durchsichtigen
+Hintergrund und sind verlustfrei, resultieren aber meistens in sehr viel größeren Dateien.
 
-**Paste without Shift strips formatting**  
-By default, formatting like bold and colors are kept when pasting,
-unless the <kbd>Shift</kbd> key is held down. This option reverses the behaviour.
+**Text aus der Zwischenablage ohne Formatierung einfügen**  
+Standardmäßig wird Formatierung wie Schriftstärke und Farbe beim Einfügen beibehalten, außer es wird
+die <kbd>Umschalttaste</kbd> gedrückt. Diese Option kehrt dieses Verhalte um.
 
-**Night mode**  
-Night mode will cause Anki to show cards as white text on a
-black background. Some card templates may need to be modified to work
-properly with this option enabled - please see [night mode
-styling](templates/styling.md#night-mode) for more information.
+**Nachtmodus**  
+Im Nachmodus werden Karten mit weißer Schrift auf schwarzem Hintergrund angezeigt. Manche Kartenvorlagen
+musst du vielleicht anpassen, damit sie in diesem Modus gut funktionieren. Siehe
+[Nachtmodus-Design](templates/styling.md#night-mode) für weitere Informationen.
 
-**When adding, default to current deck**  
-Controls how note types and decks interact. The default of "When adding, default
-to current deck" means that Anki saves the last-used note type for each deck and
-selects it again then next time you choose the deck (and, in addition, will
-start with the current deck selected when choosing Add from anywhere). The other
-option, "Change deck depending on note type," saves the last-used deck for each
-note type (and opens the add window to the last-used note type when you choose
-Add). This may be more convenient if you always use a single note type for each
-deck.
+**Beim Hinzufügen aktuellen Stapel als Standard festlegen**  
+Beeinflusst die Wechselwirkung zwischen Notiztypen und Stapeln. Das voreingestellte Verhalten
+"Beim Hinzufügen aktuellen Stapel als Standard festlegen" bedeutet, dass Anki für jeden Stapel den
+zuletzt genutzten Notiztyp speichert und ihn wieder auswählt, wenn du das nächste Mal den Stapel
+auswählst. (Zusätzlich wird der aktuelle Stapel vorausgewählt, wenn du von irgendwo aus _Hinzufügen_
+startest.)
+Die andere Möglichkeit "Stapel abhängig vom Notiztyp zuweisen" speichert den zuletzt genutzten
+Stapel für jeden Notiztyp (und der zuletzt genutzte Notiztyp wird vorausgewählt, wenn du _Hinzufügen_
+startest). Das kann praktischer sein, wenn du für jeden Stapel immer einen einizigen Notiztyp verwendest.
 
-**Default search text**
-Allows you to customize the starting search text in the browser (eg, to start 
-with "deck:current").
+**Standardmäßig eingestellter Suchtext**  
+Erlaubt die Anpassung des anfänglichen Suchtextes in der Kartenverwaltung (`deck:current` lässt z.B.
+den aktuellen Stapel anzeigen.)
 
-**User interface size**
-If you find that the interface elements are too small for you, you can 
-try to increase this setting.  
+**Schriftgröße der Benutzeroberfläche**  
+Wenn dir die Elemente der Benutzeroberfläche zu klein sind, kannst du diese Einstellung erhöhen.
 
-## Scheduling
+## Zeitplanung
 
-**Show next review time above answer buttons**  
-Useful to know how far in the future your cards are being pushed.
+**Zeit für nächste Wiederholung über Antworttaste anzeigen**  
+Nützlich um zu wissen, wann Karten das nächste Mal wieder gezeigt werden
 
-**Show remaining card count during review**  
-Disable this option to hide the card count at the bottom of the screen.
+**Zähler für verbleibende Karten beim Lernen anzeigen**  
+Deaktivieren, um den Kartenzähler am unteren Rand zu verstecken.
 
-**Show learning cards with larger steps before**  
-Only shown when the 2.1 scheduler is enabled. Normally learning cards with a 1+
-day delay are shown after normal reviews. If checked, Anki will show them before
-normal reviews instead.
+**Lernkarten mit größeren Lernstufen vor Wiederholungskarten zeigen**  
+Nur mit aktiviertem V3-Zeitplaner sichtbar. Normalerweise werden Lernkarten mit einem Intervall
+von mehr als einem Tag nach Wiederholungskarten gezeigt. Mit dieser Option werden sie stattdessen
+vorher gezeigt.
 
-**Legacy timezone handling**  
-Please see here:
-<https://faqs.ankiweb.net/timezone-handling-changes.html>
+**Veralteter Umgang mit Zeitzonen**  
+Siehe
+<https://faqs.ankiweb.net/timezone-handling-changes.html>.
 
-**V3 Scheduler**  
-The Anki V3 scheduler is documented here:  
+**V3-Zeitplaner**  
+Der V3-Zeitplaner ist hier dokumentiert:  
 <https://faqs.ankiweb.net/the-2021-scheduler.html>
 
-**Mix new cards and reviews**:
-Only shown when the v1/v2 schedulers are enabled. This drop-down box controls when
-new cards are shown: either mixed with, before, or after all reviews.
+**Neue und Wiederholungskarten mischen**  
+Nur mit V1- oder V2-Zeitplaner sichtbar. Diese Option bestimmt, wann neue Karten gezeigt werden:
+Gemischt mit, vor oder nach Wiederholungskarten.
 
-**Next day starts at**  
-Controls when Anki should start showing the next day’s cards. The default
-setting of 4AM ensures that if you’re studying around midnight, you won’t have
-two days' worth of cards shown to you in one session. If you stay up very late
-or wake up very early, you may want to adjust this to a time you’re usually
-sleeping. Note that the start of the next day is relative to your current timezone.
-Also note that any cards that cross a day boundary [will appear at the start of 
-the day they are scheduled for](./deck-options.md#day-boundaries), just like review cards do. 
+**Neuer Tag beginnt um**  
+Legt fest, ab wann Anki die Karten des nächsten Tages zeigen soll. Die Standardeinstellung von 4 Uhr
+stellt sicher, dass dir in einer Sitzung nicht die Karten von zwei Tagen angezeigt werden, wenn du
+gegen Mittenacht lernst. Wenn du sehr spät schlafen gehst oder sehr früh aufstehst, solltest du
+stattdessen eine Zeit einstellen, zu der du normalerweise schläfst.
+Beachte, dass der Beginn des neuen Tages von deiner aktuellen Zeitzone abhängt. Beachte außerdem,
+dass Karten, die eine Tagesgrenze überschreiten,
+[zu Beginn des Tages, für den sie geplant wurden](./deck-options.md#day-boundaries),
+angezeigt werden, genau wie Wiederholungskarten.
 
-**Learn ahead limit**  
-Tells Anki how to behave when there is nothing left to study in the current deck
-but cards in learning. The default setting of 20 minutes tells Anki that cards
-should be shown early if they have a delay of less than 20 minutes and there’s
-nothing else to do. If you set this to 0, Anki will always wait the full delay,
-showing the congratulations screen until the remaining cards are ready to be
-reviewed.
+**Grenzwert für vorgezogenes Lernen**  
+Bestimmt das Verhalten, wenn es im aktuellen Stapel nur noch Lernkarten zu lernen gibt.
+Mit der Voreinstellung von 20 Minuten zeigt Anki Karten verfrüht, wenn ihr Restintervall weniger
+als 20 Minuten beträgt und es sonst nichts zu tun gibt.
+Wenn du 0 einstellst, wartet Anki immer das ganze Intervall ab und zeigt den Glückwunsch-Bildschirm,
+bis die verbleibenden Karten bereit sind.
 
-**Timebox time limit**  
-Timeboxing is a technique to help you focus by dividing a longer activity (such
-as a 30 minute study session) into smaller blocks. If you set the timebox time
-limit to a non-zero number of minutes, Anki will periodically show you how many
-cards you’ve managed to study during the prescribed time limit.
+**Zeitbegrenzung für Sitzungen**  
+_Timeboxing_ ist eine Konzentrationstechnik, bei der eine längere Aktivität (wie eine dreißigminütige
+Lerneinheit) in kleinere Blöcke zerlegt wird. Wenn du eine Zeitbegrenzung von mehr als 0 Minuten
+einstellst, zeigt Anki dir regelmäßig, wie viele Karten du in in der vorgegebenen Zeit geschafft hast.
 
-## Network
+## Netzwerk
 
-The network tab contains options related to syncing with AnkiWeb.
+Der Netzwerkreiter enthält Einstellungen für die Synchronisierung mit AnkiWeb.
 
-- When logged in, the **deauthorize** button will log you out.
-- When the 'force changes' option is enabled, the next sync will
-  ask you whether you wish to upload or download. This is useful if
-  you have made some changes accidentally, and wish to overwrite them
-  with an older version that is on AnkiWeb.
+- Wenn du angemeldet bist, wird eine Schaltfläche zum **Abmelden** angezeigt.
+- Wenn die Option "Bei der nächsten Synchronisation Änderungen in eine Richtung erzwingen" aktiviert
+  ist, wirst du bei der nächsten Synchronisierung gefragt, ob du hochladen oder herunterladen willst.
+  Das ist nützlich, wenn du aus Versehen Änderungen vorgenommen hast und sie mit einer älteren Version
+  auf AnkiWeb rückkgängig machen willst.
