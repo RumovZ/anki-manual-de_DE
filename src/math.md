@@ -25,7 +25,7 @@ To try it out:
 
         \(\sqrt{x}\)
 
-4.  If you click the Cards…​ button, you’ll see a preview of how the
+4.  If you click the Cards… button, you’ll see a preview of how the
     equation will appear when the card is reviewed.
 
 Anki’s MathJax support expects content in TeX format. If you’re not
@@ -67,17 +67,17 @@ experience with LaTeX, please consult one of the many guides available
 on the internet. If you are having trouble with markup, please ask on a
 LaTeX forum.
 
-To install LaTeX, on Windows use MiKTeX; on macOS use MacTex, and on Linux
+To install LaTeX, on Windows use MiKTeX; on macOS use MacTeX, and on Linux
 use your distro’s package manager. Dvipng must also be installed.
 
-On Windows, go to Settings in MikTek’s maintenance window, and make sure
-"Install missing packages on the fly" is set to "No", not to "Ask me
+On Windows, go to Settings in MikTeX’s maintenance window, and make sure
+"Install missing packages on the fly" is set to "Always", not to "Ask me
 first". If you continue to have difficulties, one user reported that
 running Anki as an administrator until all the packages were fetched
 helped.
 
-On macOS, LaTeX has only been tested with MacTex and BasicTex. If you use
-BasicTex, you need to install dvipng separately, with the following
+On macOS, LaTeX has only been tested with MacTeX and BasicTeX. If you use
+BasicTeX, you need to install dvipng separately, with the following
 command:
 
     sudo tlmgr update --self; sudo tlmgr install dvipng
@@ -183,7 +183,7 @@ an example file for chemtex on the internet:
 
     \end{document}
 
-Firstly, follow the documentation of the package and MiKTeX/MacTex in
+Firstly, follow the documentation of the package and MiKTeX/MacTeX in
 order to install the package. To check the package is working, you’ll
 want to put code like the above into a .latex file and test if you can
 compile it from the command line. Once you’ve confirmed that the package

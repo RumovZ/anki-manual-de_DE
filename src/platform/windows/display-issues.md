@@ -17,30 +17,31 @@ Dieses Toolkit wird von allen Anki-Versionen vor 2.1.50 benutzt. Hier kann der
 Anzeigetreiber unter Werkzeuge>Einstellungen angepasst werden.
 Anschließend solltest du Anki neu starten.
 
-Wenn du nicht auf Ankis Einstellungen zugreifen kannst und Anki ein paar mal neu zu
-starten nicht hilft, musst du den Grafiktreiber vielleicht manuell anpassen.
-Dafür kannst cmd.exe starten und das Folgende eingeben:
+Wenn du nicht auf Ankis Einstellungen zugreifen kannst und, Anki ein paar mal neu zu
+starten, nicht hilft, musst du den Grafiktreiber vielleicht manuell anpassen.
+Dafür kannst du cmd.exe starten und das Folgende eingeben:
 
 ```bat
 echo auto > %APPDATA%\Anki2\gldriver
 ```
+
+Es wird kein Text ausgegeben. Nun kannst du Anki neu starten.
 
 Die Voreinstellung ist `software`; die beiden anderen Treiber, die du ausprobieren kannst,
 sind `angle` und `auto`.
 
 ## Qt6
 
-Anki 2.1.50+ kann mit dem neueren Qt6-Toolkit benutzt werden. Hier kann der
-Anzeigetreiber nicht mehr einfach geändert werden und `angle` wird überhaupt nicht mehr
-unterstützt. Es ist allerdings immer noch möglich `software` zu benutzen, indem du Anki
-von cmd.exe aus startest, nachdem du den folgenden Befehl ausgesührt hast.
+Anki 2.1.50+ kann mit dem neueren Qt6-Toolkit benutzt werden. Grafikbeschleunigung ist hier
+standardmäßig aktiviert. Bei Anzeigeproblemen kannst du den Modus `software` ausprobieren:
 
 ```bat
-set QT_OPENGL=software
+echo software > %APPDATA%\Anki2\gldriver6
 ```
 
-Wenn du diese Einstellung dauerhaft machen willst, musst du diese Zeile am Anfang der Datei
-anki-console.bat einfügen und sie zukünftig anstelle von anki.exe ausführen.
+Es wird kein Text ausgegeben. Nun kannst du Anki neu starten.
+
+Um zur Standardeinstellung zurückzukehren, ersetze `software` durch `auto` oder lösch die Datei.
 
 ## Vollbild
 

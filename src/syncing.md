@@ -144,12 +144,10 @@ einem Ort ist.
 ## Firewalls
 
 Zur Synchronisation muss Anki in der Lage sein, ausgehende HTTPS-Verbindungen
-aufzubauen. Dazu muss es mindestens zu ankiweb.net, sync.ankiweb.net und
-syncN.ankiweb.net (wobei N eine Zahl zwischen 2 und 6 ist) eine Verbindung
-herstellen können. Diese Domains können sich im Laufe der Zeit ändern und auch
-die IP-Adressen, auf die sie verweisen, können sich ändern. Daher empfehlen wir,
-Wildcard-Zugriff auf \*.ankiweb.net zu erlauben, um die Chance zu verringern,
-dass die Firewall-Regeln in Zukunft aktualisiert werden müssen.
+nach ankiweb.net, sync.ankiweb.net, sync2.ankiweb.net und so weiter aufzubauen.
+Diese Domains ändern und auch die IP-Adressen, auf die sie verweisen, können sich im
+Laufe der Zeit ändern. Daher empfehlen wir, Wildcard-Zugriff auf \*.ankiweb.net zu erlauben,
+um die Chance zu verringern, dass die Firewall-Regeln in Zukunft aktualisiert werden müssen.
 
 Wenn du eine Firewall auf deinem Rechner hast, solltest du eine Ausnahme für
 Anki hinzufügen. Wenn du dich in einem Arbeits- oder Schulnetzwerk befindest,

@@ -8,8 +8,8 @@ In jüngerer Zeit gab es Berichte darüber, dass Anki nicht erscheint, ohne dass
 eine Fehlermeldung angezeigt wird. In dieser Situation kannst du eines der folgenden
 Dinge tun:
 
-- Die neuste [Windows-Qt6-Beta](https://apps.ankiweb.net/downloads/beta/?C=N&O=D)
-  installieren. (Bei Kompatibilitätsproblemen mit Erweiterungen, versuch Qt5.)
+- Die neuste [Anki-Version](https://apps.ankiweb.net/) installieren. (Probier sowohl Qt5
+  als auch Qt6.)
 - Das [Dezimaltrennzeichen](https://forums.ankiweb.net/t/windows-update-broke-anki/1822/75)
   ändern, wenn es kein Punkt ist.
 - Die alte Anki-Version 2.1.35-alternate installieren.
@@ -50,7 +50,7 @@ Siehe bitte [Anzeigeprobleme](./display-issues.md).
 
 Wenn du die Meldung *"LoadLibrary ist mit Fehler 126 fehlgeschlagen"* bekommst,
 könnte das daran liegen, dass das von Anki benutzte Toolkit Probleme mit
-[mehreren Bildschirmen](https://forums.ankiweb.net/t/error-126-on-open-anki-desktop/13967)
+[mehreren Bildschirmen](https://forums.ankiweb.net/t/error-126-on-open-anki-desktop/13967).
 hat.
 
 ## Antivirus- / Firewall-Software

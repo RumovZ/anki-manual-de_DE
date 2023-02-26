@@ -34,8 +34,7 @@ indem du sie mit Leerzeichen voneinander trennst. So würde z. B. die Eingabe
 Du kannst diesen Bereich aber auch leer lassen.
 
 Hast du Text auf Vorder- und Rückseite eingegeben, kannst du die Notiz mit einem
-Klick auf die Schalfläche "Hinzufügen" oder mit dem Tastaturkürzel <kbd>Strg</kbd>
-+<kbd>Enter</kbd> (<kbd>⌘</kbd>+<kbd>Enter</kbd> auf dem Mac) zu deiner Sammlung hinzufügen.
+Klick auf die Schalfläche "Hinzufügen" oder mit dem Tastaturkürzel <kbd>Strg</kbd> +<kbd>Enter</kbd> (<kbd>⌘</kbd>+<kbd>Enter</kbd> auf dem Mac) zu deiner Sammlung hinzufügen.
 Zusätzlich wird eine Karte erstellt und in den aktuell ausgewählten Stapel einsortiert.
 Du kannst auch nach der Erstellung noch Änderungen an deinen Notizen vornehmen.
 Klicke auf die Schaltfläche "Verlauf", um in der [Kartenverwaltung](browsing.md)
@@ -57,7 +56,7 @@ Aus Effizienzgründen überprüft Anki die restlichen Felder nicht automatisch a
 Die Kartenverwaltung bietet jedoch eine Funktion namens "Duplikate suchen", die du bei Bedarf
 manuell ausführen kannst.
 
-###  Effektiv lernen
+### Effektiv lernen
 
 Jeder hat seine eigenen Vorlieben, wenn es um die Wiederholung von Lernstoff geht.
 Es gibt jedoch eine Reihe allgemeingültiger Konzepte, die man stets im Hinterkopf behalten
@@ -87,7 +86,7 @@ verteilen.
 
 Vielleicht denkst du: "Aber ich will nur eine Karte,
 warum kann ich nicht einfach eine Audiodatei, ein Bild, einen Hinweis
-und die Übersetzung in das Feld *Vorderseite* eingeben?"
+und die Übersetzung in das Feld _Vorderseite_ eingeben?"
 Wenn du das bevorzugst, geht das natürlich in Ordnung. Diese Herangehensweise hat
 jedoch einen großen Nachteil: All diese Informationen sind untrennbar miteinander verbunden.
 So bist du dann z. B. nicht in der Lage, die Karten nach dem Hinweis zu sortieren, da dieser
@@ -237,7 +236,7 @@ Flaggen funktionieren ähnlich wie Schlagwörter, werden beim Wiederholen aber
 rechts oben angezeigt. Du kannst auch in der Kartenverwaltung nach Karten mit
 einer bestimmten Flagge suchen, Flaggen in der Seitenleiste umbenennen und Auswahlstapel
 aus Karten erstellen, die mit einer bestimmten Flagge gekennzeichnet wurden.
-Im Gegensatz zu Schlagwörtern kann eine Karte nur eine Flagge auf einmal zugewiesen bekommen. 
+Im Gegensatz zu Schlagwörtern kann eine Karte nur eine Flagge auf einmal zugewiesen bekommen.
 Ein weiterer wichtiger Unterschied besteht darin, dass Flaggen auf der
 [Kartenebene](getting-started.md#karten) gespeichert werden, d. h. das Zuweisen
 einer Flagge zu einer Karte hat keine Auswirkungen auf deren Geschwister.
@@ -245,7 +244,6 @@ einer Flagge zu einer Karte hat keine Auswirkungen auf deren Geschwister.
 Du kannst Karten direkt beim Wiederholen eine Flagge zuweisen bzw. diese wieder entfernen,
 indem du das Tastaturkürzel <kbd>Strg</kbd> + <kbd>1-7</kbd> (<kbd>⌘</kbd> + <kbd>1-7</kbd>
 auf dem Mac) drückst. Das funktioniert auch in der [Kartenverwaltung](browsing.md).
-
 
 ### Das Schlagwort "marked"
 
@@ -259,7 +257,6 @@ anderen Farbe hinterlegt.
 
 Info: Diese Funktion gibt es nur mehr aus Kompatibilitätsgründen mit älteren
 Versionen. In den meisten Fällen sind Flaggen besser geeignet.
-
 
 ### Felder verwenden
 
@@ -406,12 +403,19 @@ Bei der Wiederholung wird die Karte so erscheinen:
 Es gibt auch die Möglichkeit, den Lückeninhalt bei der Wiederholung einzutippen.
 Für nähere Informationen, siehe [Antworten eingeben](templates/fields.md#checking-your-answer).
 
-Bitte beachte, dass die Verschachtelung von Lücken nicht unterstützt wird.
-Die folgende Eingabe wäre also ungültig:
+Ab Version 2.1.56 wird auch die Verschachtelung von Lücken unterstützt:
 
     Die {{c1::Universität {{c2::Wien}}}} wurde 1365 gegründet.
 
-Wenn du überlappende Lückentexte brauchst, musst du ein zweites Feld erzeugen,
+Die innere Lücke wird vollständig von der äußeren umschlossen. Überlappende Lücken wie hier
+werden nicht unterstützt:
+
+    [...] 1365 gegründet. -> Die Universität Wien wurde
+    Die Universität Wien [...]. -> wurde 1365 gegründet.
+
+("wurde" kommt in beiden Lücken vor.)
+
+Wenn du überlappende Lückentexte auf einer Version vor 2.1.56 brauchst, musst du ein zweites Feld erzeugen,
 dieses in die [Vorlage](templates/intro.md) des Notiztyps einfügen und den Text
 folgendermaßen in beide Felder kopieren:
 

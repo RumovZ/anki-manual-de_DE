@@ -3,7 +3,7 @@
 <!-- toc -->
 
 Mit der Kartenverwaltung kannst du in deinen Karten und Notizen stöbern und sie
-bearbeiten. Du öffnest sie, indem du im Hauptfenster auf *Kartenverwaltung* klickst
+bearbeiten. Du öffnest sie, indem du im Hauptfenster auf _Kartenverwaltung_ klickst
 oder <kbd>B</kbd> drückst. Sie besteht aus drei Bereichen: der Seitenleiste links,
 der Karten- bzw. Notiztabelle oben rechts und dem Bearbeitungsbereich unten rechts.
 Du kannst einen Bereich vergrößern und einen anderen verkleinern, indem du auf
@@ -37,19 +37,19 @@ Mit diesem Werkzeug verhält sich die Leistenleiste wie in früheren Versionen:
 Auf einen Eintrag zu klicken, löst eine Suche danach aus.
 
 Du kannst <kbd>Strg</kbd> (<kbd>Befehl</kbd> auf dem Mac) gedrückt halten, um
-den angeklickten Eintrag mit einer *AND*-Bedingung ("und") an die aktuelle Suche
+den angeklickten Eintrag mit einer _AND_-Bedingung ("und") an die aktuelle Suche
 anzuhängen, anstatt eine neue zu starten. Wenn du z.B. Lernkarten sehen wolltest,
-die sich außerdem im Englisch-Stapel befinden, könntest du auf *Lernen* klicken
-und dann auf *Englisch* <kbd>Strg</kbd>-klicken.
+die sich außerdem im Englisch-Stapel befinden, könntest du auf _Lernen_ klicken
+und dann auf _Englisch_ <kbd>Strg</kbd>-klicken.
 
-Du kannst die <kbd>Umschalttaste</kbd> gedrückt halten, um eine *OR*- ("oder") statt
-eine *AND*-Suche zu erzeugen. Indem du mehrere Stapel mit <kbd>Umschalttaste</kbd>
+Du kannst die <kbd>Umschalttaste</kbd> gedrückt halten, um eine _OR_- ("oder") statt
+eine _AND_-Suche zu erzeugen. Indem du mehrere Stapel mit <kbd>Umschalttaste</kbd>
 anklickst, kannst du so alle Karten gleichzeitig anzeigen lassen, die sich in einem
 dieser Stapel befinden.
 
 Du kannst <kbd>Alt</kbd> (<kbd>Wahl</kbd> auf dem Mac) gedrückt halten, um
 die Suche umzukehren (`-` voranzustellen), z.B. um alle Karten anzuzeigen, die
-ein bestimmtes Schlagwort *nicht* haben. <kbd>Alt</kbd> / <kbd>Wahl</kbd> können
+ein bestimmtes Schlagwort _nicht_ haben. <kbd>Alt</kbd> / <kbd>Wahl</kbd> können
 mit <kbd>Strg</kbd> oder <kbd>Umschalttaste</kbd> kombiniert werden. So wird
 das Klicken mit <kbd>Strg</kbd>+<kbd>Alt</kbd> einen negierten Ausdruck an die
 Suche anhängen.
@@ -66,7 +66,7 @@ auf den Urdu-Stapel in der Seitenleiste klickst, um die folgende Suche zu erhalt
 
 Das Auswahlwerkzeug ermöglicht es, mehrere Einträge gleichzeitig auszuwählen,
 indem beim Klicken <kbd>Strg</kbd> oder <kbd>Umschalttaste</kbd> gedrückt wird.
-Es unterstützt auch *Drag-and-drop* ("Ziehen und Ablegen"), um Stapel und Schlagwörter
+Es unterstützt auch _Drag-and-drop_ ("Ziehen und Ablegen"), um Stapel und Schlagwörter
 neu anzuordnen.
 
 Dazu ein Beispiel: Angenommen, du hast die Schlagwörter `Mathe`, `Analysis` und
@@ -77,7 +77,7 @@ Hinter den Kulissen hat Anki die beiden Schlagwörter zu `Mathe::Analysis` bzw.
 `Mathe::Algebra` umbenannt und deine Notizen entsprechend aktualisiert.
 
 Auch beim Suchen ist die Auswahl mehrerer Einträge nützlich: Wenn du eine Auswahl
-rechtsklickst, gibt es die Optionen *Suchen &gt; Alle ausgewählten / Eins der ausgewählten*.
+rechtsklickst, gibt es die Optionen _Suchen &gt; Alle ausgewählten / Eins der ausgewählten_.
 Das kann mit den verschiedenen Umschalttasten wie im Abschnitt [Suchwerkzeug](#search-tool)
 beschrieben kombiniert werden, um das Ergebnis an die aktuelle Suche anzuhängen.
 
@@ -124,7 +124,7 @@ ausgewählt ist, und im Notizmodus gilt eine Karte als ausgewählt, wenn ihre
 Notiz ausgewählt ist.
 
 Andere Funktionen (wie das Zeigen der Kartenstatisik) werden nur für eine einzelne
-Karte oder Notiz ausgeführt. Diese wird als *aktuelle* Karte bzw. Notiz bezeichnet
+Karte oder Notiz ausgeführt. Diese wird als _aktuelle_ Karte bzw. Notiz bezeichnet
 und ist im Normalfall die zuletzt ausgewählte oder angeklickte.
 Im Kartenmodus ist die aktuelle Notiz wieder die der aktuellen Karte und im
 Notizmodus ist die aktuelle Karte die erste Karte der aktuellen Notiz.
@@ -179,7 +179,7 @@ Der Bereich unten rechts zeigt die aktuell ausgewählte Notiz an. Für mehr
 Informationen zu Karten und Notizen, siehe [Loslegen](getting-started.md).
 Für mehr Informationen zu Bearbeitungsschaltflächen, siehe [Bearbeiten](editing.md).
 
-Du kannst auf *Vorschau* oben im Bearbeitungsbereich klicken, um zu sehen, wie
+Du kannst auf _Vorschau_ oben im Bearbeitungsbereich klicken, um zu sehen, wie
 die aktuell ausgewählte Karte beim Lernen aussehen würde. Es werden allerdings
 keine Antwort-Eingeben-Felder angezeigt, wodurch du die Karten leichter schnell
 durchschauen kannst.
@@ -212,6 +212,7 @@ des Kontextmenüs zu finden.
 | Name | Aktion |
 |-|-|
 | Notiz hinzufügen | Öffnet das [Hinzufügen-Fenster](editing.md#adding-cards-and-notes). |
+| Kopie erstellen | Öffnet ein [Duplikat](browsing.md#finding-duplicates) der aktuellen Notiz im [Editor](editing.md#adding-cards-and-notes), das angepasst werden kann, um schnell neue Varianten zu erzeugen. Standardmäßig wird das Duplikat im selben Stapel wie das Original angelegt. |
 | Notizen exportieren | Öffnet das [Export-Fenster](exporting.md). |
 | Schlagwörter hinzufügen | Fügt die angegebenen Schlagwörter allen ausgewählten Notizen hinzu. |
 | Schlagwörter entfernen | Entfernt die angegebenen Schlagwörter von allen ausgewählten Notizen. |
@@ -234,8 +235,8 @@ des Kontextmenüs zu finden.
 | Name | Aktion |
 |-|-|
 | Stapel wechseln | Verschiebt die aktuell ausgewählten Karten in einen anderen Stapel. |
-| Fälligkeitsdatum bestimmen | Macht Karten zu Wiederholungskarten und lässt sie zu einem bestimmten Datum fällig werden. Das kann hilfreich sein, um Karten ein paar Tage vor- oder nach hinten zu verlegen, wenn dein Lernrhythmus unterbrochen wurde. Ein Bereich wie `60-90` lässt die Karten in 60 bis 90 Tagen vom aktuellen Tag an fällig werden. Neue Karten erhalten auch ein dementsprechendes Intervall, wohingegen Wiederholungskarten ohne Änderung des Intervalls neu geplant werden, es sei denn es wurde ein `!` angehängt.
-| Vergessen | Platziert die ausgewählten Karten am Ende der Schlange der neuer Karten. Die Wiederholungshistorie wird beibehalten. |
+| Fälligkeitsdatum bestimmen | Macht Karten zu Wiederholungskarten und lässt sie zu einem bestimmten Datum fällig werden. Das kann hilfreich sein, um Karten ein paar Tage vor- oder nach hinten zu verlegen, wenn dein Lernrhythmus unterbrochen wurde. Ein Bereich wie `60-90` lässt die Karten in 60 bis 90 Tagen vom aktuellen Tag an fällig werden. Neue Karten erhalten auch ein dementsprechendes Intervall, wohingegen Wiederholungskarten ohne Änderung des Intervalls neu geplant werden, es sei denn es wurde ein `!` angehängt. (Beachte, dass die Antwortzeit hierbei nicht aufgezeichnet wird, da diese Aktion auch außerhalb der Lernansicht ausgeführt werden kann und Anki nicht weiß, welche Karte gerade womöglich angezeigt wird.)
+| Vergessen | Platziert die ausgewählten Karten am Ende der Schlange der neuer Karten. Die Wiederholungshistorie wird beibehalten. In 2.1.50+ können optional die ursprüngliche Position wiederhergestellt und die Kartenfehlschläge sowie -wiederholungen zurückgesetzt werden. |
 | Position ändern | Ändert die Reihenfolge, in der neue Karten erscheinen. Die aktuelle Position lässt sich durch Aktivieren der Spalte *Fällig* ermitteln, siehe dazu den Abschnitt über die [Tabelle](#cardnote-table). Wenn du diese Funktion ausführst, während mehrere Karten ausgewählt sind, werden diesen der Reihe nach aufsteigende Nummern zugewiesen. Standardmäßig steigt die Nummer mit jeder Karte um 1, aber das lässt sich mit der Einstellung *Schrittweite* anpassen. Die Option *Position existierender Karten verschieben* ermöglicht die Positionierung zwischen existierenden Karten, wodurch jene auseinander geschoben werden. Wenn du z.B. fünf Karten hast und 3, 4 und 5 zwischen 1 und 2 verschieben möchtest, werden die Karten mit dieser Option in die Reihenfolge 1, 3, 4, 5, 2 gebracht. Im Gegensatz dazu erhalten 1 und 2 ohne diese Option dieselbe Positionsnummer (womit unvorhersehbar ist, welche dieser beiden Karten zuerst erscheinen wird). Bitte beachte, dass mit dieser Option jede Karte mit einer höheren Position verändert wird und all diese Karten bei der nächsten Synchroniserung gesendet werden müssen. |
 | Aussetzung umschalten | [Setzt die ausgewählten Karten aus](studying.md#editing-and-more) oder hebt die Aussetzung auf je nachdem, ob die aktuelle Karte ausgesetzt ist oder nicht. |
 | Markierung | Schaltet die Markierungen der ausgewählten Karten um. Ob eine Markierung hinzugefügt oder entfernt wird, hängt davon ob, die aktuelle Karte die gewählte Markierung besitzt. |
@@ -285,16 +286,16 @@ sprengen. Es gibt zahlreiche Leitfäden zur Syntax im Internet:
 
 ## Duplikate suchen
 
-Mit der Funktion *Notizen > Duplikate suchen* lassen sich Notizen mit demselben
+Mit der Funktion _Notizen > Duplikate suchen_ lassen sich Notizen mit demselben
 Inhalt finden. Das Fenster zeigt eine Liste der Felder aller Notitzypen in deiner
-Sammlung. Wenn du Notizen finden wolltest, die im Feld *Rückseite* übereinstimmen,
-würdest du dieses Feld aus der Liste auswählen und auf *Suchen* klicken.
+Sammlung. Wenn du Notizen finden wolltest, die im Feld _Rückseite_ übereinstimmen,
+würdest du dieses Feld aus der Liste auswählen und auf _Suchen_ klicken.
 
 Standardmäßig wird in allen Notiztypen gesucht, die das angegebene Feld besitzen.
 Damit unterscheidet sich die Funktion von der Duplikatsprüfung beim Eingeben neuer
 Notizen, die auf einen Notiztyp beschränkt ist.
 
-Das Eingabefeld *Optionaler Filter* ermöglicht es, die Suche einzugrenzen.
+Das Eingabefeld _Optionaler Filter_ ermöglicht es, die Suche einzugrenzen.
 Wenn du nur in den Notiztypen "Französischvokabeln" und "Französische Verben"
 nach Duplikaten suchen wolltest, würdest du hier
 
@@ -309,7 +310,7 @@ siehe [Suchen](searching.md).
 
 Du kannst die Links in der Suchergebnisliste anklicken, um die Notizen dieser Gruppe
 anzeigen zu lassen. Wenn die Suche sehr viele Duplikate zutage fördert, möchtest
-du vielleicht lieber die Schalfläche *Duplikate verschlagworten* benutzen, wodurch
+du vielleicht lieber die Schalfläche _Duplikate verschlagworten_ benutzen, wodurch
 allen gefundenen Notizen das Schlagwort "doppelt" zugewiesen wird.
 Anschließend kannst du in der Kartenverwaltung danach suchen (`tag:doppelt`)
 und alle Duplikate von einem Fenster aus behandeln.

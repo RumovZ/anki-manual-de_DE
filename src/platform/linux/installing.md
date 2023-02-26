@@ -4,7 +4,7 @@
 
 ## Requirements
 
-The packaged version requires a recent 64 bit Intel/AMD Linux, and common
+The packaged version requires a recent 64 bit Intel/AMD Linux with glibc, and common
 libraries like libwayland-client and systemd. If you are on a different
 architecture, or a barebones Linux distro, you will not be able to use the
 packaged version, but you may be able to use the [Python
@@ -20,22 +20,45 @@ sudo apt install libxcb-xinerama0
 
 If Anki fails to start after installing, you may be [missing other libraries](./missing-libraries.md).
 
+Anki's build system only supports glibc, so musl-based distros are not currently supported.
+
 ## Installing
 
 To install Anki:
 
-1. Download Anki from <https://apps.ankiweb.net> to your Downloads folder.
-2. Open a terminal and run the following commands, replacing the version
-number as appropriate.
+1. Download Anki from <https://apps.ankiweb.net> to your Downloads folder. See the next section
+   for how to choose between -qt5 and -qt6.
+2. If zstd is not already installed on your system, you'll need to install it (eg `sudo apt install zstd`).
+3. Open a terminal and run the following commands, replacing the filename as appropriate.
 
 ```shell
-tar xjf Downloads/anki-2.1.XX-linux.tar.bz2
-cd anki-2.1.XX-linux
+tar xaf Downloads/anki-2.1.XX-linux-qt6.tar.zst
+cd anki-2.1.XX-linux-qt6
 sudo ./install.sh
 ```
 
-3. You can then start Anki by typing 'anki' and hitting enter. If you encounter
-any issues, please see the links on the left.
+On some Linux systems, you may need to use `tar xaf --use-compress-program=unzstd`.
+
+4. You can then start Anki by typing 'anki' and hitting enter. If you encounter
+   any issues, please see the links on the left.
+
+## Qt5 vs. Qt6
+
+Recent Anki versions come in separate Qt5 and Qt6 variants. The Qt6 version
+is recommended for most users.
+
+Advantages of the Qt6 version:
+
+- Compatibility with recent glibc versions (fixes [blank screens on recent distros](./blank-window.md)).
+- Better HiDPI support.
+- Better Wayland support.
+- Various bugfixes, including things like better support for less common languages.
+- Security updates. Support for the Qt5 library was discontinued in Nov 2020,
+meaning that any security flaws discovered since then will remain unfixed.
+
+Disadvantages of the Qt6 version include:
+
+- Some add-ons currently only work with the Qt5 version.
 
 ## Upgrading
 
@@ -56,7 +79,6 @@ Some add-ons have not been updated to support the latest Anki release yet. If an
 add-on you depend on has not been ported to the latest release yet, you may have
 more luck with 2.1.44 from the [releases
 page](https://github.com/ankitects/anki/releases).
-
 
 ## Problems
 

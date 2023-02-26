@@ -4,6 +4,10 @@
 
 Du hast es eilig? Geh gleich zu [Loslegen](getting-started.md).
 
+## Hilfe erhalten
+
+Du suchst Hilfe? Schaue bitte auf [Getting Help](https://faqs.ankiweb.net/getting-help.html).
+
 ## Übersetzungen
 
 Dieses Handbuch ist eine Übersetzung des [englischen Originals](https://docs.ankiweb.net/).

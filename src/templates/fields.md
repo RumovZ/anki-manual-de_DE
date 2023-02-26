@@ -124,6 +124,37 @@ using the `cloze-only` filter, like so:
 
 The cloze-only filter is supported in Anki 2.1.29+ and AnkiMobile 2.0.65+.
 
+You can enable Anki's TTS feature on supported platforms while falling back to [AnkiDroid's
+own method](https://docs.ankidroid.org/#_workarounds). Until AnkiDroid 
+supports the {{tts:FieldName}} syntax, it will render these fields as 
+text, while other platforms will render a (re)play audio button. In order 
+to temporarily fix this discrepancy between platforms, we can use the 
+following in our templates:
+
+```html
+<tts service="android" voice="en_US">{{Front}}</tts>
+
+<span class="ankitts">{{tts en_US:Front}}</span>
+
+<button class="ankidroidTtsButton" onclick="
+AnkiDroidJS.ankiTtsSpeak('{{Front}}');">Play TTS</button>
+```
+
+Then in the styling section:
+
+```css
+/*Anki (desktop) TTS needs to be hidden because AnkiDroid currently renders it as text instead of a play button like desktop.*/
+.android .ankitts {
+  display: none;
+}
+
+/*The AnkiDroid tts button won't work on other platforms because it uses the JS API, therefore it should be hidden*/
+html:not(.android) .ankidroidTtsButton { 
+  display: none;
+} 
+
+```
+
 ## Special Fields
 
 There are some special fields you can include in your templates:
@@ -135,6 +166,8 @@ There are some special fields you can include in your templates:
     The card's deck: {{Deck}}
 
     The card's subdeck: {{Subdeck}}
+
+    The card's flag: {{CardFlag}}
 
     The type of card ("Forward", etc): {{Card}}
 
@@ -240,6 +273,58 @@ to adjust the template like so:
 
     <div dir=rtl>{{FieldThatHasRTLTextInIt}}</div>
 
+## Ruby Characters
+
+Some languages commonly use annotations above the text to display the
+pronunciation of characters. These annotations are known as
+[ruby characters](https://en.wikipedia.org/wiki/Ruby_character).
+In Japanese, these are known as [furigana](https://en.wikipedia.org/wiki/Furigana).
+
+In Anki, you can display ruby characters by using the following syntax:
+
+    Text[Ruby]
+
+Suppose the text above is written in MyField. By default, if you simply use
+`{{Myfield}}`, the field will be displayed as is. To properly position the
+ruby characters above the text, use the `furigana` filter in the templates
+like so:
+
+    {{furigana:MyField}}
+
+Here are some examples:
+
+<!-- prettier-ignore -->
+| Raw Text | Rendered Text |
+|-|-|
+| `Text[Ruby]` | <ruby><rb>Text</rb><rt>Ruby</rt></ruby> |
+| `日本語[にほんご]` | <ruby><rb>日本語</rb><rt>にほんご</rt></ruby> |
+| `世[よ]の 中[なか]` | <ruby><rb>世</rb><rt>よ</rt></ruby>の<ruby><rb>中</rb><rt>なか</rt></ruby> |
+| `世[よ]の中[なか]` | <ruby><rb>世</rb><rt>よ</rt></ruby><ruby><rb>の中</rb><rt>なか</rt></ruby>  *(incorrect!)* |
+
+Notice how the third example has a space before the 中 character. This is
+necessary to specify that the ruby text applies only to that character.
+If there was no space, the ruby text will be misplaced above the の character,
+as shown in the fourth example.
+
+### Additional Ruby Character Filters
+
+In addition to the `furigana` filter, you can also only show certain parts
+of the ruby text, with the `kana` and `kanji` filters. The `kana` filter will
+only show the ruby text, while the `kanji` filter removes the ruby text
+entirely.
+
+<!-- prettier-ignore -->
+| Raw Text | Field Filter | Rendered Text |
+|-|-|-|
+| `日本語[にほんご]` | `{{furigana:MyField}}` | <ruby><rb>日本語</rb><rt>にほんご</rt></ruby> |
+| `日本語[にほんご]` | `{{kana:MyField}}` | にほんご |
+| `日本語[にほんご]` | `{{kanji:MyField}}` | 日本語 |
+
+These names are again, borrowed from Japanese.
+The term [kana](https://en.wikipedia.org/wiki/Kana) represents the phonetic
+system used to describe how words are pronounced, whereas the term
+[kanji](https://en.wikipedia.org/wiki/Kanji) represents its Chinese characters.
+
 ## Media & LaTeX
 
 Anki does not scan templates for media references, because it is slow to
@@ -317,7 +402,7 @@ up to you to decide how well you remembered or not.
 Only one typing comparison can be used on a card. If you add the above
 text multiple times, it will not work. It also only supports a single
 line, so it is not useful for comparing against a field that is
-comprised on multiple lines.
+comprised of multiple lines.
 
 Anki uses a monospaced font for the answer comparison so that the
 “provided” and “correct” sections line up. If you wish to override the

@@ -6,6 +6,19 @@ Die Einstellungen finden sich im Menü _Werkzeuge_ auf Windows/Linux und im Anki
 
 ## Einfach
 
+**Sprache**
+Ändere die Anzeigesprache. [Hier](https://translating.ankiweb.net/) kannst du helfen,
+die Übersetzungen zu verbessern.
+
+**Thema**
+Der Dunkelmodus (Nachtmodus) macht Ankis Oberfläche dunkel und lässt Karten in weißer
+Schrift auf schwarzem Hintergrund erscheinen. Manche Kartenvorlagen müssen für eine
+korrekte Darstellung eventuell angepasst werden. Siehe [Nachtmodus-Design](templates/styling.md#night-mode)
+für weitere Informationen.
+
+In Version 2.1.50+ gibt es eine Einstellung, um autmatisch zwischen Tag- und Nachtmodus
+zu wechseln.
+
 **Videotreiber**  
 Ankis Programmbibliotheken benötogen einen Videotreiber, um Inhalte auf dem Bildschirm darstellen zu
 können. Aufgrund unterschiedlicher Hardware- und Software-Konfigurationen hängt es von deinem Rechner
@@ -29,10 +42,9 @@ Hintergrund und sind verlustfrei, resultieren aber meistens in sehr viel größe
 Standardmäßig wird Formatierung wie Schriftstärke und Farbe beim Einfügen beibehalten, außer es wird
 die <kbd>Umschalttaste</kbd> gedrückt. Diese Option kehrt dieses Verhalte um.
 
-**Nachtmodus**  
-Im Nachmodus werden Karten mit weißer Schrift auf schwarzem Hintergrund angezeigt. Manche Kartenvorlagen
-musst du vielleicht anpassen, damit sie in diesem Modus gut funktionieren. Siehe
-[Nachtmodus-Design](templates/styling.md#night-mode) für weitere Informationen.
+**Akzente bei der Suche ignorieren**
+
+Wenn aktiviert, werden in einfachen Suchen automatisch [Akzente ignoriert](./searching.md#ignoring-accentscombining-characters).
 
 **Beim Hinzufügen aktuellen Stapel als Standard festlegen**  
 Beeinflusst die Wechselwirkung zwischen Notiztypen und Stapeln. Das voreingestellte Verhalten
@@ -98,7 +110,7 @@ _Timeboxing_ ist eine Konzentrationstechnik, bei der eine längere Aktivität (w
 Lerneinheit) in kleinere Blöcke zerlegt wird. Wenn du eine Zeitbegrenzung von mehr als 0 Minuten
 einstellst, zeigt Anki dir regelmäßig, wie viele Karten du in in der vorgegebenen Zeit geschafft hast.
 
-## Netzwerk
+## Synchronisierung und Netzwerk
 
 Der Netzwerkreiter enthält Einstellungen für die Synchronisierung mit AnkiWeb.
 
@@ -107,3 +119,8 @@ Der Netzwerkreiter enthält Einstellungen für die Synchronisierung mit AnkiWeb.
   ist, wirst du bei der nächsten Synchronisierung gefragt, ob du hochladen oder herunterladen willst.
   Das ist nützlich, wenn du aus Versehen Änderungen vorgenommen hast und sie mit einer älteren Version
   auf AnkiWeb rückkgängig machen willst.
+- Für Informationen zur Einstellung eines eigenen Synchronisierungs-Servers, siehe [diesen Abschnitt](./sync-server.md).
+
+## Sicherungen
+
+Siehe [diesen Abschnitt](backups.md#automatic-backups) des Handbuchs.

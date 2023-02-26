@@ -207,6 +207,16 @@ In der rechten unteren Ecke des Wiederholungsfenster befindet sich die Schaltfl�
   Mit dem [Zeitplaner 2.1](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html)
   werden die Lernstufen durch eine Zurückstellung hingegen nicht zurückgesetzt.
 
+- **Karte vergessen**: Schiebt die Karte [ans Ende der Warteschlange neuer Karten](browsing.md#cards).
+
+  Anki 2.1.50+ merkt sich die ursprüngliche Position, wenn eine Karte das erste Mal mit
+  dem Zeitplaner 2.1 gelernt wird. Mit der Option "Ursprüngliche Position wiederherstellen"
+  wird einer Karte, die du vergisst, wieder diese Position zugewiesen.
+
+  Mit der Option "Fehlschläge und Wiederholungen zurücksetzen" werden diese Zähler
+  wieder auf 0 gesetzt. Die Kartenhistorie, die unten in der Kartenstatisik angezeigt
+  wird, wird *nicht* entfernt.
+
 - **Fälligkeitsdatum auswählen**: Reiht die Karte in die Wiederholungsschlange ein und
   lässt sie [zu einem bestimmten Datum fällig](browsing.md#cards) werden.
 
@@ -225,11 +235,17 @@ In der rechten unteren Ecke des Wiederholungsfenster befindet sich die Schaltfl�
 
 - **Karteninformation**: Zeigt [statistische Daten](stats.md#card-info) zur Karte.
 
+- **Vorherige Karteninformation**: Zeigt [statistische Daten](stats.md#card-info) zur vorherigen Karte.
+
 - [**Notiz kennzeichnen**](editing.md#the-marked-tag): Fügt der Notiz das Schlagwort
   _marked_ ("markiert") hinzu, sodass sie leicht in der Kartenverwaltung
   wiedergefunden werden kann. Das ist ähnlich, wie einzelnen Karten Flaggen zuzuweisen,
   aber da es sich hier um ein Schlagwort handelt, werden bei einer Suche danach
   alle Karten einer Notiz angezeigt. Für die meisten Benutzer sind Flaggen angemessener.
+
+- **Kopie erstellen**: Öffnet ein [Duplikat](browsing.md#finding-duplicates) der aktuellen Notiz im
+  [Editor](editing.md#adding-cards-and-notes), das angepasst werden kann, um schnell neue
+  Varianten zu erzeugen. Standardmäßig wird das Duplikat im selben Stapel wie das Original angelegt.
 
 - **Notiz löschen**: Löscht die Notiz und all ihre Karten.
 

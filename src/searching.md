@@ -50,7 +50,8 @@ Findet Notizen mit "h", dann beliebigen Buchstaben und dann "nd" wie "hnd",
 
 `w:hund`  
 Sucht nach "Hund" umgeben von Wortgrenzen, z.B. "Hund, der", aber nicht "hundert" oder
-"Wachhund". Benötigt Anki 2.1.24+ oder AnkiMobile 2.1.61+.
+"Wachhund". Benötigt Anki 2.1.24+ oder AnkiMobile 2.1.61+. Beachte, dass Formatierungsänderungen
+als Wortgrenzen interpretiert werden. Z.B. findet `w:Bei` den Text Bei**spiel**. 
 
 `w:hund*`  
 Findet "Hund" und "hundert", aber nicht "Wachhund".
@@ -96,6 +97,10 @@ diese Variante eine exakte Übereinstimmung.
 Findet Notizen mit einem Feld _Vorderseite_, das genau "Hund" enthält. Ein Feld mit Inhalt "ein Hund"
 würde nicht gefunden werden.
 
+`"Mein Tier:ein Hund"`  
+Findet Notizen, wo das Feld "Mein Tier" genau "ein Hund" enthält. Die Anführungszeichen sind
+erforderlich, siehe [unten](#matching-special-characters).
+
 `vorderseite:*hund*`  
 Findet Notizen mit einem Feld _Vorderseite_, in dem irgendwo "Hund" vorkommt.
 
@@ -108,7 +113,7 @@ Findet Notizen mit einem nicht leeren Feld _Vorderseite_.
 `vorderseite:*`  
 Findet Notizen mit einem Feld _Vorderseite_, egal ob leer oder nicht.
 
-`vor*:text`
+`vor*:text`  
 Findet Notizen mit einem Feld, das mit mit "Vor" beginnt. Benötigt Anki 2.1.24+ oder AnkiMobile 2.1.60+.
 
 ## Schlagwörter, Stapel, Karten- und Notiztypen
@@ -348,7 +353,8 @@ besonders zu behandeln.
 
 - _Leerzeichen_  
   Um etwas mit Leerzeichen zu finden, muss der `"gesamte Ausdruck"` in Anführungszeichen gesetzt werden.
-  Bei einer Doppelpunktsuche kann auch nur der `Teil:"nach dem Doppelpunkt"` umfasst werden.
+  Bei einer Doppelpunktsuche kann auch nur der `Teil:"nach dem Doppelpunkt"` umfasst werden,
+  solange der Teil vor dem Doppelpunkt keine Leerzeichen enthält.
 
 - `"`, `*` und `_`  
   Stell diesen Zeichen einen umgekehrten Schrägstrich voran, um nach ihnen zu suchen. Z.B. findet

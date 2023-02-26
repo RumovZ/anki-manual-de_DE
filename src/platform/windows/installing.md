@@ -4,23 +4,41 @@
 
 ## Voraussetzungen
 
-Neue Anki-Versionen benötigen die 64-Bit-Version von Windows 7, 8, 10 oder 11.
+Neue Anki-Versionen benötigen die 64-Bit-Version von Windows 10 oder 11.
 
-Die letzte Version, die 32-Bit-Windows unterstützt, war _Anki 2.1.35-alternate_.
+- Die letzte Version, die Windows 7 und 8.1 unterstützt, war _Anki 2.1.49_.
+- Die letzte Version, die 32-Bit-Windows unterstützt, war _Anki 2.1.35-alternate_.
+
 Wenn du einen alten PC hast, kannst du diese Version
-[hier](https://github.com/ankitects/anki/releases)
-herunterladen.
+[hier](https://github.com/ankitects/anki/releases) herunterladen.
 
 ## Installation
 
 Um Anki zu installieren:
 
-1. Lade Anki von <https://apps.ankiweb.net> herunter.
+1. Lade Anki von <https://apps.ankiweb.net> herunter. Siehe unten, wie du zwischen -qt5
+   und -qt6 entscheidest.
 2. Speicher die Datei auf deinem Desktop oder im Downloads-Ordner.
 3. Doppelklicke auf die Datei, um sie auszuführen. Wenn du eine Fehlermeldung
    siehst, schau dir bitte die Links auf der linken Seite an.
 4. Sobald Anki installiert ist, doppelklicke auf das neue Stern-Logo auf deinem
    Desktop, um Anki zu starten.
+
+## Qt5 vs. Qt6
+
+Neue Anki-Versionen kommen in den Varianten Qt5 und Qt6. Letztere wird für die meisten
+Benutzer empfohlen.
+
+Vorteile der Version Qt6:
+
+- Verschiedene Fehlerbehebungen, u.a. bessere Unterstützung für seltenere Sprachen.
+- Sehr große Bilder laden schneller als mit Qt5.
+- Sicherheitsaktualisierungen. Unterstützung für Qt5 wurde im November 2020 beendet, d.h.
+  seitdem entdeckte Sicherheitslücken werden nicht geschlossen.
+
+Nachteile der Version Qt6:
+
+- Einige Add-Ons funktionieren derzeit nur mit Version Qt5.
 
 ## Updates
 
@@ -48,4 +66,3 @@ du vielleicht mehr Glück mit Version 2.1.44 von der
 
 Solltest du auf irgendwelche Probleme beim Installieren oder Starten von Anki
 stoßen, siehe bitte die Links auf der linken Seite.
-
