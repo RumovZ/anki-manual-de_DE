@@ -1,204 +1,196 @@
-# Syncing with AnkiWeb
+# Synchronisation mit AnkiWeb
 
 <!-- toc -->
 
-AnkiWeb is a service that allows you to keep your collection
-synchronized across multiple devices, and to study online. Please sign
-up for a [free account](https://ankiweb.net/) before following the steps
-below.
+AnkiWeb ist ein Dienst, um deine Sammlung über verschiedene Geräte hinweg synchron
+zu halten und online zu lernen. Bitte leg einen [kostenlosen Account](https://ankiweb.net/)
+an, bevor du die folgenden Schritten durchführst.
 
-## Intro Videos
+## Einführungsvideos
 
-For a quick introduction to syncing, please check out the
-[syncing intro videos](https://www.youtube.com/watch?v=YkiM4DPzSVc&list=PLGgmaKOIHykFoomqkBJAyGiDQ2kyiuTao&yt:cc=on).
+Für eine schnelle Einführung in die Synchronisation sieh dir bitte die
+[Einführungsvideos zur Synchronisation](https://www.youtube.com/watch?v=YkiM4DPzSVc&list=PLGgmaKOIHykFoomqkBJAyGiDQ2kyiuTao&yt:cc=on)
+(englisch) an.
 
-## Setup
+## Einrichtung
 
-To start syncing your collection across devices, click the sync button
-(the top right one on the main screen), or press 'y' on your keyboard.
-You’ll be prompted for your AnkiWeb ID and password, which you created
-in the signup process.
+Um mit der geräteübergreifenden Synchronisation zu beginnen, klick auf die
+Synchronisieren-Schaltfläche (oben rechts im Hauptbildschirm) oder drück <kbd>Y</kbd>
+auf deiner Tastatur.
+Du wirst nach deiner AnkiWeb-ID und deinem Passwort gefragt, die du bei der
+Account-Erstellung angelegt hast.
 
-When you synchronize your collection for the first time, Anki will ask
-you if you want to upload or download. If you have cards on your
-computer and your AnkiWeb account is empty, choose "upload" to send your
-data to AnkiWeb. If you have cards on AnkiWeb from another device, and
-no cards on your computer, choose "download" to replace the empty local
-collection with the cards that are on AnkiWeb. If you have different
-cards on both devices, [more work is required](#merging-conflicts) to
-avoid losing data.
+Wenn du deine Sammlung das erste Mal synchronisierst, fragt dich Anki, ob du hoch-
+oder herunterladen möchtest. Wenn du Karten auf deinem Computer hast und dein
+AnkiWeb-Account leer ist, wähle _Hochladen_, um deine Kartendaten nach AnkiWeb
+zu senden. Wenn du auf AnkiWeb Karten von einem anderen Gerät und keine auf deinem
+Computer hast, wähle _Herunterladen_, um deine lokale leere Sammlung mit den Karten
+von AnkiWeb zu ersetzen. Wenn du verschiedene Karten auf beiden Geräten hast, ist
+[mehr Arbeit](#merging-conflicts) erforderlich, um den Verlust von Daten zu vermeiden.
 
-Once the initial one way sync is completed, Anki will be able to merge
-changes from multiple locations with a few exceptions.
+Nachdem die erstmalige Einweg-Synchronisation abgeschlossen ist, kann Anki Änderungen
+von mehreren Quellen mit ein paar Ausnahmen selbst zusammenführen.
 
-If you have multiple people using Anki on one machine and have created a
-profile for each user, each user will need to create their own AnkiWeb
-account to sync with. If you attempt to synchronize multiple profiles
-with a single AnkiWeb account, you will lose data.
+Wenn mehrere Leute Anki auf demselben Gerät mit jeweils eigenem Profil nutzen,
+muss jeder Benutzer seinen eigenen Account für die Synchronisation anlegen.
+Wenn du versuchst, mehrere Profile mit demselben Account zu synchronisieren, wirst
+du Daten verlieren.
 
-## Automatic Syncing
+## Automatische Synchronisation
 
-Once syncing is enabled, Anki will automatically sync each time your
-collection is closed or opened. If you would prefer to synchronize
-manually, you can disable automatic syncing in Anki’s preferences.
+Nachdem die Synchronisation einmal aktiviert ist, wird Anki deine Sammlung bei jedem
+Öffnen und Schließen automatisch synchronisieren. Wenn du lieber manuell synchronisieren
+möchtest, kannst du die automatische Synchronisation in den Einstellungen deaktivieren.
 
-## Button Color
+## Schaltflächenfarbe
 
-The sync button will change to blue when a normal sync is required,
-and red when a full sync is required.
+Die Synchronisieren-Schaltfläche wird blau, wenn eine normale, und rot, wenn eine
+volle Synchronisation erforderlich ist.
 
-## Media
+## Medien
 
-Related video: <https://www.youtube.com/watch?v=phP9GGG-PxY>
+Zugehöriges Video (englisch): <https://www.youtube.com/watch?v=phP9GGG-PxY>
 
-Anki will synchronize any sounds and images used by your notes. It will
-notice when media has been added or removed from your media folder, but
-will not notice if you have edited some existing files without adding or
-removing any. To get your edits noticed, you need to add or remove a
-file as well.
+Anki synchronisiert alle von deinen Notizen genutzten Audio- und Bilddateien.
+Es registriert, wenn Dateien zu deinem Medienordner hinzugefügt oder daraus
+entfernt worden sind, aber nicht, wenn du existierende Dateien verändert hast.
+Dafür musst du erst auch eine Datei hinzugefügen oder entfernen.
 
-If you’re running Anki off a USB flash drive, you should use an NTFS
-file system, as Anki may not be able to detect media changes on a FAT32
-filesystem.
+Wenn du Anki von einem USB-Speicher aus startest, solltest du ein NTFS-Dateisystem
+benutzen, da Anki Änderungen auf einem FAT32-System möglicherweise nicht registriert.
 
-## Conflicts
+## Konflikte
 
-Related video: <https://www.youtube.com/watch?v=UEAcpfMQnjo>
+Zugehöriges Video (englisch): <https://www.youtube.com/watch?v=UEAcpfMQnjo>
 
-Under normal circumstances, reviews and note edits can be merged, so if
-you review or edit on two different devices before syncing, Anki will
-preserve your changes from both locations. If the same card has been
-reviewed in two different locations, both reviews will be marked in the
-revision history, and the card will be kept in the state it was when it
-was most recently answered.
+Unter normalen Umständen können Wiederholungen und Bearbeitungen zusammengeführt
+werden. Wenn du Karten also auf zwei verschiedenen Geräten lernst und bearbeitest,
+bevor du synchronisierst, übernimmt Anki die Änderungen von beiden Quellen.
+Wenn dieselbe Karte an zwei verschiedenen Orten wiederholt wurde, werden beide
+Wiederholungen in der Wiederholungshistorie vermerkt und die Karte verbleibt im
+Zustand nach der aktuellsten Wiederholung.
 
-There are certain changes that Anki is unable to merge. These mainly
-relate to the format of notes: things like adding a new field, or
-removing a card template. When you perform an operation that can’t be
-merged, Anki will warn you, and give you the option of aborting the
-operation. If you choose to continue, you’ll be asked to choose whether
-to keep the local copy or the copy on AnkiWeb when your collection is
-next synchronized.
+Bestimmte Änderungen kann Anki nicht zusammenführen, hauptsächlich wenn sie das
+Notizformat betreffen, z.B. das Hinzufügen eines Felds oder das Entfernen einer Vorlage.
+Wenn du eine Aktion ausführst, die nicht zusammengeführt werden kann, warnt Anki
+dich und gibt dir die Möglichkeit, sie abzubrechen. Wenn du trotzdem fortfährst,
+wirst du bei der nächsten Synchronisation gefragt, ob du die lokale oder die Sammlung
+auf AnkiWeb behalten möchtest.
 
-If certain problems are detected while syncing, it will also force a one
-way sync. If you find this consistently happens, please post on our
-support site.
+Auch bestimmte Probleme beim Synchronisieren erzwingen eine Einweg-Synchronisation.
+Wenn das häufiger geschieht, melde es bitte in unserem Forum.
 
-When a one way sync is required, you need to choose whether you wish to
-keep the collection on your local device, or the collection on AnkiWeb.
-If changes have been made on both ends, only changes on one end can be
-preserved.
+Bei einer Einweg-Synchronisation musst du wählen, ob du deine lokale Sammlung
+oder die auf AnkiWeb behalten möchtest. Wenn in beiden Änderungen vorgenommen
+wurden, können nur die aus einer Quelle erhalten werden.
 
-If you choose Upload, the content on your local device will be sent to
-AnkiWeb. You then need to sync your other devices, and choose "Download"
-to have them grab a copy of that content.
+Wenn du _Hochladen_ wählst, wird der Inhalt deines lokalen Geräts nach AnkiWeb
+geschickt. Danach musst du deine anderen Geräte synchronisieren und _Herunterladen_
+wählen, damit sie diesen Inhalt kopieren.
 
-If you choose Download, it will replace any local changes you’ve made
-with the data that is on AnkiWeb.
+Wenn du _Herunterladen_ wählst, werden alle lokalen Änderungen, die du vorgenommen
+hast, durch die Daten von AnkiWeb ersetzt.
 
-Once all devices are in sync, future syncs will return to the normal
-behaviour of merging changes from both ends.
+Nachdem alle Geräte synchronisiert sind, werden bei folgenden Synchronisationen
+wieder Änderungen von beiden Seiten zusammengeführt.
 
-If you wish to force a full upload or download (for example, because you
-accidentally deleted a deck on one side and want to restore the deck
-rather than having its deletion synchronized), you can check the "On
-next sync, force changes in one direction" box in
-Tools&gt;Preferences&gt;Network, then sync as usual. (You’ll be given
-the option to choose which side you want to use.)
+Wenn du ein vollständiges Hoch- oder Herunterladen erzwingen möchtest (z.B. weil
+du aus Versehen einen Stapel auf einer Seite gelöscht hast und ihn wiederherstellen
+möchtest, anstatt seine Löschung zu synchronisieren), kannst du unter
+_Werkzeuge > Einstellungen > Netzwerk_ den Haken bei "Bei der nächsten Synchronisation
+Änderungen in eine Richtung erzwingen" setzen und dann wie gewohnt synchronisieren.
+(Du hast dann die Wahl, welche Seite du benutzen willst.)
 
-Forcing a one way sync only affects card syncing - media is synced as
-normal. If you have files that you want to remove from AnkiWeb, please
-ensure your client is fully in sync first. After syncing is up to date,
-any files you remove (eg via the Check Media function) will be removed
-from AnkiWeb on the following sync.
+Änderungen in eine Richtung zu erzwingen, beeinflusst nur die Kartensynchronisation
+– Medien werden wie immer synchronisiert. Wenn du Dateien von AnkiWeb entfernen
+möchtest, stell bitte zuerst sicher, dass dein Gerät vollständig synchronisiert ist.
+Anschließend werden alle Dateien, die du entfernst (z.B. durch die Funktion
+_Medien überprüfen_), bei der nächsten Synchronisation von AnkiWeb entfernt.
 
-## Merging Conflicts
+## Zusammenführungskonflikte
 
-Because the [first sync](#setup) can only sync changes in one
-direction, if you have added different content to different devices or
-profiles before setting syncing up, content on one device will be lost
-if you overwrite it with the content from the other device. With some
-work, it is possible to manually merge data into a single collection.
+Da die [erste Synchronisierung](#einrichtung) Änderungen nur in eine Richtung synchronisieren kann,
+geht Inhalt, den du auf anderen Geräten oder Profilen hinzugefügt hast, verloren, wenn
+du ihn mit dem Inhalt des anderen Geräts überschreibst. Mit etwas Arbeit ist es jedoch möglich,
+Daten manuell zu einer einzigen Sammlung zusammenzuführen.
 
-Start by taking a backup on each device/profile, in case something goes
-wrong. With the computer version you can use File&gt;Export to export
-"all decks" with scheduling information and media files included, and
-save the file somewhere safe. In AnkiMobile, the Add/Export button on
-the decks list screen will let you export all decks with media.
+Beginne damit, auf jedem Gerät/Profil ein Backup zu erstellen, für den Fall, dass etwas schief geht. In der
+Computer-Version kannst du unter Datei&gt;Export "Alle Stapel" mit Zeitplaninformationen und
+Mediendateien exportieren und die Datei an einem sicheren Ort speichern. In AnkiMobile kannst du
+über die Schaltfläche "Hinzufügen/Exportieren" in der Stapelübersicht Stapel mit
+Medien exportieren.
 
-Next, if one of your devices is a mobile device, synchronize it first.
-If there’s a conflict, choose "upload" to overwrite any existing data on
-AnkiWeb with the data from your mobile device. If both devices/profiles
-are on your computer, synchronize the device/profile with the most
-number of decks first.
+Falles eines ein mobiles Gerät ist, synchronisiere es nun zuerst. Wenn es Konflikte gibt, wähle "Hochladen",
+um vorhandene Daten auf AnkiWeb mit den Daten deines Mobilgeräts zu überschreiben. Wenn sich
+beide Geräte/Profile auf deinem Computer befinden, synchronisiere zuerst das Gerät/Profil mit der
+höchsten Anzahl an Stapeln.
 
-Now return to the other device/profile. If automatic syncing is enabled,
-a message may pop up asking if you want to upload or download. Click the
-cancel button - we don’t want to sync yet.
+Kehre nun zum anderen Gerät/Profil zurück. Wenn die automatische Synchronisierung aktiviert ist,
+kann eine Meldung erscheinen, die fragt, ob du hoch- oder herunterladen möchtest. Klicke auf
+die Abbrechen-Schaltfläche - noch möchten wir nicht synchronisieren.
 
-Once you’re looking at the deck list, click the cog icon next to the
-first deck, and choose "export". Export the content with scheduling
-information and media included, and save the .apkg file somewhere. Now
-you’ll need to repeat this for each top-level deck.
+Sobald du die Stapelübersicht siehst, klicke auf das Zahnradsymbol neben dem ersten Stapel und wähle
+"Exportieren". Exportiere mit Zeitplaninformationen und Medien und speichere die
+.apkg-Datei. Wiederhole diesen Schritt für jeden Oberstapel.
 
-Once all top-level decks have been exported, click the sync button at
-the top right, and choose "download", which will overwrite the local
-content with the content you synced from your other device.
+Sobald alle Oberstapel exportiert wurden, klick auf die Synchronisierungsschaltfläche oben rechts und
+wähle "Herunterladen", um den lokalen Inhalt mit dem Inhalt zu überschreiben, den du von deinem
+anderen Gerät synchronisiert hast.
 
-You can now use File&gt;Import to import the .apkg files you exported
-earlier, which will merge the exported content with the existing
-content, so everything will be in one place.
+Du kannst nun über Datei&gt;Importieren die .apkg-Dateien importieren, die du zuvor exportiert hast.
+Dadurch wird der exportierte Inhalt mit dem vorhandenen Inhalt zusammengeführt, sodass alles an
+einem Ort ist.
 
 ## Firewalls
 
-Anki needs to be able to make outbound HTTPS connections to sync. At a
-minimum it must be able to connect to ankiweb.net, sync.ankiweb.net and
-syncN.ankiweb.net, where N is number between 2 and 6. These domains may
-change over time, and the IP addresses they point to may also change, so
-we recommend you allow wildcard access to \*.ankiweb.net to reduce the
-chance of the firewall rules needing to be updated in the future.
+Zur Synchronisation muss Anki in der Lage sein, ausgehende HTTPS-Verbindungen
+aufzubauen. Dazu muss es mindestens zu ankiweb.net, sync.ankiweb.net und
+syncN.ankiweb.net (wobei N eine Zahl zwischen 2 und 6 ist) eine Verbindung
+herstellen können. Diese Domains können sich im Laufe der Zeit ändern und auch
+die IP-Adressen, auf die sie verweisen, können sich ändern. Daher empfehlen wir,
+Wildcard-Zugriff auf \*.ankiweb.net zu erlauben, um die Chance zu verringern,
+dass die Firewall-Regeln in Zukunft aktualisiert werden müssen.
 
-If you have a firewall on your machine, you should add an exception for
-Anki. If you are on a work or school network, please contact your
-network administrator for assistance - it is not something we can help
-you with.
+Wenn du eine Firewall auf deinem Rechner hast, solltest du eine Ausnahme für
+Anki hinzufügen. Wenn du dich in einem Arbeits- oder Schulnetzwerk befindest,
+bitte deinen Netzwerkadministrator um Unterstützung - damit können wir nicht helfen.
 
 ## Proxies
 
-If you need a proxy to access the internet, Anki should automatically
-pick up your system proxy settings if you’re on Windows or macOS, and
-will honour the HTTP_PROXY environment variable if you’re on another
-platform.
+Wenn du einen Proxy benötigst, um auf das Internet zuzugreifen, sollte Anki
+automatisch deine System-Proxy-Einstellungen übernehmen, wenn du Windows oder
+macOS verwendest. Wenn du auf einer anderen Plattform bist, wird die
+HTTP_PROXY-Umgebungsvariable berücksichtigt.
 
-Anki will only be able to pick up your system settings if a proxy is
-manually configured, and does not require a password. If your system
-uses automatic proxy setup, or uses a proxy that requires a username and
-password, you will need to manually tell Anki the proxy configuration.
+Anki kann deine Systemeinstellungen nur dann übernehmen, wenn ein Proxy manuell
+konfiguriert ist und kein Passwort erfordert. Wenn dein System eine automatische
+Proxy-Konfiguration verwendet oder ein Proxy, der einen Benutzernamen und ein
+Passwort erfordert, musst du Anki die Proxy-Konfiguration manuell mitteilen.
 
-To tell Anki your proxy settings, define a HTTPS_PROXY environmental
-variable that points to the proxy server. It will look like:
+Um Anki deine Proxy-Einstellungen mitzuteilen, musst du die Umgebungsvariable HTTPS_PROXY
+definieren, sodass sie auf den Proxy-Server zeigt. Das sieht etwa so aus:
 
     http://user:pass@proxy.company.com:8080
 
-If your username or password contains an @ (eg `user@workdomain.com`),
-you need to change it to %40, like so:
+Wenn dein Benutzername oder Passwort ein @ enthält (z.B. `user@workdomain.com`),
+musst du es durch %40 ersetzen, also:
 
     http://user%40workdomain.com:pass@proxy.company.com:8080
 
-Anki 2.0 expects to find HTTP_PROXY instead of HTTPS_PROXY.
+Anki 2.0 erwartet HTTP_PROXY anstelle von HTTPS_PROXY.
 
-To set environmental variables on Windows, please see
+Um Umgebungsvariablen unter Windows zu setzen, siehe
 <https://www.google.com/search?q=windows+set+environmental+variable>
 
-If you’re on a Mac, please see
+Wenn du auf einem Mac bist, siehe
 <http://stackoverflow.com/questions/135688/setting-environment-variables-in-os-x>
 
-Heavily locked down networks that intercept secure connections and
-present their own certificate instead may cause Anki to throw up SSL
-errors. In such environments, you may be able to work around the errors
-with <https://ankiweb.net/shared/info/878367706>
+Stark eingeschränkte Netzwerke, die sichere Verbindungen abfangen und anstelle
+eines Zertifikats ihr eigenes Zertifikat präsentieren, können dazu führen, dass
+Anki SSL-Fehler ausgibt. In solchen Umgebungen kannst du die Fehler möglicherweise
+mit <https://ankiweb.net/shared/info/878367706> umgehen.
 
-An alternative solution is to install a local proxy server, and point
-that proxy server at your normal proxy server. You can then tell Anki to
-use the local proxy, which will redirect requests to the proxy you
-normally use.
+Eine alternative Lösung besteht darin, einen lokalen Proxy-Server zu installieren
+und diesen auf deinen normalen Proxy-Server zu verweisen. Du kannst Anki dann sagen,
+dass es den lokalen Proxy verwenden soll, der Anfragen an den von dir normalerweise
+verwendeten Proxy umleitet.
